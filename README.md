@@ -8,10 +8,13 @@ so `git diff c66303f` is the complete delta.
 
 ## Status
 
-**Phase 1 (bug fixes on the original structure) — done.**
+**Phase 1 (bug fixes on the original structure) — done, loads and runs in-game
+(verified 2026-07-26).**
 **Phase 2 (port to modern Hooks + MSU) — not started.**
+Picking it up? Start at **[docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md)**.
 
-Nothing here has been tested in-game yet. See *Verification* below.
+In-game verification so far confirms the mod loads and plays. The three
+individual defect repros in *Verification* below have not each been exercised.
 
 | Fix | Defect | Commit |
 |---|---|---|
@@ -25,11 +28,20 @@ resolved by the Phase 2 port rather than by patching in place.
 ## Layout
 
 ```
-scripts/ gfx/ ui/     the mod itself — this is what ships
-docs/DEFECTS.md       17 defects, root causes, and what is still unproven
-docs/COMPATIBILITY.md identifiers other mods depend on; who fights us for hooks
-tools/check_mod.py    static checker, stands in for a compile step
-dist/mod_AC.zip       packaged build, installable via Vortex
+scripts/ gfx/ ui/        the mod itself — this is what ships
+docs/PHASE2-HANDOFF.md   start here to continue the work
+docs/DEFECTS.md          17 defects, root causes, and what is still unproven
+docs/COMPATIBILITY.md    identifiers other mods depend on; who fights us for hooks
+docs/reference/          modern Hooks/MSU porting guide, compat survey, Nexus scrape
+tools/check_mod.py       static checker, stands in for a compile step
+tools/setup_refs.sh      rebuilds the reference trees the checker needs
+dist/mod_AC.zip          packaged build, installable via Vortex
+```
+
+Build the zip with:
+
+```bash
+powershell -ExecutionPolicy Bypass -Command "Compress-Archive -Path scripts,gfx,ui -DestinationPath dist/mod_AC.zip -Force"
 ```
 
 ## Verification

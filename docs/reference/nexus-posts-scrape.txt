@@ -1,0 +1,4347 @@
+=========== PAGE 1 ===========
+439 comments
+Pages
+1
+2
+3
+...
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+dalbaeb148812121212
+member 
+0 kudos
+Report
+Reply
+11 May 2026, 3:47AM
+how to tame creatures the chance is so small that it is not even clear how to tame them. I have studied the information and I know that the lower the hp, the greater the chance, but in any case, the chance is small. I do not even know how to tame them. There is an action that does not work!I can't imagine why they don't get tamed.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 May 2026, 10:52PM
+This mod is very out of date and I'm not really updating it anymore, but I am considering a total remake one of these days.
+
+However, you should be able to adjust the chance/scaling in scripts/companions/companions_library.nut, by increasing the values of TameChance.
+syordswords
+member 
+0 kudos
+Report
+Reply
+27 Aug 2025, 6:56AM
+How to add Armor on Armored Frost Unhold? Because when tamed they have no armor.
+StopGamer
+member 
+0 kudos
+Report
+Reply
+22 Aug 2025, 10:08AM
+Great mod, still using it. Adds both functionality, challenge(not difficulty, but goal to achieve "catch them all") and flavor to game. Looking for update or rework
+Terege11
+member 
+0 kudos
+Report
+Reply
+11 Jun 2025, 2:49PM
+как приручить животное. я пробую и пишет не та цель или что то типа того
+Vazl
+premium 
+6 kudos
+Report
+Reply
+12 Jun 2025, 9:33AM
+This mod hasn't been updated in years, and I wouldn't be surprised if it doesn't work properly anymore (especially depending on what other mods you are running). It's kind of abandoned. I might redo the entire mod some day and fix all the bugs.
+
+Google Translate: Этот мод не обновлялся годами, и я не удивлюсь, если он больше не работает как надо (особенно в зависимости от того, какие моды вы используете). Он как-то заброшен. Возможно, я когда-нибудь переделаю весь мод и исправлю все ошибки.
+Terege11
+member 
+0 kudos
+Report
+Reply
+16 Jun 2025, 8:58AM
+спасибо за ответ. модом все же пользуюсь. собак качать, хоть что то. ломает и главное
+StopGamer
+member 
+0 kudos
+Report
+Reply
+22 Aug 2025, 10:05AM
+Vazl, Thanks for great mod! Strangely still one of my favorite mods. Looking for update v2) Or atleast for someone to pick up this mode and update tp latest version and fix some bugs
+alfb
+member 
+0 kudos
+Report
+Reply
+08 Mar 2025, 11:00AM
+як збільшити спавн на карті Beastmasters?
+
+syordswords
+member 
+0 kudos
+Report
+Reply
+20 Jan 2025, 6:20AM
+How to increase taming chance to 100%?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+20 Jan 2025, 4:27PM
+Check under "modding the mod" on the description page
+AgentXTopSecret
+member 
+0 kudos
+Report
+Reply
+10 Nov 2024, 8:45AM
+why if i change sometinges in the code like the tameing chance and i repack it into .rar and delet the old one  of course, why the mod no longer works ? i dont get it :( i just want a higher tameing chance because it is really low and really grinding to get a nice wolf ^^
+
+EDIT: lol i found out that .ZIP and not .RAR thats the reason OPS xD
+facecrusher12
+supporter 
+7 kudos
+Report
+Reply
+05 Oct 2024, 12:29AM
+can someone tell me how to make it so the beasts all have a chance to drop accessory not just spiders and necromancer?
+AgentXTopSecret
+member 
+0 kudos
+Report
+Reply
+05 Jun 2024, 6:37AM
+this mod is really nice, thank u so much <3
+nik0li
+supporter 
+14 kudos
+Report
+Reply
+15 Feb 2024, 2:26AM
+This is hands down one of my favorite mods for BB, and I'm really glad it still works without issue. I love collecting a team of Direwolves or Hyenas, depending on the theme of the current merc group. 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+16 Feb 2024, 12:28AM
+Glad you like it. The code is a mess though, and it does have some bugs and issues. I might come back and completely redo do it one of these days.
+bytmyhnd
+member 
+0 kudos
+Report
+Reply
+01 Jun 2024, 12:44AM
+This mod alongside the stronghold and EIMO mods are must haves :) hands down the 3 best mods for this game...make that four, need to include the faster mod also. hope you will one day come back and redo it, would be awesome to have the capture rate and large big beasts limits be able to be adjusted in the mod options menu. Thanks  for the awesome mod :) 
+Pages
+1
+2
+3
+...
+11
+Jump
+Jump
+=========== PAGE 2 ===========
+439 comments
+Pages
+1
+2
+3
+4
+...
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+Pangolinii
+member 
+0 kudos
+Report
+Reply
+02 May 2024, 6:08PM
+How do you obtain an armored unhold.
+Yhoozy78c
+member 
+0 kudos
+Report
+Reply
+23 Jan 2024, 5:48PM
+When a nacho feeds and moves up a tier... does it remain with the same HP or does it increase like the enemy nacho?
+Zetenix
+member 
+0 kudos
+Report
+Reply
+12 Jul 2023, 4:44PM
+I have another question, can i increase tame chance? I tried to make changes to the file but it didnt work.
+Zetenix
+member 
+0 kudos
+Report
+Reply
+12 Jul 2023, 4:42PM
+Hello, can i ask how to increase raise ability uses?
+DacianDraco1
+member 
+0 kudos
+Report
+Reply
+11 Jun 2022, 5:15PM
+Since you can equip/unequip the RES necklace accessory i though of putting mine in backpack to be able to use the Tame ability. And it worked, but since i have the Reset Equipment option enabled it put my RES necklace accessory back on bro after battle, and the newly tamed pet was unfortunately deleted since it can't stay in backpack, and it wasn't in inventory either. It's sad but i guess i leaned something, and i'm leaving this here for everyone to not do as i did.
+Dadavain
+member 
+0 kudos
+Report
+Reply
+09 Apr 2022, 3:08PM
+I want to know how to modify the usage times of REANIMATE DEAD?sorry this is MT?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+09 Apr 2022, 11:34PM
+Change the instances of this.m.UseCount >= 2 found in scripts/companions/onequip/companions_raise to the number of times you would like to be able to use it. There should be a total of 3 instances in that script.
+
+I don't know what you mean by MT.
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+22 Jan 2022, 2:59PM
+It's an amazing mode. It was fun to capture through low probabilities and to grow the captured creatures.
+
+https://www.nexusmods.com/battlebrothers/mods/453?tab=files
+Is there any plan for the horse in the horse mode to follow the level-up system?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Jan 2022, 5:08PM
+Glad you like it, but it's pretty much a dead project at the moment. Not sure I'll ever come back to update it or fix things.
+
+I am also not the author of that horsemod, so I can't tell you what they're going to do :)
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+26 Jan 2022, 12:06PM
+Thank you for your answer! It didn't matter anyway because the mod maker recently prepared a renewal so that it wouldn't take up the accessory slot.
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 6:14AM
+Bug??
+Unable to capture pets (not included in the attack range)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Sep 2021, 7:19AM
+Unable how? You cannot target them, or when targeting them the game crashes or something? The page you linked me to shows the game in a non-english version, so maybe that's why. You'll need to edit this mod if you're playing a non-english version of Battle Brothers, as explained on the Description page.
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 7:30AM
+The capture skill does not work properly to see if there is a conflict between the Korean translation mode and this mode. I really like this mode, so I really want to use it. Can you tell me where to fix this mode to make it work?
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 7:35AM
+It's my favorite mode out of all the modes I've seen, so I really want to use it. I would appreciate it if you could help me a little. I'd like you to tell me where to modify it.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Sep 2021, 7:42AM
+Currently, what would have to be done in order to make this mod's taming work, when playing Battle Brothers in another language, is changing the names in scripts/companions/companions_library::gt.Const.Companions.TameList to exactly match the new names of the various beasts in the translation mod.
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 7:50AM
+Thank you! What is "mod_AC_TomeReanimation" on the list? There's no need to fix this, right?
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 7:58AM
+I'll give it a try. And thank you for creating a fun mode. : )
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 9:29AM
+Thank you for your help. I solved the problem.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Sep 2021, 11:30AM
+Ah, yeah, the entries with silly names like "mod_AC_whatever" are just there because they are not used (and shouldn't be changed). Glad you got it working :)
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+26 Sep 2021, 12:01AM
+This is my best mod : )  
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+24 Oct 2021, 11:46AM
+Is it possible to share the modified file? .nut I modified the file and modified it as below, but I can't capture creature like nachzehrer or Snake.
+
+gt.Const.Companions.TameList <- [
+    "Wardog",
+    "Armored Wardog",
+    "mod_AC_WardogArmorHeavy",
+    "Warhound",
+    "Armored Warhound",
+    "mod_AC_WarhoundArmorHeavy",
+    "Wolf",
+    "?????",
+    "Frenzied Direwolf",
+    "????",
+    "Frenzied Hyena",
+    "????",
+    "?",
+    "????",
+    "??",
+    "???",
+    "??? ???",
+    "???",
+    "????",
+    "mod_AC_TomeReanimation"
+(???? is korean)
+
+revised it like this. Is there anything wrong?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Oct 2021, 9:18PM
+That should be it, as long as the names are correct. Try changing the name of the zipfile to something like zmod_AC or something to make sure it's loaded after your translation mod and see if that helps.
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+25 Oct 2021, 8:07AM
+thx reply
+but,
+
+l_mod_korean_koyo_ver(1.4.0.49_06_02_21).zip
+J_mod_AC-314-1-26-1615188083.zip
+
+Despite the change of name and arrangement as above, there is no probability of capturing creature except for frenzied wolves and hyenas.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Oct 2021, 10:19AM
+I am sorry to hear that, but I'm not sure exactly what could be wrong then. The only thing that should be required is making sure that the names in gt.Const.Companions.TameList exactly match the new names of the beasts in any translation mod, and possibly renaming this mod's zip file to make it load after any such translation mod. You say you have done these things, so I don't know how else to help you.
+
+Just to make sure: you did put the changed file back into the mod's zipfile after you changed it, right?
+
+I think the user jiwoo1228, just above in the comments here, is using a korean translation mod as well and he seems to have gotten it to work. Perhaps you could message him and see if he can tell you how he did it?
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+25 Oct 2021, 4:10PM
+I applied what other forums advised me to do, but there's no beast to test...
+
+The Beast disappeared because it was an undead scourge
+After the undead scourge, I'll experiment again and if it doesn't work,and I'll attach the log.
+
+Thank you for your answer.
+yamaiomoiomoi
+member 
+0 kudos
+Report
+Reply
+19 Oct 2021, 1:53PM
+Thank you for your great mod :)
+
+I encountered an error while using Alp.
+Alp teleports when it takes damage, but
+The moment he teleports, an error occurs and the game crashes.
+The same error occurs even after repeated loading.
+
+I already chaged mod name to "zmod_AC-314-1-26-1615188083.zip"
+
+Here is the log.
+
+
+Function:
+unknown -> NATIVE : -1
+Function:
+queryDestinationsInRange -> scripts/ai/tactical/behavior.nut : 606
+Function:
+onEvaluate -> scripts/ai/tactical/behaviors/ai_alp_teleport.nut : 108
+Function:
+teleport -> scripts/skills/racial/alp_racial.nut : 129
+Vazl
+premium 
+6 kudos
+Report
+Reply
+19 Oct 2021, 5:45PM
+Thank you for reporting this. I am making a note of it right now so that I don't forget about it. Are you sure that's all of the script error information, though? It looks a little slim, so I'm just checking  Could you make it happen again and check if there's more, and include the entire incident?
+
+I am kind of taking some time away from Battle Brothers at the moment and I don't know when or if I will be back. Even if I get back to Battle Brothers again, I am not sure I will continue updating this mod. I have kind of grown tired of it. But you never know! I am prone to sudden bursts of energy, so it's possible I will get right back at any time.  I have several other Battle Brothers project half-finished as well, so perhaps I'll get some work on them and make a new release.
+
+Anyway.. for now I guess you could just avoid using the Alp.
+dantalian007
+member 
+0 kudos
+Report
+Reply
+09 Oct 2021, 7:01PM
+Vazl
+Thanks for this interesting mod.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+09 Oct 2021, 9:50PM
+You are welcome!
+Pages
+1
+2
+3
+4
+...
+11
+Jump
+Jump
+=========== PAGE 3 ===========
+439 comments
+Pages
+1
+2
+3
+4
+...
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+Pangolinii
+member 
+0 kudos
+Report
+Reply
+02 May 2024, 6:08PM
+How do you obtain an armored unhold.
+Yhoozy78c
+member 
+0 kudos
+Report
+Reply
+23 Jan 2024, 5:48PM
+When a nacho feeds and moves up a tier... does it remain with the same HP or does it increase like the enemy nacho?
+Zetenix
+member 
+0 kudos
+Report
+Reply
+12 Jul 2023, 4:44PM
+I have another question, can i increase tame chance? I tried to make changes to the file but it didnt work.
+Zetenix
+member 
+0 kudos
+Report
+Reply
+12 Jul 2023, 4:42PM
+Hello, can i ask how to increase raise ability uses?
+DacianDraco1
+member 
+0 kudos
+Report
+Reply
+11 Jun 2022, 5:15PM
+Since you can equip/unequip the RES necklace accessory i though of putting mine in backpack to be able to use the Tame ability. And it worked, but since i have the Reset Equipment option enabled it put my RES necklace accessory back on bro after battle, and the newly tamed pet was unfortunately deleted since it can't stay in backpack, and it wasn't in inventory either. It's sad but i guess i leaned something, and i'm leaving this here for everyone to not do as i did.
+Dadavain
+member 
+0 kudos
+Report
+Reply
+09 Apr 2022, 3:08PM
+I want to know how to modify the usage times of REANIMATE DEAD?sorry this is MT?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+09 Apr 2022, 11:34PM
+Change the instances of this.m.UseCount >= 2 found in scripts/companions/onequip/companions_raise to the number of times you would like to be able to use it. There should be a total of 3 instances in that script.
+
+I don't know what you mean by MT.
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+22 Jan 2022, 2:59PM
+It's an amazing mode. It was fun to capture through low probabilities and to grow the captured creatures.
+
+https://www.nexusmods.com/battlebrothers/mods/453?tab=files
+Is there any plan for the horse in the horse mode to follow the level-up system?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Jan 2022, 5:08PM
+Glad you like it, but it's pretty much a dead project at the moment. Not sure I'll ever come back to update it or fix things.
+
+I am also not the author of that horsemod, so I can't tell you what they're going to do :)
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+26 Jan 2022, 12:06PM
+Thank you for your answer! It didn't matter anyway because the mod maker recently prepared a renewal so that it wouldn't take up the accessory slot.
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 6:14AM
+Bug??
+Unable to capture pets (not included in the attack range)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Sep 2021, 7:19AM
+Unable how? You cannot target them, or when targeting them the game crashes or something? The page you linked me to shows the game in a non-english version, so maybe that's why. You'll need to edit this mod if you're playing a non-english version of Battle Brothers, as explained on the Description page.
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 7:30AM
+The capture skill does not work properly to see if there is a conflict between the Korean translation mode and this mode. I really like this mode, so I really want to use it. Can you tell me where to fix this mode to make it work?
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 7:35AM
+It's my favorite mode out of all the modes I've seen, so I really want to use it. I would appreciate it if you could help me a little. I'd like you to tell me where to modify it.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Sep 2021, 7:42AM
+Currently, what would have to be done in order to make this mod's taming work, when playing Battle Brothers in another language, is changing the names in scripts/companions/companions_library::gt.Const.Companions.TameList to exactly match the new names of the various beasts in the translation mod.
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 7:50AM
+Thank you! What is "mod_AC_TomeReanimation" on the list? There's no need to fix this, right?
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 7:58AM
+I'll give it a try. And thank you for creating a fun mode. : )
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+25 Sep 2021, 9:29AM
+Thank you for your help. I solved the problem.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Sep 2021, 11:30AM
+Ah, yeah, the entries with silly names like "mod_AC_whatever" are just there because they are not used (and shouldn't be changed). Glad you got it working :)
+jiwoo1228
+member 
+0 kudos
+Report
+Reply
+26 Sep 2021, 12:01AM
+This is my best mod : )  
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+24 Oct 2021, 11:46AM
+Is it possible to share the modified file? .nut I modified the file and modified it as below, but I can't capture creature like nachzehrer or Snake.
+
+gt.Const.Companions.TameList <- [
+    "Wardog",
+    "Armored Wardog",
+    "mod_AC_WardogArmorHeavy",
+    "Warhound",
+    "Armored Warhound",
+    "mod_AC_WarhoundArmorHeavy",
+    "Wolf",
+    "?????",
+    "Frenzied Direwolf",
+    "????",
+    "Frenzied Hyena",
+    "????",
+    "?",
+    "????",
+    "??",
+    "???",
+    "??? ???",
+    "???",
+    "????",
+    "mod_AC_TomeReanimation"
+(???? is korean)
+
+revised it like this. Is there anything wrong?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Oct 2021, 9:18PM
+That should be it, as long as the names are correct. Try changing the name of the zipfile to something like zmod_AC or something to make sure it's loaded after your translation mod and see if that helps.
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+25 Oct 2021, 8:07AM
+thx reply
+but,
+
+l_mod_korean_koyo_ver(1.4.0.49_06_02_21).zip
+J_mod_AC-314-1-26-1615188083.zip
+
+Despite the change of name and arrangement as above, there is no probability of capturing creature except for frenzied wolves and hyenas.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Oct 2021, 10:19AM
+I am sorry to hear that, but I'm not sure exactly what could be wrong then. The only thing that should be required is making sure that the names in gt.Const.Companions.TameList exactly match the new names of the beasts in any translation mod, and possibly renaming this mod's zip file to make it load after any such translation mod. You say you have done these things, so I don't know how else to help you.
+
+Just to make sure: you did put the changed file back into the mod's zipfile after you changed it, right?
+
+I think the user jiwoo1228, just above in the comments here, is using a korean translation mod as well and he seems to have gotten it to work. Perhaps you could message him and see if he can tell you how he did it?
+Riorao
+supporter 
+34 kudos
+Report
+Reply
+25 Oct 2021, 4:10PM
+I applied what other forums advised me to do, but there's no beast to test...
+
+The Beast disappeared because it was an undead scourge
+After the undead scourge, I'll experiment again and if it doesn't work,and I'll attach the log.
+
+Thank you for your answer.
+yamaiomoiomoi
+member 
+0 kudos
+Report
+Reply
+19 Oct 2021, 1:53PM
+Thank you for your great mod :)
+
+I encountered an error while using Alp.
+Alp teleports when it takes damage, but
+The moment he teleports, an error occurs and the game crashes.
+The same error occurs even after repeated loading.
+
+I already chaged mod name to "zmod_AC-314-1-26-1615188083.zip"
+
+Here is the log.
+
+
+Function:
+unknown -> NATIVE : -1
+Function:
+queryDestinationsInRange -> scripts/ai/tactical/behavior.nut : 606
+Function:
+onEvaluate -> scripts/ai/tactical/behaviors/ai_alp_teleport.nut : 108
+Function:
+teleport -> scripts/skills/racial/alp_racial.nut : 129
+Vazl
+premium 
+6 kudos
+Report
+Reply
+19 Oct 2021, 5:45PM
+Thank you for reporting this. I am making a note of it right now so that I don't forget about it. Are you sure that's all of the script error information, though? It looks a little slim, so I'm just checking  Could you make it happen again and check if there's more, and include the entire incident?
+
+I am kind of taking some time away from Battle Brothers at the moment and I don't know when or if I will be back. Even if I get back to Battle Brothers again, I am not sure I will continue updating this mod. I have kind of grown tired of it. But you never know! I am prone to sudden bursts of energy, so it's possible I will get right back at any time.  I have several other Battle Brothers project half-finished as well, so perhaps I'll get some work on them and make a new release.
+
+Anyway.. for now I guess you could just avoid using the Alp.
+dantalian007
+member 
+0 kudos
+Report
+Reply
+09 Oct 2021, 7:01PM
+Vazl
+Thanks for this interesting mod.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+09 Oct 2021, 9:50PM
+You are welcome!
+Pages
+1
+2
+3
+4
+...
+11
+Jump
+Jump
+=========== PAGE 4 ===========
+439 comments
+Pages
+1
+2
+3
+4
+5
+6
+...
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+Wordhalm
+supporter 
+0 kudos
+Report
+Reply
+29 Mar 2021, 1:10AM
+Does it permit to tame variants of unhold? Just did a long run using the Ac companions for legends and i could tame normal unholds but not variants.
+Otherwise, thank you for your nice work! It adds a new dimension to the game.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+29 Mar 2021, 1:45AM
+I don't know which version of this mod he based the latest version of his submod on, but in this mod you should be allowed to tame Unholds of all variants since many versions ago, unless I made an oversight or mistake somewhere in the code, but I'm pretty sure I tested it thoroughly last time I updated it. I might not have tested it thoroughly enough, but looking at the code right now it should work. Not sure which Unhold you consider to be the "normal" one, but the current maximum allowed Unholds is still 1, regardless of their variant, so maybe that's why you're unable to tame other Unholds.
+
+If you want to change the maximum number of allowed accessory items for a specific type of beast (for taming purposes) you can go to scripts/companions/companions_library.nut, scroll down until you find the correct entry for that beast type in the gt.Const.Companions.Library array and change the value of their MaxPerCompany key. In the case of Unholds you will have to change the MaxPerCompany key of both the accessory.unhold and the accessory.armored_unhold entries.
+
+If you're using this version and you are still unable to tame a specific type of Unhold variant while you have not reached the MaxPerCompany, please let me know and I'll dig deeper into this.
+Wordhalm
+supporter 
+0 kudos
+Report
+Reply
+29 Mar 2021, 1:51AM
+Firstly, thank you for your very quick answer!
+You totally solved my problem : i had already a tamed unhold ^^
+I didn't know there was a limit, despite reading carefully the logs of the mod!
+Anyway, thank you for your answer!
+
+Beside this, do you plan new features for this mod/ have future mods in mind? 
+Honnestly, i look forward to your formidable work!
+Vazl
+premium 
+6 kudos
+Report
+Reply
+29 Mar 2021, 2:06AM
+Ah, glad that was it :) I was kind of dreading having to go through lots of debugging right now, haha.
+
+I have lots of ideas that might turn into actual plans. I just need to get some time and (more importantly) some energy to buckle down and code it, but I'm sort of low energy these days. It might take a while before anything additional gets added to this mod (other than fixing bugs/issues reported), but I might also get a sudden burst of energy and stay up for days adding stuff. We'll see :)
+
+If you're wondering about specific ideas or plans, then.. well, I'm sort of working on a new legendary location at which you can hire all sort of mercenaries as a "contract" item (goes in the accessory slot just like the beast companions do), new events in which you can get access to unique companions as well as scratching my head coming up with an easy/convenient way of making it possible for the player to rename their companions. There are a lot more ideas and suggestions I've taken note of as well, but it'll take too much time to describe it all here.
+
+I should seriously take some time to fix the layout of the description page and make use of articles, to make it much easier to read and get the information you want/need without having to read through all the stuff that's currently there.
+Wordhalm
+supporter 
+0 kudos
+Report
+Reply
+29 Mar 2021, 2:22AM
+I can totally understand you, debugging's the worst!
+
+That looks promising! I'll sure try out the new mods you'll make!
+Thank you again for putting some of your time and energy into this game!
+Momon22221111
+member 
+0 kudos
+Report
+Reply
+26 Mar 2021, 5:06AM
+А можно какое-то видео сделать по этому? А то у меня почему не хочет вообще срабатывать даже перк. 
+Reffy2
+member 
+0 kudos
+Report
+Reply
+24 Mar 2021, 9:03PM
+I had a nachzeher with 1 hp, 2 bleeding debuffs, fleeing and broken ribs. The chance to tame it was 2.5% 
+That's so painfully low, it's like I'm not playing with mods at all. 
+
+I'm going to change the odds to something more reasonable, because I don't want to fight 6 million wolves before I can recruit 1. 
+Regardless, thanks for the mod. It's a cool idea.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Mar 2021, 10:27PM
+Yeah, feel free to change the taming chances and whatever else you want to :)
+Marduk23
+member 
+2 kudos
+Report
+Reply
+21 Mar 2021, 1:02PM
+Hi, I have a quick question. I'd like to increase the drop of the Necromancer's Tome as it's a rather rare enemy to have 3% drop on it. Is this the correct line from the mod_AC to change? If so, what exactly does the number "1000" stand for and what do I change it to to have higher drop chance? As far as I understand, the lower the number, the higher the chance, right?
+
+                if (this.Math.rand(1, 1000) <= this.Const.Companions.TameChance.Default)
+                {
+                    local type;
+                    if (this.m.Type == this.Const.EntityType.Necromancer)
+
+Also, if you ever get to looking into Legends compatibility, there seem to be some issues with the fork version that's here on Nexus - it bugs the houndmaster perk tree with the recent version of the Legends mod. I'd assume it has something to do with the changes Legends does to that background: there's a "Dog Handling" tree (it's not in the original game, right?) that offers various skills to handling dogs in battle and out of it. So it's something to keep in mind, I guess.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Mar 2021, 6:10PM
+Hi!
+this.Math.rand(1, 1000) generates a random number between 1 and 1000, and if that number is equal to or lower than this.Const.Companions.TameChance.Default (the same value that's used for taming, found in scripts/companions/companions_library) it's a success.
+
+If you want to change the chances for the tome to drop (without affecting the taming chances) you can just change that line to whatever you want the chances to be, like 100 permille (10%) in this case:
+
+if (this.Math.rand(1, 1000) <= 100)
+Marduk23
+member 
+2 kudos
+Report
+Reply
+23 Mar 2021, 5:18PM
+Thanks for the advice, I managed to changed the chance and got a drop. The tome is pretty neat, especially on the necro class from legends. Do zombies risen by the skill scale the same way your other pets do and get skills mentioned in the description of the tome, though? I imagine the mechanics behind it might be different.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+23 Mar 2021, 11:30PM
+The zombies and skeletons gain stats and quirks just like regular beasts, yeah. The attribute values shown in the item description of the tome is the bonus they get to their stats.
+Reianor1
+member 
+4 kudos
+Report
+Reply
+03 Mar 2021, 3:27AM
+I don't think 0.03% per 1% missing hp is working out.
+Day 89, I haven't tamed a single beast yet.
+Granted, I did forget a few times to do the roll on em, and I wasn't specifically hunting beasts down, but still, the total effort that went into taming the ones that I did fight combines into quite a noticeable waste. Not to mentioned that I'm literally unable to enjoy most of the mod's content like this. QQ
+
+You ever considered alternative solutions? Like buying a special net and using it on a fleeing beast or some such?
+Or I dunno... cumulative taming? As in instead of getting a 2-3% chance to tame you just get 2-3% progress in taming, and once you get 100+ for a specific beast type you get one?
+
+2-3% chance to tame looks fine on paper but in my experience it just isn't working.
+If nothing else, I don't feel like 2-3% chance is worth it's 4 ap and 30 fatigue cost (and at 1-tile range too).
+Vazl
+premium 
+6 kudos
+Report
+Reply
+03 Mar 2021, 3:52AM
+Sorry to hear you're unable to enjoy most of the content. It was originally intended just for the purchasable dogs and hounds, and then the taming just ended up being an extension of that. The low taming chances are on purpose because the tamable beasts are ridiculously strong, especially once they get some levels under their belts.
+
+I have considered making netted beasts easier to tame but I never went with it. Perhaps I should reconsider it again because it's not a terrible idea. Having certain edible items in the inventory/belt (and using them up while trying to tame) to increase the taming chance is another idea tossed at me previously. I will consider both ideas and possibly have either or both in the next release. Either way I won't make either of those methods grant a huge increase in the taming chance.
+
+A very simple adjustment, that you can do on your own, can be made in scripts/companions/companions_library.nut in gt.Const.Companions.TameChance at the top, to change the maximum taming chance. Beastmaster is for the Beastmaster sub-background while Default is for every other background. 100.00 would result in a 10% maximum taming chance.
+AlexisCarmine
+member 
+0 kudos
+Report
+Reply
+21 Mar 2021, 7:56PM
+Thank you so much for explaining how to make that adjustment!
+
+The mod is great, but I had the same issue as Reianor1. I totally get that the chance should be low, but I also want to have it happen in a run and see the mod in action. :P With your explanation, I upped the chance to 5% - 6% which is still pretty unlikely but not semi-impossible anymore. I think that compromise is working for me personally. Thanks again for your explanation for how to adjust/customise that; really appreciate that! (And the mod, obviously.)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Mar 2021, 8:40PM
+Thank you, and I'm glad you're enjoying it :)
+murphy9926
+premium 
+0 kudos
+Report
+Reply
+10 Mar 2021, 11:38PM
+So ran into this error while using your mod and Legends. Maybe you can help
+
+18:27:37
+SQ
+[Murphy the Wolf] executes skill [Tame Beast] on target [Unhold]
+18:27:37
+SQ
+Murphy the Wolf uses skill Tame Beast
+18:27:37
+Script Error
+the index 'setType' does not exist
+Function:
+onUse -> scripts/companions/player/companions_tame.nut : 232
+Variables:
+loot = Table, chance = 159.736, target = Table, actor = Instance,
+tameBeastmaster = 245, tameDefault = 200, _targetTile = Instance, _user =
+Instance, this = Table
+Function:
+-> c:\Program Files (x86)\Steam\steamapps\common\Battle Brothers\data\scripts\!mods_preload\mod_tactical_state.nut : 577
+Variables:
+skill = Table, _targetTile = Instance, _activeEntity = Table, this = Table
+Function:
+setActionStateByMouseEvent -> scripts/states/tactical_state.nut : 1034
+Variables:
+tile = Instance, activeEntity = Table, _mouseEvent = Instance, this = Table
+18:27:37
+Core
+A critical exception occured.
+18:27:37
+Core
+Modules & Application Stacktrace:
+SymInit: Symbol-SearchPath: '.;D:\Steam\steamapps\common\Battle
+Brothers;D:\Steam\steamapps\common\Battle
+Brothers\win32;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;',
+symOptions: 530, UserName: 'user'
+
+OS-Version: 6.2.9200 () 0x300-0x118:27:37
+Core
+Script Stacktrace:
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Mar 2021, 12:58PM
+It looks like mod_AC isn't being applied properly, since "scripts/items/accessory/wardog_item" does not seem to have the setType function. This could mean another mod has modified that accessory item (any pet accessory items) after mod_AC has already done so, or who knows what's up  It's definitely due to some weird interaction between mods.
+
+What other mods are you running anyway, besides mod_AC, Legends and tactical state?
+
+Try changing the name of mod_AC's zip file to have it load after all other mods.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Mar 2021, 2:10PM
+.. or perhaps there's an error somewhere in my code regarding to the taming of unholds, but it looks solid and I'm pretty sure I tested it thoroughly back when I introduced the new taming system. Have you been able to tame unholds before? Have yuo been able to tame non-unholds as well?
+murphy9926
+premium 
+0 kudos
+Report
+Reply
+11 Mar 2021, 3:01PM
+Mods I am using:
+Accessory Companions
+Legends
+Lair Info Compilation
+Evident Rumors
+More Retinue Member Slots
+Bro Editor (Breditor) (BB and Legends)
+18 Fielded Bros - 27 In Company Compatible with Everything
+battlefield cleanup
+Better Slings
+Event Frequency
+better_kingsguard
+better lone wolf
+SellShitForMore
+murphy9926
+premium 
+0 kudos
+Report
+Reply
+11 Mar 2021, 3:03PM
+This is the first one that I have been able to tame after adjusting the taming percentage.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Mar 2021, 3:10PM
+I see. Try changing the filename of this mod to something like zmod_AC.zip to make it load after those other mods and see if  that makes any difference. Let me know if it does (or doesn't) 
+Khalpazan
+BANNED 
+0 kudos
+Report
+Reply
+06 Mar 2021, 9:22PM
+have you deleted my post? why
+Vazl
+premium 
+6 kudos
+Report
+Reply
+07 Mar 2021, 11:03AM
+I have not deleted your post. I answered another post and your post got moved below it.. (scroll down and you'll see it)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+07 Mar 2021, 11:06AM
+I did, however, remove the bug report since it wasn't a bug. So instead of answering in your now-removed bug report I'll just answer you here. Yes, some parts (like taming, and the Beastmaster drafting) of this mod does not work together with a mod that changes the in-game language (specifically the names of the beasts, and settlement descriptions). I've already answered this previously and then put information on the description page about what you can do to make it work, which you would've noticed if you actually looked at the description page 
+goodgoogle
+member 
+0 kudos
+Report
+Reply
+21 Feb 2021, 10:15AM
+colossus and healthy don't seem to have any effect on the HP numbers for example a level 6 snake with colossus has 134 HP and same level snake without colossus has 133
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Feb 2021, 5:08PM
+Thank you for reporting this. Is this for Serpents only or have you noticed the same thing for other beasts as well? Do you have a screenshot or anything to show this?
+goodgoogle
+member 
+0 kudos
+Report
+Reply
+21 Feb 2021, 8:28PM
+as far as I noticed, it happens with all beasts, also when alps get hit with ranged weapon and try to teleport game crashes, I can take a screen shot, not sure how to upoad it yet,  unless it is specific to my game, you can reproduce it easily just by having a beast gain those traits
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Feb 2021, 8:37PM
+I see. I'll look into it!
+
+I also didn't know alps getting hit by ranged attacks crashes the game. First I've heard of it. That stuff would definitely show up in the log, however, so I'd very much like to see those error messages of when it happens.
+goodgoogle
+member 
+0 kudos
+Report
+Reply
+21 Feb 2021, 11:30PM
+not playing a game with an alp now but just have an alp in the front row and it will be hit with ranged, game crassed for me about 90% of the time, I will save log next time I have an alp, thank you
+Vazl
+premium 
+6 kudos
+Report
+Reply
+04 Mar 2021, 7:08AM
+I'm not able to replicate the problem on my end. I added some lines in the code to have the creatures report their current and maximum health to the log, and they do indeed get the bonus from both Healthy and Colossus. Perhaps you are still using the True Balance mod that others also have reported some problems with when used together with this mod, or it might be because of some other mod.
+goodgoogle
+member 
+0 kudos
+Report
+Reply
+04 Mar 2021, 7:32AM
+I thought I was pretty sure that colossus and healthy did not change the HP numbers, but I am very unsmart to put it mildly lol, thanks
+
+Update: so I clicked about and uploaded an image showing two direwolves one with colossus the other without yet have the same HP, I used only AC and mod hook no other mod 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Mar 2021, 12:40PM
+Notice how it says "This individual's base attributes:" above that? It's only showing the basic value of each attribute, affected by nothing. The quirk (skills, traits, perks) effects are not included at that point, and are only added to the beast when it's being unleashed.
+goodgoogle
+member 
+0 kudos
+Report
+Reply
+06 Mar 2021, 6:44AM
+understood, thank you!
+Vazl
+premium 
+6 kudos
+Report
+Reply
+06 Mar 2021, 7:38PM
+You're welcome
+Khalpazan
+BANNED 
+0 kudos
+Report
+Reply
+06 Mar 2021, 4:55PM
+please tell me WHO can i tame. and place this info to descript page either pls, cant tame wolves, spiders, someones dog,snakes, who can i tame then lol? or maybe mod doesnt work for somereason?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+06 Mar 2021, 7:17PM
+Ifrit and boss beasts are the only ones you can't tame, if I'm not mistaken. All tamable ones are listed at the description page and have been there for months.
+
+I'm gonna need more information than simply telling me it's not working. Are you sure you have the mod installed? If so, do your brothers have the taming skill? Are beasts not targetable, or are you simply failing when trying to tame them? Are you using language mods? Any errors in the log (documents\battle brothers\log.html)?
+goodgoogle
+member 
+0 kudos
+Report
+Reply
+01 Mar 2021, 11:02PM
+Hi Vazl, I think I found an issue with the spider pet. so when you click unleash icon and there are red hexes on the ground, you can basically place the same spider on each red hex if you don't release the unleast button , so same spider can be unleashed more than once. same thing did not happen with the unhold, don't have any other pets now to test. i'm though using many mods mostly don't effect gameplay except for true blance mod, so if you cant easily replicate this error then it is something to do with my set up, and I apologize for spamming.
+
+also noticed the error bellow in the log
+
+Script Error
+the index 'addQuirkBehaviors' does not exist
+
+Function:
+applyCompanionScaling -> scripts/companions/types/companions_spider.nut : 430
+
+Variables:
+propertiesBase = Table, propertiesNew = Table, this = Table
+
+Function:
+onUse -> scripts/companions/onequip/companions_unleash.nut : 151
+
+Variables:
+entity = Table, _targetTile = Instance, _user = Instance, this = Table
+
+Function:
+executeEntitySkill -> scripts/states/tactical_state.nut : 1340
+
+Variables:
+skill = Table, _targetTile = Instance, _activeEntity = Table, this = Table
+
+Function:
+setActionStateByMouseEvent -> scripts/states/tactical_state.nut : 1034
+
+Variables:
+tile = Instance, activeEntity = Table, _mouseEvent = Instance, this = Table
+
+I removed true balance mod and now spiders are normal,  so pls ignore this comment , sorry i don't see any way to remove this comment
+Vazl
+premium 
+6 kudos
+Report
+Reply
+03 Mar 2021, 3:42AM
+Glad you got it working :) It might also work if you rename this mod's zipfile so that it's loaded after that true balance mod, but I'm not sure. Either way there have been some weird interaction reported between the two mods previously.
+goodgoogle
+member 
+0 kudos
+Report
+Reply
+04 Mar 2021, 4:29AM
+hello again, thanks for the tip. just wondering did you find the issue with colossus and healthy not adding to the HP numbers? If so any updates coming?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+04 Mar 2021, 6:29AM
+No, I haven't done anything about it. I'm not able to replicate the problem on my end. I added some lines in the code to have the creatures report their current and maximum health to the log, and they do indeed get the bonus from both Healthy and Colossus. Perhaps you are still using the True Balance mod that others also have reported some problems with when used together with this mod, or it might be because of some other mod.
+Pages
+1
+2
+3
+4
+5
+6
+...
+11
+Jump
+Jump
+=========== PAGE 5 ===========
+439 comments
+Pages
+1
+...
+3
+4
+5
+6
+7
+...
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+Walkroom
+member 
+0 kudos
+Report
+Reply
+03 Mar 2021, 7:40AM
+Hello. First of all, i really do love this mod, second, are all nacho pets limited to the tier 1 version? i captured a tier 3 one and in my inventory i got a tier 1.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+03 Mar 2021, 7:48AM
+Hi there. Yeah, they currently always spawn at size 1, because if they spawned at size 2 they could so quickly and easily just eat something to turn into size 3 and wreck everything. Spawning at size 3 from the get go would be extra overpowered. They used to spawn at size 1 or 2 (randomly) before, and whenever they spawned as size 2 it was obvious it was too good.
+MarsUlt0r
+member 
+0 kudos
+Report
+Reply
+26 Feb 2021, 2:55PM
+Hi, I wanted to ask, is there content for which the "Legends" version was made in due time?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+26 Feb 2021, 4:29PM
+I'm not sure what you're asking. I've not made a single Legends version release, but wuxiangjinxing has. Perhaps you should ask him, but I don't think he's done anything to add compatibility between the mods anyway — at least not in any of the releases I've seen.
+MarsUlt0r
+member 
+0 kudos
+Report
+Reply
+26 Feb 2021, 6:45PM
+I meant that as the author of the original mod, perhaps during the update process you could have added those functions for which wuxiangjinxing made a separate version.
+(or is it impossible in principle for technical reasons?)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+26 Feb 2021, 6:51PM
+If I actually played using Legends I would definitely add Legends-specific compatibility, but I don't. From what I've seen, Wuxiangjinxing has not added any Legends compatibility either, but he has added Legends-specific beasts to this mod's beasts library.
+
+It's very possible to make this mod completely compatible with Legends but I'd have to get re-acquainted with the Legends code, and then I'd possibly have to keep on updating this mod for various future changes done in Legends. It's not something I'd enjoy doing since I'm not actively playing using Legends myself.
+MarsUlt0r
+member 
+0 kudos
+Report
+Reply
+27 Feb 2021, 1:20PM
+As far as I know, there seem to be no compatibility problems, so I’ll ask you in a different way: is it possible to add Legends-specific beasts here on an ongoing basis without breaking anything?
+(for example, if the legends are installed, then these animals are present, if there are no legends, then there are no beasts either.)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Feb 2021, 6:40PM
+Oh, really? I've heard there are problems with the Houndmaster/Beastmaster, at least, when using the two mods, but if there are no compatibility issues; good \o/
+
+It's possible. You can do whatever you want. I won't be adding Legends-specific stuff to this mod. One can simply make a very basic and tiny separate mod that, through the mod_hooks queue system, makes sure it's loaded after this mod and Legends, and then insert Legends-specific beast information in this mod's beast library, type list and possibly tame list. It wouldn't have to be updated at all in tandem with this mod nor Legends. It won't, however, be fully backwards-savefile-compatible if and when I add more creatures to the library: it will load a different creature. The same thing can be done with adding new quirks, too.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Feb 2021, 6:43PM
+"(for example, if the legends are installed, then these animals are present, if there are no legends, then there are no beasts either.)"
+
+Removing such a mod (as described in previous post) while keeping this mod would probably cause a game crash because those beast library indexes do not exist so the savefile would not load properly. Assuming that savefile contains accessory companion items of those separately added beast types, of course.
+MarsUlt0r
+member 
+0 kudos
+Report
+Reply
+27 Feb 2021, 7:29PM
+Thank you, now it seems to have become clear.
+As for the presence of compatibility problems, I personally cannot guarantee, since I have not personally encountered it yet, but if people write, maybe something unfortunately is.
+GigaDrillCat
+member 
+0 kudos
+Report
+Reply
+11 Feb 2021, 4:46AM
+I love this mod! 
+Wanted to ask about the plans for the "super" pets. How will their system for going berserk work? Will it be just like the barbarians having to whip their armored unhold each turn to prevent them from going crazy and attacking their own guys?
+
+Oh and is there any chance in the future there might be a way to implement directly controlling your companions?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Feb 2021, 6:51AM
+I'm kind of low on energy at the moment, and lately, so I haven't gotten anything done. I have lots of plans, but I have no idea when (or if) I'll get around to adding them to the mod just because I don't have the energy for it.
+
+I haven't given much thought to exactly how the untaming mechanics of the super pets will work, but probably something somewhat similar to what the barbarians have got going for them, without the whipping. I have no plans of adding direct control of companions.
+GigaDrillCat
+member 
+0 kudos
+Report
+Reply
+11 Feb 2021, 8:02AM
+I see, thanks for the heads up.
+
+Also, I noticed my tamed frost unhold and lindwurm have one extra AP. Is that intentional? Or a glitch?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Feb 2021, 2:05PM
+Lindwurms should have 7 AP and Unholds should have 9 AP. I have not set up an interface for the user to see their AP in game, so how do you know they have more than that? Either way, if they have more it's not intentional and I would like to know the context. It might be some weird interaction with some quirks, or an oversight somewhere on my part.
+GigaDrillCat
+member 
+0 kudos
+Report
+Reply
+11 Feb 2021, 4:49PM
+I have a mod that shows exact enemy stats and pet stats. I also noticed pets like lindwurm (head) and spider are able to attack twice a turn when enemy versions attack only once.
+
+I think every pet I have seems to have one extra AP from what I've seen.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Feb 2021, 5:19PM
+I have not seen that happening at all in my tests and campaigns, nor from watching other people play with the mod, unless they have Berserk and the first attack scores a kill. Looking at the code, too, I can't find an extra AP anywhere. Perhaps it's due to some interaction with other mods you have.
+GigaDrillCat
+member 
+0 kudos
+Report
+Reply
+11 Feb 2021, 5:34PM
+I think I might have a mod conflict.
+
+The other mods I use in addition to yours are-Player NPC equality mod-Show enemy stats-BB Editor-Named item chance display-Power of magic origins pack-Show all crafting recipes
+-More well trained pets-Paymaster for gladiator/lone wolf
+I'm guessing I might have a conflict with power of magic origins, since that seemed to modify a lot of files.
+
+Thanks for the help!
+Vazl
+premium 
+6 kudos
+Report
+Reply
+12 Feb 2021, 5:54PM
+Hehe, yeah I have no idea which mod(s) might conflict, nor why they apparently give this mod's companions additional AP. Seems really weird 
+Gelscressor
+member 
+1 kudos
+Report
+Reply
+08 Feb 2021, 12:03PM
+Greetings,
+
+I was thinking of trying to make a starting scenario wherein you start with one of this mod's accessory companions. While I already have some experience with making starting scenarios, I'm not sure how to accomplish this; in particular due to the mod not appearing to have individual file entries per accessory in the items folder. Maybe I'm missing the obvious, but could anyone give me a tip or two on how to try to accomplish this?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+09 Feb 2021, 6:11AM
+This mod applies changes to all of the "pet" scripts (any accessory with a "setEntity" key, to be more precise), giving them new functions and such. You can see all of them in scripts/!mods_preload/mod_AC.nut in the mod_AC_foundation function at the bottom. scripts/companions/companions_library.nut holds all current companion types: gt.Const.Companions.TypeList is an easy list to use for setting companion type, and gt.Const.Companions.Library has the actual details of the different companion types.
+
+To create a new Accessory Companion item you could simply do something like this:
+
+local newCompanion = this.new("scripts/items/accessory/wardog_item");
+newCompanion.setType(this.Const.Companions.TypeList.Nacho);
+and then add newCompanion to the stash, equip it to a brother, or whatever you want.
+Gelscressor
+member 
+1 kudos
+Report
+Reply
+12 Feb 2021, 1:02AM
+Thanks for the reply. I figured it out and was able to do what I planned.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+12 Feb 2021, 5:53PM
+Glad you got it working. Lemme know if you're making a mod for the Origin that makes use of this mod, and I'll check it out!
+SkyR187
+member 
+0 kudos
+Report
+Reply
+30 Jan 2021, 3:41PM
+Hello everybody! Nice mod but I can't tame anyone, I can't target beast using active skill - incorrect target. Any help plz?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+31 Jan 2021, 12:02AM
+Greetings!
+I'm trying to understand exactly what the problem is. Are you standing right next to a beast and then activating the ability, but you cannot select the beast? The taming skill only has a range of 1. Them being unselectable should only happen if you already have the maximum amount of that beast type tamed already, or if you have already failed to tame them in the same battle.
+
+Perhaps you are some using this mod with some other mod(s) that for some reason have a conflict, or maybe you've run into some weird error because I've overlooked something in the code. Are you getting any script error messages in the log? /documents/battle brothers/log.html
+SkyR187
+member 
+0 kudos
+Report
+Reply
+31 Jan 2021, 3:39AM
+Well, I have only dogs from shop, tried to tame white unhold with ~10% hp, he is unselectable like any other beasts. Log file has no errors. Tried to delete all mods except  modhooks.zip, tried to start new campaign - same result(. 
+p.s. I use battle brothers 1.4.0.46 russian version
+Vazl
+premium 
+6 kudos
+Report
+Reply
+31 Jan 2021, 4:37PM
+Hmm, that's weird. You do see the attributes of the two dogs you picked up, and their quirks? Oh, there's a russian version? I don't know anything about that. Is that a mod? If it is, try playing without it to see if it works.
+
+If this mod doesn't work for you when you only have this mod + mod_hooks installed, and you're not getting any error messages in the log, than I just.. don't know what's wrong.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+31 Jan 2021, 5:52PM
+Actually.. what am I saying? Yes, if you're using a mod or version that changes the names of beasts, taming won't work at all. I will get right on making an update that does not make use of enemy names, but rather their EntityType. I'm not at home at the moment, though, so I might not get around to making a release until I get back home in a couple of days.
+
+Thanks for bringing this to my attention :) Making use of an entity's EntityType instead of their name, for the taming code, is a much better way anyway. I just happened to go with using the name, originally.
+SkyR187
+member 
+0 kudos
+Report
+Reply
+31 Jan 2021, 6:38PM
+Thank you for response. I tried to change names in gt.Const.Companions.TameList  section to russian ones - didn't help)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+31 Jan 2021, 7:38PM
+Oh, you did? Hmm, that's peculiar because that should've worked, assuming you used the exact same names in the TameList as in the beasts' names. I'll still look into changing taming to use EntityTypes instead of names, but it might not be fully functional change. I'll have to see once I get back home.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+31 Jan 2021, 7:48PM
+Okay, so I downloaded the 1.21 version from where I'm at right now, to see if it would be feasible to use a beast's EntityType instead of their Name for taming purposes, but it's not. It would make several beasts untamable because of shared EntityTypes.
+
+What you, or anyone, would have to do to make this mod's taming work with a different BB language is to change the names in gt.Const.Companions.TameList to exactly match the new names of the various beasts. That's the only solution I have for you, at least right now, I'm afraid, but it should definitely work since the Name is the basis of identifying which beast is tamable or not in the current code.
+
+I have some ideas of how to change the code to go about this mechanic differently, so that text strings have no part in it, but lately I'm just totally out of energy. I will test it out as I continue to work on this project, however, but it might take a while or two.
+borzzz
+member 
+0 kudos
+Report
+Reply
+09 Feb 2021, 8:49PM
+Can you explain in more detail in which folder of the mod you need to edit the file and which attributes for which?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+10 Feb 2021, 1:33PM
+The taming skill (scripts/companions/player/companions_tame) looks for the target's name in the TameList (scripts/companions/companions_library::gt.Const.Companions.TameList). If the target's name is found nowhere in that list, the target cannot be tamed.
+borzzz
+member 
+0 kudos
+Report
+Reply
+11 Feb 2021, 2:12PM
+If I understand correctly, it should be changed to Russian names from the translation. Is it necessary only in the line gt.Const.Companions.TameList or also in gt.Const.Companions.TypeList and gt.Const.Companions.Library?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Feb 2021, 2:28PM
+Only the names in the TameList, yeah. Replace them with whatever their names are in russian. Just make sure you don't change the order in that list.
+borzzz
+member 
+0 kudos
+Report
+Reply
+11 Feb 2021, 3:19PM
+Unfortunately, it did not help, I changed it following the instructions http://joxi.ru/bmoyO0gCy0KbGA but the game is still not active.
+borzzz
+member 
+0 kudos
+Report
+Reply
+11 Feb 2021, 3:37PM
+I may be writing the wrong name. I'm inserting from the game, maybe I should go to the mod files and look there. Can you tell me where to look for the names? Here is the mod https://www.nexusmods.com/battlebrothers/mods/355 if you're interested
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Feb 2021, 3:57PM
+In what way does it not work? Does it not even load properly? Any error messages in the log? Try making sure this mod is loaded after the translation mod and see if that helps.
+borzzz
+member 
+0 kudos
+Report
+Reply
+11 Feb 2021, 4:08PM
+Thanks for the help. The main problem was that the mod was higher than the mod with the Legend and Russifier. I changed the name according to your instructions and put the mod last in the list and it worked.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+11 Feb 2021, 4:19PM
+Great 
+meferoktaki
+member 
+0 kudos
+Report
+Reply
+05 Feb 2021, 6:20PM
+Loving the mod !
+
+One thing would make it even better - some sort of status effect from which you can tell if taming attempt was made on specific beast.
+
+Thanks again for great mod !
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Feb 2021, 6:50PM
+Good idea. I'll make sure to add that to the next release.
+Kingzone1
+member 
+0 kudos
+Report
+Reply
+05 Feb 2021, 4:47PM
+Nice Work love it
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Feb 2021, 5:12PM
+Can you upload a log of when the crash happens, so I can see what's going on? You can find it in /documents/battle brothers/log.html
+
+I'm specifically looking for anything  that says "script error".
+
+EDIT: oh, you got it working?
+Yuggles
+supporter 
+0 kudos
+Report
+Reply
+04 Feb 2021, 12:12AM
+Love the idea of the mod but im having trouble making it work. I couldnt get a "hit chance" for taming over 3% so i modded the chances to see how i could get it to work; got to the point where i put the values to 10000 and i still have .9-3% chance to tame even when the beast is at like 1/4 hp could someone explain to me what im doing wrong?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+04 Feb 2021, 1:38AM
+Perhaps you're using both this mod and the Legends version at the same time and changed the values in whichever of these mods are loaded first, in which case the other mod, that loads afterwards, will overwrite your changed values.
+Yuggles
+supporter 
+0 kudos
+Report
+Reply
+04 Feb 2021, 11:57PM
+Thank you for the reply! i did a fresh install of all mods andthe only ones i have right now are mod hooks, legends, and this version of the mod, changed the values and again at roughly 1/3-1/4 hp the hit chance when i hover over a beast with Tame is like 1.5%.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Feb 2021, 12:30AM
+Of course I will try to help :)
+
+I can't guarantee this mod works at all with Legends, because I do not play using Legends myself and I have not made any Legends-specific cases in my code, so I would actually be surprised if everything in this mod is compatible with Legends. Some parts certainly are. I'm not even sure the current Legends version of this mod has been updated to work with Legends.
+
+Did you change the correct value? The "Beastmaster" value is used by the Beastmaster background only, while the "Default" value is for every other background. Also, did you put the file you edited back into the zip file once you had edited it, so that you don't have two versions of the file (one extracted and one in the zip file) around?
+Yuggles
+supporter 
+0 kudos
+Report
+Reply
+05 Feb 2021, 3:54AM
+I did the exact same thing with the legends variant of the mod, is the % shown where the hit percent is displayed accurate? or is it something the game calculated behind the scenes because i suppose i could just be getting unlucky but setting the values for both default and beastmaster to 1000 should be almost guaranteed at very low hitpoints correct? thank you again for taking the time to try to help me out.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Feb 2021, 4:36AM
+1000 should equal a 99% chance to tame when the beast is at 1% hp, yeah, and the "hit chance" makes use of the same values you changed so they should automatically update. The only reason I can think of that is making your changes not take place is that you have two versions of the script in your data folder + subfolders, and one of them is overwriting the other.
+
+When you made these changes, did you download the zip file, extract only the companions_library.nut file, make changes to that file and then put it back into the zip file (overwriting the file within the zip)?
+Yuggles
+supporter 
+0 kudos
+Report
+Reply
+05 Feb 2021, 5:11AM
+Thank you so much for replying i finally found out the issue, for some reason when i edited the file even though i was erasing the original it was creating a new file of a different type hidden in the base game folder rather than the vortex mod so when i was searching for the original file type to ty to delete any copies i couldnt find it and only managed to by going and manually searching through the steam battle brothers file and now it properly works. Love the mod and thanks again!
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Feb 2021, 5:33AM
+Glad you sorted it out :) Have fun!
+wwwdose
+member 
+0 kudos
+Report
+Reply
+24 Jan 2021, 8:22PM
+Hey, i am really enjoying this mod, but i wanted to change the chances to tame a beast, there was someone else that wanted to do so, and you said  that we had to change a number in the  scripts/companions/companions_library, at the top there. 30.00 = 3% max, and i did just that, with several numbers, i even tried 1000.00, but alas it didnt work, so i wonder if i did something worng or if maybe i need a new save file for it to work.
+
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Jan 2021, 8:26PM
+In what way did it not work? If the beast is at full health they will never be tamable. The chance scales directly with their hit point percentage, so setting the Default value to 1000.00 would mean you have a 99% chance to tame them when they are at 1% hp.
+wwwdose
+member 
+0 kudos
+Report
+Reply
+24 Jan 2021, 8:29PM
+Yeah i know that, the mosters were almost dead but the chance was 2.7%
+wwwdose
+member 
+0 kudos
+Report
+Reply
+24 Jan 2021, 8:32PM
+Wait nevermind i think i have found the problem, you see i have the ledgends mod installed and for some reason i have the normal AC  and the ledgends one, and i changed the values of the normal one, thanks anyway
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Jan 2021, 8:33PM
+Yeah you shouldn't use both this mod and the Accessory Companions for Legends mod at the same time
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Jan 2021, 8:33PM
+Glad you sorted it out :)
+3DReactor
+member 
+0 kudos
+Report
+Reply
+05 Jan 2021, 11:20PM
+Really love this mod. I'm just not sure if its a bug or if im doing something wrong but is there a limit of amount of super beast you can tame? I seem not being able to tame more than 1 per type.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Jan 2021, 11:27PM
+Glad you're having a good time :) Yeah, there's a maximum for all beast types. You can see the actual values in the Description tab.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Jan 2021, 11:29PM
+It's to keep the game from being ridiculously easy. The maximum values can be changed in scripts/companions/companions_library. All companion types are defined there, within gt.Const.Companions.Library. MaxPerCompany defines the maximum allowed to be tamed.
+3DReactor
+member 
+0 kudos
+Report
+Reply
+18 Jan 2021, 3:02PM
+Sorry, I must've misread the description. Also, the possible fix for serpents has worked for me. Tyvm.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+18 Jan 2021, 4:20PM
+Good to hear! :) I didn't know if the "fix" was an actual fix or not, since I couldn't replicate the issue and no-one would say if it had done any difference since I released it, so thank you.
+Pages
+1
+...
+3
+4
+5
+6
+7
+...
+11
+Jump
+Jump
+=========== PAGE 6 ===========
+439 comments
+Pages
+1
+...
+4
+5
+6
+7
+8
+...
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+16 Jan 2021, 12:44AM
+    function getHitchance(_targetEntity)
+    {
+        local tameDefault = this.Const.Companions.TameChance.Default / 10.0;
+        local tameBeastmaster = this.Const.Companions.TameChance.Beastmaster / 10.0;
+        return this.getContainer().getActor().getSkills().hasSkill("background.companions_beastmaster") ? (1.0 - _targetEntity.getHitpointsPct()) * tameBeastmaster : (1.0 - _targetEntity.getHitpointsPct()) * tameDefault;
+    }
+Based on this equation, even the target beast has 0% HP (which is obviously impossible), the chance to successfully tame it is merely 3% (or 4.5% for beastmaster).  Is such a low chance intentional?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+16 Jan 2021, 1:27AM
+It is, and that function is just to display the "hit percentage" when hovering a unit with the skill. The actual calculation for success or failure is in the onUse function further down.
+
+You can adjust the chances in scripts/companions/companions_library, at the top there. 30.00 = 3% max.
+LordKing1
+member 
+0 kudos
+Report
+Reply
+12 Jan 2021, 3:56PM
+Hello there again. I saw in the most recent updates you changed how beasts are tamed which I think is a good change. However I followed your simple instructions from the front page to find the taming chances and went to change them as 3% at most with the much harder system is a bit low for my liking. I simply tried to double the number from 30.00 to 60.00 and it makes the game fail to launch (steam just stops the startup and it goes back to the play button). Do you have any tips you could give to edit this because maybe there is something I'm missing. Thanks. 
+LordKing1
+member 
+0 kudos
+Report
+Reply
+12 Jan 2021, 4:10PM
+I think I figured out the mistake. I tried to make the beastmaster and default values the same. Making them different allowed the game to run. Sorry!
+Vazl
+premium 
+6 kudos
+Report
+Reply
+12 Jan 2021, 6:00PM
+Weird. Them having either the same or different values shouldn't cause any problems. I've no idea why it would fail to load, unless you accidently entered the values weirdly, or perhaps forgot the comma after the Default value. Good you got it working though :)
+wild24one
+member 
+0 kudos
+Report
+Reply
+10 Jan 2021, 12:00AM
+Are Ifrits excluded intentionally?
+wild24one
+member 
+0 kudos
+Report
+Reply
+10 Jan 2021, 12:13AM
+also there is a bug with the serpents after you capture one the serpent stays but invisible (yet attackable) but attacking it causes an error that closes the game
+Vazl
+premium 
+6 kudos
+Report
+Reply
+10 Jan 2021, 3:47AM
+Ifrits are pretty much intentionally excluded from taming, yes, because I don't consider them to be beasts. They're spirits of the dead. I haven't really given it much thought though.
+
+Show me logs of the bug, please, because I haven't experienced this and I've tried to replicate it without success. It's possibly a conflict with other mods, or a rare bug. Logs could help clear that out regardless, especially since I cannot seem to replicate the issue.
+aLcodictator
+member 
+0 kudos
+Report
+Reply
+21 Dec 2020, 11:36AM
+my direwolf don't use throw dirt. Is there any priority in choosing skills?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Dec 2020, 12:45PM
+The AI scores all of their available "behaviors" based on all sorts of factors and properties of their entity and what's going on in the battle, and then kind of randomly picks between them. The ones with highest score are more likely to get picked, but certainly not always. The companions have the same properties and behaviors as when they were enemies, and when they learn a new active skill theydo receive the associated behavior for that skill. Perhaps the Direwolf values their damage output more than the debuff? I've seen the companions use Throw Dirt a lot, but it all comes down to their action economy and what they deem to be the better choice.
+aLcodictator
+member 
+0 kudos
+Report
+Reply
+22 Dec 2020, 5:42AM
+nachzehrer don't like use Gruesome Feast. Usually he starts eating corpses only then the enemies are more than one turn from him. When i tried leash my wolf with bleeding, he died.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+24 Dec 2020, 1:38PM
+The nachos use Gruesome Feast just as often as the enemy Nachos. There's simply no change in their AI.
+
+Your wolf died when you leashed it?
+aLcodictator
+member 
+0 kudos
+Report
+Reply
+25 Dec 2020, 4:48PM
+it was bleeding and when I leashed it, wolf died from bleeding, as if its turn ended.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Dec 2020, 5:41PM
+Interesting. Them ending their turn was intentional when leashing them, but I didn't think of this type of scenario that you're mentioning. I'll change it for the next release and see if things go smooth with those changes.
+aLcodictator
+member 
+0 kudos
+Report
+Reply
+06 Jan 2021, 8:12PM
+lone wolf has no effect on lindwurm cause his body is in two parts
+Vazl
+premium 
+6 kudos
+Report
+Reply
+08 Jan 2021, 12:03AM
+Yeah. I should go over various quirks and see which ones work, and so on. Sooner or later.
+
+EDIT: Well I know which ones work.. they all do :D But I  mean go over things just like the Lone Wolf for Lindwurms.
+tukwidth
+member 
+0 kudos
+Report
+Reply
+09 Jan 2021, 1:22AM
+I guess I can chime a bit on this as well.  I noticed that the Nachzehrers go strait for a dead body, instead of participating in the battle.  I tested it exclusively,   They will eat, level up, eat again, level up again, and eat again before they even think about going in for an attack.
+
+If you release them next to someone they will attack just fine, but then they wander off to eat after that enemy is dead.  I understand that's the AI for them, I don't think there is a way to effectively use them, without abusing leash.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+09 Jan 2021, 1:32AM
+I've gotten reports of them "never going for dead bodies" as well. I dunno what you expect me to do here.
+ekaly
+member 
+0 kudos
+Report
+Reply
+07 Jan 2021, 10:07PM
+Thank you for doing this mod! This sort of mod is my favorite.
+tukwidth
+member 
+0 kudos
+Report
+Reply
+03 Jan 2021, 12:57PM
+How easy it is to change the Resurrect skill to more than 2 times a fight?  Also, It seems like not all dead humans can be resurrected.  Is there some low level or high level cap on how strong a human has to be for it to be revived?
+
+BTW:  This is such a great mod.  Everything works perfectly.
+
+I found a couple lines and changed them, but still didn't allow what I was looking for.
+
+Code:
+
+
+this.m.MaxLevelDifference = 4  (found in companions_raise.nut)  -  I tried a value of 99, and that didn't allow 
+all dead to be raised.  Is this a cap?
+
+this.m.IsHidden = this.m.UseCount >=2 (found in companions_raise.nut) - I tried a value
+ of 99 here again.  didn't seem to raise the count of rez'es per/battle
+
+if (!this.skill.isUsable() || this.m.UseCount >=2  also, same as above, tried 99
+
+________________________
+
+These 2 lines, I wasn't sure about so I haven't tried changing them yet.  They are in the same file as above.
+
+
+
+this.m.UseCount = 0
+
+this.m.IsHidden = this.m.UseCount >=2;
+Vazl
+premium 
+6 kudos
+Report
+Reply
+04 Jan 2021, 1:29AM
+All human corpses aren't resurrectable. That's decided in the corpse creation and is not something I've touched. It has to do to with both decapitation and a RNG, if I remember correctly. The MaxLevelDifference index is only relating to the height difference allowed between the user's tile and the target tile.
+
+If you want to change the number of times it can be used, you need to change the following things in companions_raise (XXX being your new value):
+* line 85: change this.m.UseCount >= 2 to this.m.UseCount >= XXX
+* line 96: change this.m.UseCount >= 2 to this.m.UseCount >= XXX
+* line 268: change this.m.UseCount >= 2 to this.m.UseCount >= XXX
+
+I'm glad you like the mod :)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+04 Jan 2021, 1:41AM
+I should probably make some streamline changes all over the code to make it more user-friendly, but one thing at a time :)
+Momon22221111
+member 
+0 kudos
+Report
+Reply
+31 Dec 2020, 2:24PM
+Я не могу приручить зверя с помощью способности приручения. Когда я пытаюсь воспользоваться этой способностью на зверей, но способность не распознает зверей как цель атаки.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+31 Dec 2020, 2:37PM
+Я не говорю по-русски. Я использую гугл переводчик.
+
+Возможно, у вас есть максимально допустимое количество для этого вида зверя?
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+29 Dec 2020, 6:35AM
+beastmasters spawn chance modable ?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+29 Dec 2020, 6:28PM
+Yes, everything in this mod is changable. In scripts/!mods_preload/mod_AC.nut, there's a hook at line 405 which has some instances of the line this.m.DraftList.append("houndmaster_background"); within it. More of those lines will increase the draft chances.
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+29 Dec 2020, 10:09PM
+ya my game is all hounds masters for some reason i havent seen there backround tag as beast
+
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+29 Dec 2020, 10:25PM
+i dont see an adjustable number ?
+
+Vazl
+premium 
+6 kudos
+Report
+Reply
+29 Dec 2020, 10:27PM
+Maybe you're running some mods that conflict with the player.nut script's setStartValuesEx function? The beastmaster shares the same script as the houndmaster, and is transformed when drafted in specific settlements, using that function.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+29 Dec 2020, 10:28PM
+Each line of this.m.DraftList.append("houndmaster_background"); within the if-statements in the hook starting at line 405 adds 1 more chance to add a houndmaster to the specific settlements.
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+29 Dec 2020, 10:31PM
+could the add more recuit mod be over wrinting your spawn chances ?
+
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+29 Dec 2020, 10:32PM
+i am a derp and dont under stand this code lol 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+29 Dec 2020, 10:42PM
+I do not know that mod or it's code, but from it's name it certainly sounds like something that could be causing conflicts.
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+30 Dec 2020, 5:52AM
+ya i dont see any wolf head backrounds at all and i got quite a few other mods 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Dec 2020, 6:40AM
+Pretty sure there's some conflict with this particular part of the mod then.
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+30 Dec 2020, 9:15AM
+setting the tame chance to 100% dosent work cant open game then and at 99 still cant tame properly
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+30 Dec 2020, 9:38AM
+ok i did the math and got this stuff to work at 3500.00 i can tame any mob if a i do damage to them ... so your bace chances are like 1-1000 if you have the 45.00 witch is the (0.045%) thats not even 1% at bace with no hp missing. eaven with mobs at like 1 hp its not doing it that offtin
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Dec 2020, 4:12PM
+Yes, base chance is 0%, and then increases with 0.03/0.045 per 1% missing hp, as described since I released active taming. You aren't setting the static taming chance because the taming chance isn't static. What you do set is how much it increases per missing hp.
+
+You could just go to the actual taming skill and give it a static value if you'd like, and change the mod however you want to, but I'm not here to walk you guys through modding this mod.
+queenofdamed
+member 
+0 kudos
+Report
+Reply
+30 Dec 2020, 11:09PM
+ya i figured that out . i will have to do more math to find a nice medium i like . allso is it posable to add the in game dog armor to be equipted to wolfs and the like ? for all the lupin like monsters ? maby after that you can figure out a crafable or store sold armor for the other mobs you make tameable
+brickme
+premium 
+0 kudos
+Report
+Reply
+26 Dec 2020, 4:42PM
+New Concept: Accessory Companions would have to heal like players between battles;
+When a Accessory Companion would be leashed, HP stat would be saved and would have to heal over time similar to brothers. Making them less of endless damage sinks and more like Actual living creatures. The Exception being the Necromancer Book, that only makes Temporary Undead.
+
+Current HP of Accessory Companions modify there value for party strength, such as if all of your Accessory companions are damaged , they would have a lot less actual combat value.
+
+Healing rates on Unholds would be exceptionally fast, and Schrats would be 2x normal during the day time.  
+
+Accessory Companions would heal faster while equipped in Accessory slot based on (Char Lvl + 10%); Double for Beast Masters for all Accessory Companions and Hound Masters for ( Wolf/War Dog/War hound); While Accessory Companions in general inventory would heal at base rate. Assuming that the Loving Battle Brother Master would be taking Care of the Accessory Companion while traveling with them.
+
+Accessory Companions that are released in battle at Low Health would have a good chance to be at lower moral, unless frenzied by Masters Death ,modified by New Perk Favored Master levels; 10% bonus to moral per level;  While Beast Masters/Hound Masters Accessory Companions would always be Max Moral at Start.
+
+New Perk Recommended for Accessory Companion: Favored Master Perk [10 battles/25 battles/40 battles]
+Favored Master perk that can develop by completing battles with the same Brother, similar to the Arena buff, where stats would be buffed 7.5%/15%/22.5% for the three levels. If Accessory Companion is changed to new Master, it restarts at 0 for that New Battle Brother.
+
+Pet Frenzy when Favored Brother is downed in battle, Pet would be in Rage with (2X Favored Master Perk) bonus to stats and have a mean Red Aura for remainder of battle.
+
+Favored Master perk would be developed 2x faster for Hound Master/Beast Master.
+
+Hound Master/Beast Master would also give Exp boost to there Pet based on ((Beastmaster x2) + 10%)
+
+Beast Masters/Hound Masters would become very valuable during the course of the game.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+26 Dec 2020, 4:51PM
+Greetings :)
+I'm already working on companions keeping their wounds after a battle and healing up on the world map kind of like players do, so that's getting added probably in the next release. I am also working on pets being able to "break" during battle, kind of like the barbarian Unholds, so that the owner will have to re-affirm their hold over them. Mostly (if not only) intended for the super pets = unholds, schrats, lindwurms.
+
+Nice ideas in general. I really like the idea of Beastmasters and Houndmasters giving their equipped companions exp at a faster rate. I'm definitely putting that in the game! We'll see which values I'll use though, hehe.
+
+I'll make note of your other suggestions, too :)
+brickme
+premium 
+0 kudos
+Report
+Reply
+28 Dec 2020, 5:59AM
+I really like your mod a lot. I put some thought into what would make Accessory Companions really come to life.. And the idea that they bond to 1 master more then others , and possibly frenzy when the master is downed makes them come to life, vs just a portable damage shield, and to make them mortal, and your Battle Brothers Actual friend. I think that the Spider pets might have a chance to drop from non damaged Spider Eggs since you could just raise them from an egg state. Also, possibly make it that, throwing a possible preferred food item/bait item might give you a possible advantage to taming role, or possibly netting accessory companions may also give advantage to role based on companion type. Maybe also advantage in taming pack animals if you have one that's higher level been deployed in battle/ Alpha pack animal, such as wolf/Hyena/War Hound/ War Dog/ even Nachos seem to be pack animals. 
+
+Just some Ideas.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Dec 2020, 5:19PM
+More nice ideas! Food item for increased taming chance is a very good idea, and I'll most likely add something like that to the game :) Raising Spoder eggs is also very interesting.
+bytmyhnd
+member 
+0 kudos
+Report
+Reply
+28 Dec 2020, 12:12AM
+Seems that Lindwurms freeze up on me after I updated AC, I have 2 beastmasters in my party at the mo, It never happened on 1.16, just freezes on Lindwurms turn now. Tried it without the 2 beastmasters also, same result.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Dec 2020, 12:34AM
+Hmm. Might have something to do with the "lagging Lindwurm tail on turn 1" fix, but I tested it a lot before I included it in a release. Perhaps I somehow still missed something. Does it say anything in your documents\battle brothers\log.html ?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Dec 2020, 1:39AM
+You're right. I got the same problems now when I tried them out, and I couldn't get them working properly when trying to have them act immediately when unleashed, so version 1.18 makes them (and the other super pets) act on the next turn instead which should fix this lindwurm problem.
+bytmyhnd
+member 
+0 kudos
+Report
+Reply
+28 Dec 2020, 6:25AM
+Awesome, thanks for the quick fix :) As I am a bit of a noob, I wouldn't have any idea of what I should be looking at in the log, sry :) again, thnx for the quick fix
+
+Edit. just ran into a few Lindwurms again, having the same problem. On 1.18
+
+found this in the log. Thnks for pointing out where it was :)
+
+
+*
+16:44:18
+SQ
+* Lindwurm: Starting turn.
+16:44:18
+Script Error
+the index 'getTail' does not exist.
+
+then this is just repeating.
+
+Function:
+onEvaluate -> scripts/ai/tactical/behaviors/ai_retreat.nut : 61
+Variables:
+_entity = Instance, this = Table
+Function:
+evaluate -> scripts/ai/tactical/behavior.nut : 77
+Variables:
+score = Null, startTime = 4462.08, _entity = Instance, this = Table
+Function:
+evaluate -> scripts/ai/tactical/agent.nut : 307
+Variables:
+_entity = Instance, this = Table
+Function:
+think -> scripts/ai/tactical/agent.nut : 187
+Variables:
+_evaluateOnly = True, this = Table
+Function:
+onProcessAI -> scripts/states/tactical_state.nut : 1421
+Variables:
+activeEntity = Table, this = Table
+16:44:18
+Script Error
+resuming dead generator.
+
+Hope that helps
+bytmyhnd
+member 
+0 kudos
+Report
+Reply
+28 Dec 2020, 8:20AM
+Looks like it was a mod conflict, was using the mod_printfearsome from filthy robots mod pack, removed that and they started moving again.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Dec 2020, 4:06PM
+Glad you got it working :) There was an issue with the lindwurm in 1.17 regardless, though.
+Pages
+1
+...
+4
+5
+6
+7
+8
+...
+11
+Jump
+Jump
+=========== PAGE 7 ===========
+439 comments
+Pages
+1
+...
+5
+6
+7
+8
+9
+...
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+tukwidth
+member 
+0 kudos
+Report
+Reply
+27 Dec 2020, 6:56PM
+As a new user to this mod, I found it kind of crazy how I could never get a beast.  Then I realized that only way to tame them is by hitting
+them first.  This information would probably be better at the top of the
+Description page.  It took me a couple weeks before I actually read the
+changelog (which apparently is the FAQ and startup guide).  I recommend
+putting that info on the Front page, or even as a readme.txt file in
+the mod itself. 
+
+I found that the percentages are kind of annoying, somewhat.  As a new user to the mod, even hitting a beast down
+to less than 50% of their health.. the % chance is still very low, between 1-3%.  I
+know it's supposed to be rare, but I actually thought it was glitched
+out, or the mod wasn't working.  So you may consider letting people know
+what the formula is on the front page.  It took me a week to even
+realize that the mod was working as intended.  (changing the percentage
+to a higher value is also kind of interesting.  I took it to 99.00, and it
+didn't seem like that was a lot at all.  It wasn't until I typed in
+999.00 that I realized that the mod was working as intended.  The
+default 35.00 is a decently low number for balance, but, as a new user, I thought it was glitched and not working at first.  Maybe you could recommend new users tweak the
+mod to 555.00 or something to test/try it out first.  I'm using that number now and it seems pretty fun.  Or at least make a statement that describes how hard it is to actually get a beast)
+
+It's a great mod, and those are my thoughts.  I look forward to maybe also
+getting Ifrits or tamed in your next release.  Outstanding job so far.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Dec 2020, 8:06PM
+The information for active taming chances is on the front page (the Description tab) and was added there at the same time as I updated to version 1.17. It's also only been a day or two since I added active taming (1.17) so I dunno what you mean when you say it took you weeks to figure out. Before 1.17 the information on drop rates for the pets was also present there, as well as (pretty much?) everything else one needs to know.
+
+Glad you like the mod, though. People have always been complaining about the taming chances, but I simply think it's too good when it's too easy to get the new pets. They are really strong, after all, especially ever since they can get experience without ever being released, and can be re-leashed to keep them safe.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Dec 2020, 9:05PM
+This mod was originally intended only for wardogs, warhounds and the warwolf (event), but then I expanded the mod to also include taming.
+remi1984
+member 
+0 kudos
+Report
+Reply
+27 Dec 2020, 8:56AM
+hi vazl super mod can you modify the medium size nachzehrer
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Dec 2020, 5:45PM
+Thanks.
+You can modify the Nachzehrer all you want. It's the same file for all of the sizes, though. Located in scripts/companions/types/companions_nacho.nut.
+remi1984
+member 
+0 kudos
+Report
+Reply
+27 Dec 2020, 8:11PM
+great thank you vazl good luck
+anl93
+member 
+2 kudos
+Report
+Reply
+25 Dec 2020, 10:23PM
+is 0.03% per lost HP is actually 0.03% or is it 3%
+because 0.03% is quite low i think. (1%HPleftmonstertamingchance=2,97%?? roughly 3 percent??)
+
+And thanks for kkeping this improved.
+Only suggesiton i can make is to make taming chance is different for each monster depending their tier.
+(Like pokemon and Dragon Quest games altough i know this is not an JRPG game)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Dec 2020, 10:26PM
+0.03% for every 1% hp missing, so up to 3% when at like 1% hp. The values are not set in stones :) Just the first draft. If you get your hands on a Beastmaster, taming is easier. 50%, up to 4.5% chance.
+
+It's not much lower than the chances of getting pets in pre-1.17. Higher, even, with the Beastmaster. You were killing them anyway to get them as pets, now you just have to try and tame them while they're on low health ;)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+26 Dec 2020, 5:19PM
+You can manually change the taming chances in scripts/companions/companions_library.nut in gt.Const.Companions.TameChance at the top. Beastmaster is for the Beastmaster sub-background while Default is for every other background.
+Iqbalrafad
+member 
+0 kudos
+Report
+Reply
+25 Dec 2020, 1:30PM
+How to tame the beast? I defeated them, but i dont get them
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Dec 2020, 1:36PM
+There's currently a 4% chance on kill to have them drop an accessory of their kind, but next update will change to active taming (using an ability to tame). There's information on the Description tab, by the way, including how to get beast companions.
+aceaash
+member 
+0 kudos
+Report
+Reply
+13 Dec 2020, 4:08PM
+So I have an unhold and a message popped up asking if I wanted to enter my "dog" into a fight. i am just like sure why not. my level 7 unhold got his ass kicked by a dog. haha that must have been one hell of a dog. lucky i had saved a minute or two ago lol. but that is neat that the beast can fight like that even if they don't have an advantage 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+13 Dec 2020, 4:49PM
+Haha, that is facinating :D It's probably because the Unhold still has the basic ID of a Wardog. Glad you saved ;)
+thecabalburningsoul
+member 
+0 kudos
+Report
+Reply
+20 Dec 2020, 2:18AM
+"that's a weird looking dog"
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Dec 2020, 1:20AM
+This should be fixed in the next release, by the way.
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+19 Dec 2020, 3:29PM
+After making a dash on the Alp, the armored (not white) Unhold disappeared. In fact, he was in battle and acted, but became invisible.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+19 Dec 2020, 3:52PM
+That's a common issue, regardless of mods. It happens with the regular (untamed) Unholds too.
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+15 Dec 2020, 9:39AM
+I don't know if this is a bug, but zombies don't get perks from "Tome of Reanimation" (installed with "Legends mod")
+Vazl
+premium 
+6 kudos
+Report
+Reply
+15 Dec 2020, 10:19AM
+Might be an issue with the submod if you're using that, or with Legends itself.
+
+EDIT: Or which quirk(s) are they supposedly not receiving on your end? For example, if they have the Nimble perk it won't show up as active if their total armor+helmet weight it soo high, just like for brothers, and if they have the Lone Wolf perk it won't either show up as active unless they are indeed starting their turn more than 3 tiles away from nearest ally.
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+15 Dec 2020, 10:45AM
+Perhaps the problem is with them. (I don't see active perks in zombies: for example, dodge.)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+15 Dec 2020, 10:50AM
+You mean the item tooltip doesn't show any quirks? If the Tome of Reanimation is level 1 it doesn't have any quirks.
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+15 Dec 2020, 6:27PM
+Tome is about 7th level, I don't remember exactly. (yes, there are no perks in character statistics.)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+15 Dec 2020, 7:18PM
+No attributes either? Can you show me a screenshot, and give me a list of the mods you are using?
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+16 Dec 2020, 8:21AM
+There is only the current version of the "legends mod". Modification of "Stronghold" and "Sato's Serpent Tweaks". (well, your mod)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+16 Dec 2020, 8:41AM
+Hmm, I see. I don't know exactly what those mods do, but from their description they shouldn't be interfering with this mod. Do the other pets have stats and quirks like they should? Hyenas, Webknechts, Nachzehrers or whichever types of beasts you have? Is it only your Tome that's being weird?
+
+I would really appreciate it if you could show a screenshot of the Tome, because I'm still not entirely sure exactly what the problem is.
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+16 Dec 2020, 1:59PM
+Nach and Serpent have the Nimble perk, the spiders haven't got any yet, so I can't tell. (I think this is a problem with sub mods and legends, since the bear has no dodge) [Well, I haven't quite figured out how to attach screenshots, so I can't provide it.]
+nicholasgrimm
+member 
+0 kudos
+Report
+Reply
+06 Dec 2020, 7:52PM
+Just a follow-up, really great mod and works well - Really adds another reason to hunt beasts & Hexen parties - even late game.
+
+So far the changed drop rate is working nicely - I nearly have all the beast companions, excluding the Lindwurms & Schrats. Not sure Ill tame one this time, as the Unhold I have is very strong to field.
+
+I find the Webneckts far to squishy for my liking but defin better than base Wardogs.
+
+Personally, I prefer the frenzied Direwolves. :) Nachzerers would be the choice, but the buggers generally go straight to a corpse to feast first. Not sure how they AI chooses
+Vazl
+premium 
+6 kudos
+Report
+Reply
+07 Dec 2020, 9:24AM
+Thanks for the feedback!
+
+Yeah, the Webknechts are squishy, but that's just the way they are  Nachos randomly spawn at size 1 or size 2. Having them always spawn at size 2 just seems too good, and starting at size 3 is simply out of the question because the swallow ability is so friggin' good, especially if you have many nacho companions  They have the same AI as the regular nachos -- except they cannot retreat (none of the pets can).
+
+I personally prefer the frenzied Hyenas over the frenzied Direwolves, but they're both indeed superb.
+
+EDIT: I just realized that I probably will have to update the swallow ability so that they cannot swallow entities like.. the Kraken, Lindwurm and other unique/special entities.
+nicholasgrimm
+member 
+0 kudos
+Report
+Reply
+07 Dec 2020, 9:47AM
+Totally agree and thank you for clarifying the random spawning. I was wondering why these start some battles lvl1 and then lvl 2.
+
+Seriously, great mod and big thanks :)
+
+Funny thing, imagine if the accessory slot was not blocked from the arena!
+nicholasgrimm
+member 
+0 kudos
+Report
+Reply
+13 Dec 2020, 10:46PM
+Hi Vazl,
+
+May I quickly check that you can have both an Armoured and Unarmoured Unhold in your group at the same time. I have checked change logs (last v1.13) and description i.e. Unhold (str 46, tame 1), Armored Unhold (str 47, tame 1) and have been successfully using for 25+ hours. No issues, but am trying to tame an Armoured Unhold by either savescumming or larger groups of 5+ Armoured, but no luck.
+
+Understand the drop is 4%, but thought I would check that you can have one of each and its just bad luck.
+
+Note  - I do have an unarmoured unhold (lvl 8)
+
+Thank you again. 
+ 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+14 Dec 2020, 5:16AM
+Hmm, you're supposed to be able to get one of each, yes, but perhaps I've made a miss somewhere. I'll have to check it out. Thanks for telling! I'm a bit busy right now, but I will look into it when I get time.
+
+EDIT: At at quick glance through the code I can't see anything obviously wrong that would cause them to not drop. Are there also no scripts errors in your log?
+nicholasgrimm
+member 
+0 kudos
+Report
+Reply
+14 Dec 2020, 9:40AM
+Hi Vazl,
+
+Thanks for checking and confirming. Sorry to trouble. I thought I must be going mad. :)
+
+I checked logs and cannot see any script errors.
+
+Ill let you know if I find anything.
+
+Cheers again
+Vazl
+premium 
+6 kudos
+Report
+Reply
+14 Dec 2020, 10:43AM
+I'm not saying there isn't anything that's causing them to not drop, just that I didn't see anything at first glance. I'll try to set up a fight versus some armored unholds later on, up the drop rate to 100% and see what happens.
+
+Aye, I'll let you know :)
+nicholasgrimm
+member 
+0 kudos
+Report
+Reply
+14 Dec 2020, 1:45PM
+Legendary! Thanks again :)
+Vazl
+premium 
+6 kudos
+Report
+Reply
+14 Dec 2020, 6:27PM
+Hi again! I'm actually gonna put looking into this on hold in favor of the upcoming updates that will add active taming, "super pets" (unholds, schrats, lindwurms) being able to break free of being tamed, pets not automatically healing to 100% HP for every battle, and other additions and fixes. I will go through taming the Armored Unholds while I'm working on that :)
+
+So for now.. I suppose you could just assume that taming of Armored Unholds just might be broken (unless you're terribly unlucky). Sorry for the inconvenience, but it should all get worked out with the upcoming updates.
+nicholasgrimm
+member 
+0 kudos
+Report
+Reply
+14 Dec 2020, 8:15PM
+Gday Vazl,
+
+Fully understand and the future changes sound great and the classification of 'Super Pets' and supporting changes will make it more balanced.
+
+Just to also update your good self and to let you know. Its superfluous, considering the changes you're contemplating already.
+
+Feedback
+After reloading a battle, I was able to successfully tame an Armoured Unhold, but.. when the post battle screen & drop occurred it was a unarmoured unhold. Note - There was only one Enemy Armoured unhold in the Barbarian group. 
+
+That means a) Somehow the drop took a vanilla variant, instead of the Armoured version.
+                     b) I had two tamed Unarmoured unholds, breaking the max tame rule of 1. I was able to deploy both in the next battle.
+
+Anyway, as it is now, there are no problems and works well. Even  with using Hooks, this mod works perfectly, even with quite a few others. 
+
+
+Seriously top10 mod for me
+Vazl
+premium 
+6 kudos
+Report
+Reply
+15 Dec 2020, 10:21AM
+That is very peculiar :O I am on to something about it, however, so it should work out with the upcoming releases, whenever those happen ;) Just a heads up: I will most likely turn the unholds into one combined type (so that you cannot have one unarmored and one armored).
+
+Thank you for your kind words!
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+08 Dec 2020, 11:37AM
+How does "tome of reanimation" work?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+08 Dec 2020, 12:19PM
+It is pretty much like the Necromancer's raise dead, but the item's bonus attributes and "learned" quirks are added to the raised unit.
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+08 Dec 2020, 3:55PM
+Is there a limit on the number of uses in battle?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+09 Dec 2020, 1:04AM
+Yes. 2. Please read the changelogs :)
+DonCatFreak
+member 
+0 kudos
+Report
+Reply
+09 Dec 2020, 8:47AM
+Ok thanks. (I'm used to the fact that usually changes are indicated in the description, so I did not see it)
+darkemperor110
+member 
+0 kudos
+Report
+Reply
+02 Dec 2020, 11:34AM
+hello kind sir,
+?would you kindly make variation of drop accsry scale from 10-50?
+?most of us technically too noob to modify the cnut file
+Pages
+1
+...
+5
+6
+7
+8
+9
+...
+11
+Jump
+Jump
+=========== PAGE 8 ===========
+439 comments
+Pages
+1
+...
+6
+7
+8
+9
+10
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+someidiot777
+premium 
+0 kudos
+Report
+Reply
+30 Nov 2020, 7:17PM
+Thank you Vazl for the new update.
+
+I shopping around for war dogs but it shows no tooltips when I am hovering my cursor over the dog. I have started a new run for this new update.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Nov 2020, 7:32PM
+I am glad you appreciate it. Too bad it doesn't seem to be working for you, however? :(
+
+If the wardogs and warhounds you see in your games don't have the additional tooltip information that this mod adds, then you might not have installed this mod properly (perhaps not placing the zip in the \Battle Brothers\data\ folder along with the zip of Adam's mod_hooks mod?), or you might be using other mods that somehow conflict with this mod. If that's not the case you could try uninstalling Battle Brothers and then reinstalling it again — that was how another user got this mod to work for him after he was getting all sort of error messages that didn't make sense.
+someidiot777
+premium 
+0 kudos
+Report
+Reply
+30 Nov 2020, 8:03PM
+You are right, I reinstalled the game and added the mods, and it works.
+
+The only mods I didn't add back were Retroactive Ambitions and Better King's Guard. Probably one of them.
+
+Thank you very much info.
+
+
+
+
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Nov 2020, 8:11PM
+Excellent! :)
+aceaash
+member 
+0 kudos
+Report
+Reply
+30 Nov 2020, 1:55AM
+Hey after about 15 minutes of the same battle i got an unhold, can you give them armor or do you just have to tame an armored one? 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Nov 2020, 2:01AM
+They are currently two separate types of pets. You need to kill those barbarian unholds to get an armored one yourself.
+pphhyy
+member 
+0 kudos
+Report
+Reply
+30 Nov 2020, 1:04AM
+Just saw you updated the mod, i was thinking of starting a new game and wanted to know what the tome does? is it worth making a thematic game around it?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Nov 2020, 1:15AM
+Hi. It is pretty much like the Necromancer's raise dead, but the item's bonus attributes and "learned" quirks are added to the raised dead unit.
+pphhyy
+member 
+0 kudos
+Report
+Reply
+30 Nov 2020, 1:31AM
+kooooool
+someidiot777
+premium 
+0 kudos
+Report
+Reply
+28 Nov 2020, 4:51AM
+Thank you very much for this mod and updates. Great work.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Nov 2020, 5:01AM
+Glad you like it!
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+28 Nov 2020, 2:55AM
+Is it intended that a leashed pet cannot be unleashed again?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Nov 2020, 3:01AM
+Yes.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Nov 2020, 3:04AM
+But feel free to make changes as you see fit.
+LordKing1
+member 
+0 kudos
+Report
+Reply
+28 Nov 2020, 12:35AM
+Heyo me again, just wanted to say that I downloaded the newest version of the pets mod, which I was excited about because of the passive exp gain just from being on a brother, but I quickly ran into a lot of issues. Replacing the old version with the new version caused my in progress game to not load at all, the log error was something about an index that didn't exist relating to my two pets (have a nacho and a spider) and mentioned something about an unleash function. Replacing it with the old version allowed me to load my game and unequip them, I then saved and quit to go and replace the old version with the new version. I was able to load into the game, but then I ran into weridness as my pets didn't have any tooltips, and I couldn't equip them, additionally after trying to move them around in the inventory they eventually just disappeared entirely. I quit, readded the previous mod version and everything was fine, so I'm just gonna stay on that for now.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Nov 2020, 12:37AM
+That's peculiar. I do some testruns before every release and I had no problems. I did, however, make a file path change with this last version: file path to AC-specific files is no longer scripts/items/companions, but just scripts/companions, so if you have unzipped and/or edited versions you might have to update those.
+LordKing1
+member 
+0 kudos
+Report
+Reply
+28 Nov 2020, 12:45AM
+I just used the raw, unedited new mod version and got these issues, but I'm doing some testing around with files to try and narrow down the issue because as stands the old version works just fine. I'm guessing now it's an issue with the Legends version add on and inconsistencies now between this mod and that one.
+
+Especially since you mentioned now you changed how some file paths work.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Nov 2020, 12:52AM
+Ah, yes. If you're using the submod of this one, that wuxiangjinxing made, it might not work. He will have to update the submod too. I will notify him of this change.
+
+I guess you can just use the previous version of AC until then.
+LordKing1
+member 
+0 kudos
+Report
+Reply
+28 Nov 2020, 12:53AM
+I had this on my prior message but I just saw you replied
+
+I removed the legends add on and there was no failure to load, but things are definitely not working as intended, both my pets have turned into wardogs lmao. I'm not really sure what the issues are but I'm guessing it's due to changes in filepaths and just inconsistences so I will just come back to this mod's new version when I am on a new campaign or something and give it a try then. Cheers
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Nov 2020, 12:56AM
+The new pet types turn into wardogs when the mod isn't loaded (properly), to make it possible to continue playing the same campaign even if one removes this mod.
+LordKing1
+member 
+0 kudos
+Report
+Reply
+28 Nov 2020, 12:58AM
+Yeah I'm highly guessing it's just due to inconsistencies in the data or something that makes the companions revert, because I'm using now just this mod (+ legends itself) and no companions have any of your mods features. No extended tooltips, no levels, the old release skill, etc. All and all it's fine, all I'm really missing out on is the passive XP gain and I really am not that bothered. Thanks for being fast and attentive, whenever the submod for legends is updated I'll try again.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Nov 2020, 1:14AM
+If you started the campaign with the submod of this, that wuxiang made, the problems are most likely due to his mod using the previous file path. Once that mod is updated, however, it should work just fine for players using that mod. That mod is his doing, however, and not mine. Just upgrading from 1.11 to 1.12 should not produce any errors at all in regular situations. Using 1.12 I'm having no problems at all loading savefiles that were made using even version 1.05.
+funnyfaun
+premium 
+0 kudos
+Report
+Reply
+28 Nov 2020, 12:39AM
+Does the Beast Slayer origin impact the taming chance %? 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+28 Nov 2020, 12:41AM
+It does not.
+funnyfaun
+premium 
+0 kudos
+Report
+Reply
+28 Nov 2020, 12:52AM
+Thanks for the reply, and I'm loving the mod so far. To be entirely honest, I was trying to find motivation to actually take that 20% trade reduction, but it looks like we're sticking with Lone Wolf. Appreciate the quick response.
+LordKing1
+member 
+0 kudos
+Report
+Reply
+27 Nov 2020, 1:01AM
+Hello, first off, like everyone else I want to say this is an awesome mod to use and I really enjoy it. That being said, as someone who messes around with files and things to better suit my games I had a couple questions (I'm not the most tech savvy so I don't really know where to look). 
+
+Where would I go to increase the drop rate of things? I really like the mod but so far in a total of two playthroughs, one finished, one ongoing, I have only managed to find two nachos total, in about 50 hours of playing. While I understand the reasoning for such low odds, I personally am just fine with having more as they also raise the difficulty and are not completely unstoppable companions (and they're super cool!)
+
+Additionally, I'd like to know if there is a way to remove the tame limits, as I find it rather lame that I can only get such a finite amount when I could have a fun full company and their beast companions. Obviously these are my own tastes, which is why I simply ask where to go to change these things for my own game. 
+
+Other than that just keep up the good work as this mod brings so much flavor to the game!
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Nov 2020, 1:28AM
+I am glad you like the mod!
+
+You will have to unzip the mod, decompile the .cnut files into .nut files,  make your changes, compile the files into .cnut again and place them all back into the zipped file. Adam has a nice mod kit made for this.
+
+Tame chances are located in scripts/!mods_preload/mod_AC.nut, the line if (match != null && this.Math.rand(1, 100) == 1)
+Tame limits are in scripts/items/companions_library.nut, and is different for each entry in the library. Look for the index MaxPerCompany.
+
+The next release will ahve increased drop rates, by the way. I just haven't had the energy to make an update yet.
+LordKing1
+member 
+0 kudos
+Report
+Reply
+27 Nov 2020, 6:05PM
+Yeah like I said before I mess with files and have made plenty of my own self use mods, so I'm very familiar with the kit, just not super great at it to the point where I could find anything on my own. Thanks for the help on pinning that stuff down though because it's really the only things that I've disliked about the mod as a whole. Looking forward to future updates too!
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+27 Nov 2020, 8:32PM
+so I've never messed with modding before and figured I'd try what he wanted to do, I went in and changed the line to if (match != null && this.Math.rand(1, 100) == 100) as a test run to see if i was doing it right and then fighting beasts before I'd lower it to something more reasonable, but I've killed hyenas and alps with it like that and never got the pet drop for them. Am i supposed to be changing it to (1-100) instead of (1, 100) or did i break it somehow?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Nov 2020, 9:59PM
+this.Math.rand(1, 100) means it will generate a value between 1 and 100, so this.Math.rand(1, 100) == 100 means the roll will have to be 100. If you want it to always pass you could do this.Math.rand(1, 100) <= 100 or this.Math.rand(1, 1) == 1  or just remove the random generator.
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+27 Nov 2020, 10:42PM
+ohhh okay, that makes sense! Thank you, I have no idea what I'm doing with code stuff lol so when you said how to change stuff i figured I'd look at it because I've always been curious about how mods are done so i was basically just shooting in the dark!
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Nov 2020, 10:48PM
+It's a lot of fun when you start to understand :) Take some time to examine the various scripts in the Battle Brothers data files, and various mods.
+Hudson77
+premium 
+1 kudos
+Report
+Reply
+26 Nov 2020, 8:12AM
+Hello!
+
+This mod really looks promising. 
+
+I installed it and it does work (I see wardogs have a new layout with stats en perks) but nothing drops of the new monsters.
+What are the rough dropping rates?
+
+I am committing something close to genocide on Nachzehers and nothing so far.
+umwk1217
+supporter 
+0 kudos
+Report
+Reply
+26 Nov 2020, 5:35PM
+the drop rate is 1% or D100.....a random roll from 1~100 and only drop when roll is 1.....so just focus on the dogs.....
+Hudson77
+premium 
+1 kudos
+Report
+Reply
+26 Nov 2020, 10:24PM
+ooof, that means you might wel run an entire campaign and see nothing cool from this mod at all.
+
+Is it possible to get a version with 2-3% chance for a cool drop?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+26 Nov 2020, 10:29PM
+I am increasing drop rate and letting all equipped pets get exp in combat (instead of having to be unleashed).
+
+umwk1217: everyone, including you, is free to make changes as they see fit.
+nicholasgrimm
+member 
+0 kudos
+Report
+Reply
+23 Nov 2020, 11:27PM
+Hi Vazl,
+
+Great mod concept and extends play with interesting mixes
+
+Just a quick one for you on a possible bug. Using latest ver1.11
+
+On a stable playthrough and noticed twice in battle with alps something that appears to be related to Alps. I am lucky that I have x2 tamed Webknechts, but have encountered the following issue
+
+23:10:20
+SQ
+Turn started for Krak'sax
+23:10:20
+SQ
+*
+23:10:20
+SQ
+* Krak'sax: Starting turn.
+23:10:21
+SQ
+-> Behaviors to pick from:
+Engage.Melee (2853.68)(*), Idle (1), Flee (0), BreakFree (0), Roam (0), Disengage (0), Attack.ThrowNet (0), Attack.Default (0)
+23:10:21
+SQ
+-> Behavior picked: Engage.Melee (2853.68)
+23:10:21
+SQ
+* Krak'sax: Engaging to melee range with Alp (visible), accepted_distance=0, value=0.619112
+23:10:21
+SQ
+* Krak'sax: Reached engage destination
+23:10:21
+SQ
+-> Behaviors to pick from:
+Attack.Default (136)(*), Idle (1), Roam (0), Disengage (0), Flee (0), Attack.ThrowNet (0), BreakFree (0), Engage.Melee (0)
+23:10:21
+SQ
+-> Behavior picked: Attack.Default (136)
+23:10:21
+SQ
+* Krak'sax: Using Webknecht Bite against Alp!
+23:10:21
+SQ
+Krak'sax uses skill Webknecht Bite
+23:10:22
+SQ
+Alp has died.
+23:10:22
+SQ
+-> Behaviors to pick from:
+Idle (1)(*), Roam (0), BreakFree (0), Flee (0), Attack.ThrowNet (0), Engage.Melee (0), Disengage (0), Attack.Default (0)
+23:10:22
+SQ
+-> Behavior picked: Idle (1)
+23:10:22
+Core
+A critical exception occured.
+23:10:22
+Core
+Script Stacktrace:
+Function:
+unknown -> NATIVE : -1
+Function:
+onEvaluate -> scripts/ai/tactical/behaviors/ai_alp_teleport.nut : 136
+Function:
+teleport -> scripts/skills/racial/alp_racial.nut : 129
+
+Any ideas? I am running a few mods (including hooks), but never had an Alp issue on kill.
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+24 Nov 2020, 3:37AM
+How many Webnechts did you have to kill before you got them to drop? I've killed probably 100 of every monster type and gotten nothing so far
+nicholasgrimm
+member 
+0 kudos
+Report
+Reply
+24 Nov 2020, 9:29AM
+roughly 60+
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Nov 2020, 11:51PM
+What exactly is the issue?
+Pages
+1
+...
+6
+7
+8
+9
+10
+11
+Jump
+Jump
+=========== PAGE 9 ===========
+439 comments
+Pages
+1
+...
+7
+8
+9
+10
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+goodgoogle
+member 
+0 kudos
+Report
+Reply
+24 Nov 2020, 6:54PM
+hey man, great mod, thanks, I could honestly say it doubled my enjoyment of the game.  A suggestion if I may tho, could you make it so that pets evolve into a greater form of themselves, say after level eleven, like a spider into a spider queen, also could lindwurm drop as an egg that hatches over time and then if kept alive long enough it could become an adult
+Skabold
+supporter 
+0 kudos
+Report
+Reply
+24 Nov 2020, 7:14AM
+50 days of training to make the dog/ghoul lvl 5 without them dying (hardcore already). See them get one shoot in a safe 1vs1 environnement against a weaker enemy that is almost breaking. Sad.
+
+Honestly I find the drop rate of pet a little low, and they should be able to get xp even without being use in battle. I'm mean my bro are lvl 10 to 13 so every ennemy one shoot my pet if I want to train a new one.
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+22 Nov 2020, 5:02AM
+I'm still having the issue with my pets not gaining experience when they or their master kill an enemy even in 1.11
+Vazl
+premium 
+6 kudos
+Report
+Reply
+22 Nov 2020, 5:10AM
+Hmm. Perhaps if your pets were created while I still hadn't fixed it they are still broken? I double and triple checked it with new pets and it worked fine. Could you try a new run and just kill stuff to see if you're still actually having the problem with newly created pets?
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+22 Nov 2020, 3:39PM
+i just checked, it doesn't work on a new game with 1.11 still, i just did a new install of 1.11 and started a new game, nothing
+Vazl
+premium 
+6 kudos
+Report
+Reply
+22 Nov 2020, 3:57PM
+Good, I'm glad it does work on a new game :) I'm just sorry I screwed up in version 1.08, letting armored and heavily armored wardogs and warhounds be created incompletely (which is where your problem arose).
+
+You can see what has changed in the Changelogs section in the Description tab. Some balance changes, hook improvements, various fixes and then the transition to just hooking the base game scripts instead of partly using files to override them (and the following versions to fix what I screwed up in that transition).
+
+The pets you have back in your 1.06 savefile should be complete and function properly if you load it with 1.11, but make a backup of the savefile just to be sure.
+
+
+EDIT: You changed your message just as I had answered it :(
+Vazl
+premium 
+6 kudos
+Report
+Reply
+22 Nov 2020, 4:10PM
+I started a new run just now, and it works just fine for me. Are you using any other mods, perhaps, and/or are you getting any errors in the log?
+
+Are you perhaps using the latest version of mod_hooks? Version 19? When I tried that version when it was first released also got various problems with this mod. There might be some backward compatibility issues with that version, so if that's waht you're using I would suggest going back to version 18.
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+22 Nov 2020, 6:12PM
+sorry i changed the comment, i realized after i posted it that i was still using 1.06. I'm using modhooks version 18 so i dont think that's the problem, the only other mods i have installed are extensive tryout, tweaks and fixes, and fallen gladiator origin.  Could it be one of those? Should i try mod hooks version 19 to see how that goes?
+
+Also, how do i check the log to see if there are errors to post for you?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+22 Nov 2020, 7:30PM
+I have no idea which scripts those mods modify or override, so I cannot say if they are causing a conflict or not, but I'm not sure what else could be causing your pets to not get experience when they work just fine for me. Perhaps you will find something in the log that sheds some light on things.
+
+Adam just updated mod_hooks again to version 19.1 and that version works fine for me.
+
+The log is located at  X:\Users\YourUser\Documents\Battle Brothers\log.html. The game continuously adds information to the log while you are playing. Play a while, like you regularly do, killing enemies and what not, then refresh the log file and look for lines that say Script Error in red text. Those entries let us know where something has gone wrong (usually.. ;) ), and those are the lines I would like you to share with me, if you find any.
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+22 Nov 2020, 8:22PM
+These are the only red lines i saw in the log, i did a few battles and got kills with the guys who released the dogs and the dogs themselves and its all frozen, i dont see any crazy errors though
+
+13:03:54
+UI
+Failed to load procedural content "procedural/tacticalentity(24407,133781,socket,miniboss,arrow)".
+
+13:09:55
+IO
+Unexpected file or directory found: scripts
+13:09:55
+IO
+Unexpected file or directory found: ui
+13:09:55
+IO
+The game uses modified files or files that are not part of the official release. If you encounter any issues, please first remove any mods and try again before contacting support.
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+22 Nov 2020, 9:27PM
+So i just reinstalled the game and the newest version of this and modhooks and everything works, then i went one by one and added all my old mods and everything worked just fine, I'm honestly not sure what the problem is, but it all seems to be good now. I appreciate your patience with trying to help me, i wish i could figure out what exactly caused the issue because I'm still running all the same mods and its working now on a fresh install
+Vazl
+premium 
+6 kudos
+Report
+Reply
+22 Nov 2020, 9:28PM
+Have you unpacked mods in the data folder? I ask because your pasted log information mentioning Unexpected file or directory found: scripts. In some cases that might mess you up because it no longer loads the mods and scripts in an orderly fashion, but I might also be terribly mistaken about that. I would still recommend you keep the mods in their packages and simply place them in the data folder as they are. And either way I would also suggest that you try disabling some of your other mods (if not all of them) until this mod works as intended for you, and then you can add those mods back again one by one, checking if things still work.
+
+If none of that works, I have no idea what's wrong.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+22 Nov 2020, 9:29PM
+Funny how you did the exact same thing as I was suggesting, and we posted at the same time 
+
+Hey, don't worry. I'm just glad you got things working!
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+22 Nov 2020, 9:37PM
+Yeah lol that's a hell of a coincidence, but I'm glad it works too! Now I've just gotta start farming some monsters so i can get some more pets besides just warhounds! I unpacked all the mods but if it'll work better if i leave them all in the zip files then I'll do that and see if it makes everything more stable!
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+21 Nov 2020, 3:29AM
+This mod seems to be working pretty well with Legend now.  There are two problems, though:
+
+1) In mod_AC.cnut (sorry for decompiling and posting your code here, if you won't allow me to do that I'll delete my comment ASAP), there are some codes shown below:
+
+
+local companion = bro.getItems().getItemAtSlot(this.Const.ItemSlot.Accessory);
+if (companion != null && companion.getType() != null)
+?this.m.Strength += this.Math.round(companion.m.Level)
+
+This is problematic because lots of accessories in legend (and might also in vanilla) do not have the index Level. 
+
+2) When using this mod along with Legend, character can still use the original 'unleash wardog' active skill, and the effect is just the same as using the new skill.  Those two skills exist at the same time.  I do not play vanilla game but I guess this problem also exists in vanilla.
+
+In legend there are only four new pet types: cat, war bear, wolf and white wolf.  If you don't mind I can make the corresponding 'companion' files based on your template (or do you use any kind of tools/scripts to make those files based on vanilla config/entity files?) and make this mod really works with legend.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 3:38AM
+Greetings! You may decompile and share as much as you want :) You're free to make changes as you see fit, too. If you check "Permissions" in the Description tab you'll see you're free to do a lot of things with this mod.
+
+I'm not striving to make this mod compatible with the Legends mod — at least now right now — but are you having the same problems after version 1.08 that I just released? This latest version no longer puts the various indexes and functions into accessory but rather into the pet scripts directly.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 3:43AM
+Should not the if statement checking if the accessory's Type is not null prevent any issues with the Level index? If the accessory's Type is null (which any non-pet's Type should be), it just won't continue to use the accessory's Level index, unless I'm mistaken.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 3:49AM
+If you're making a sub-mod of this to work with Legends, which you're free and welcome to do, you will most likely have to add those Legend-specific pets into the Companions TypeList and Library in companions_library.nut, as well as provide entity/agent files for them in companions/types. Updating the hook that modifies the creation of the pets might also need editing in order for setType to apply the correct Type to them.
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+21 Nov 2020, 4:02AM
+Yes I was playing with your latest version.  Regarding to your question:  First, all accessory files inherit the file scrripts/items/item.nut, and the vanilla value of Type is defined as -1 in that file.  In other words, all accessory files will have its Type to be -1 (not Null) if not specifically assigned any other values.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 4:06AM
+Ah, I see your point. I guess I should update the if-statements in those various hooks to look for something else in the accessory item's script.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 4:07AM
+The Vanilla item.nut does not have a Type index though.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 4:19AM
+Nonetheless, I will update the various if-statements that just might be causing problems. Thanks for the heads up :)
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+21 Nov 2020, 5:10AM
+It seems that companion_xxx.nut and companion_xxx_agent.nut are just copies of the corresponding entity and agent files, is that correct?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 5:16AM
+Yes, they correspond to the specific Type and they are modified versions of the original files/scripts.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 5:26AM
+Version 1.09 should no longer cause accessory issues. I think ;) I tested the various hooks using both pet accessories and accessories like the Orc Trophy without issues.
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+21 Nov 2020, 5:32AM
+I made the companion files for warbear and white wolf in legend, also I added the corresponding info to the library.  Could you help me check those files for any obvious mistakes?  Thanks a lot.
+You can find the files here:
+https://drive.google.com/file/d/1Mr0kD_y8DCdbLUJne7V0SxlBG-OlyZNU/view?usp=sharing
+
+Also in your mod_AC.nut you hooked the wardog and warhound item files, but I could not quite understand what you did in the script.  It seems that you just differentiate the pet type based on its armor?  Then I guess since warbear and white wolf do not have corresponding armor upgrades, I don't need to do the same for those two files?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 5:42AM
+The Library and agents look fine, but the AIAgent for the warbear entity directs to the wardog_agent script (in case that's not what you wanted).
+
+The hooks to the wardog and warhound scripts only affect their children (armored and heavily armored), and it's to ensure they are created properly. You don't need to make any changes there in order to bring the Legends-specific pets in.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 6:13AM
+Oh, I forgot this part of your original message: "2) When using this mod along with Legend, character can still use the original 'unleash wardog' active skill, and the effect is just the same as using the new skill.  Those two skills exist at the same time.  I do not play vanilla game but I guess this problem also exists in vanilla."
+
+I am not seeing this at all in my games. Characters only have companions_unleash and companions_leash, not the base game's version of unleash. I'm just using this mod (and some of Adam's that have nothing to do with neither pets nor accessories).
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+21 Nov 2020, 6:23AM
+I made the corrections to the AI and you can find the corrected files here:
+
+https://drive.google.com/file/d/1Mr0kD_y8DCdbLUJne7V0SxlBG-OlyZNU/view?usp=sharing
+
+Could you integrate those files into your mod?  They shall not cause any trouble in vanilla game because there is no way to get those items.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 6:55AM
+If Legends registers itself with the mod_hooks ( using ::mods_registerMod ), I can just make an simple if-statement checking if Legends is registered and if so add the Warbear and Whitewolf to the Library, yeah. What I'm not sure I'm up for is getting all sorts of questions and possible bug reports from Legends players when or if things aren't working.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 7:12AM
+It would be much easier for me if Legends were to add specific code to check if this mod is installed, and if it is then add Legends' own pets into the TypeList and Library.
+
+** The Legends package would need these new scripts/items/companion/types files you've created added to its own package.
+** You will also need to make sure that these new pets, in their own accessory files, inherit scripts/items/accessory/accessory, have an "isUnleashed" function and make use of setType(this.Const.Companions.TypeList.Warbear/Whitewolf) to properly turn them into pets of this mod (after checking if and finding out that this mod is installed). Making sure the Legends pets make use of setType could be done by hooking on to their "create" function after first making sure this mod's hooks are loaded before Legends' own hooks (using ::mods_queue).
+** The if-statement for adding the new pets could be placed in a new file, or wherever you see fit, of course, and simply hold the following:
+local gt = this.getroottable();
+if (::mods_getRegisteredMod("mod_AC") != null && "Companions" in gt.Const && "TypeList" in gt.Const.Companions && "Library" in gt.Const.Companions)
+{
+    this.Const.Companions.TypeList.Warbear <- this.Const.Companions.TypeList.len();
+    this.Const.Companions.TypeList.Whitewolf <- this.Const.Companions.TypeList.len();
+    this.Const.Companions.Library.append({the_entire_Warbear_entry_you_made});
+    this.Const.Companions.Library.append({the_entire_Whitewolf_entry_you_made});
+}
+
+This would add these Legends-specific pets to the end of the TypeList and Library no matter the version the player is using. I do have plans to add more types of pets.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 7:14AM
+Or you could just release your own mod here on Nexus, that is a version of this mod but including your new Legends-specific pets.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 8:57AM
+Also, I forgot to update the onActorKilled of all Pet actors (scripts/items/companions/types) in the previous release that fixed the if-statements regarding accessory items used in hooks, so I updated all of those in this latest release (1.10). I suppose your new pets should have the same update.
+
+    function onActorKilled(_actor, _tile, _skill)
+    {
+        this.actor.onActorKilled(_actor, _tile, _skill);
+
+        if (this.getFaction() == this.Const.Faction.Player || this.getFaction() == this.Const.Faction.PlayerAnimals)
+        {
+            local XPgroup = _actor.getXPValue();
+            local brothers = this.Tactical.Entities.getInstancesOfFaction(this.Const.Faction.Player);
+
+            foreach( bro in brothers )
+            {
+                bro.addXP(this.Math.max(1, this.Math.floor(XPgroup / brothers.len())));
+
+                local acc = bro.getItems().getItemAtSlot(this.Const.ItemSlot.Accessory);
+                if (acc != null && "setType" in acc)
+                {
+                    if (acc.getType() != null && acc.isUnleashed())
+                        acc.addXP(this.Math.max(1, this.Math.floor(XPgroup / brothers.len())));
+                }
+            }
+        }
+    }
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+21 Nov 2020, 1:36PM
+I integrated your recent change to the onActorKilled function, and made a sub-mod that shall be able to make the companion system work with legend warbear and white wolf.  I uploaded the file in the following link:
+
+https://drive.google.com/file/d/1YH0k8CyImqtOIxGJX2p8aNaLex-YREDN/view?usp=sharing
+
+Could you help me take a look at the scripts, especially on my hooks to the two accessory items?  Still I cannot quite understand why those codes are neccessary.  For example:
+
+
+    ::mods_hookBaseClass("items/accessory/legend_warbear_item", function ( o )
+    {
+        if (!("isUnleashed" in o))
+        {
+            o.create <- function ()
+            {
+                this.legend_warbear_item.create();
+                this.m.SlotType = this.Const.ItemSlot.Accessory;
+                this.m.IsDroppedAsLoot = true;
+                this.m.ShowOnCharacter = false;
+                this.m.IsChangeableInBattle = false;
+            };
+            o.setEntity <- function ( _e )
+            {
+                this.legend_warbear_item.setEntity(_e);
+            };
+        }
+    });
+
+To me this code seems to do nothing in practice. 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 3:18PM
+Yes, I've no idea why you would make those hooks like you just posted. If you're simply making a modified version of this mod (which would be simplest), you do not need to make any additional hooks. Those things I mentioned were all for the case of Legends mod itself adding new hooks to make use of this mod.
+
+What would be simplest would be to just make a copy of this mod's latest version, add the Legends-specific pets to the TypeList and Library, and add the actor and agent files to companions/types -- just like you did earlier. Then you open mod_AC.nut and find the hook I've made for "items/accessory/accessory" (just below the "///// all the good stuff" line). That hook inserts all the essential indexes and functions within it to objects that inherit accessory but only if they have "isUnleashed" in their script (like the wardog, warhound and wolf do). Now I don't know what the Warbear and Whitewolf scripts look like, but I'm assuming they are very similar to the wardog/warhound/wolf scripts, and if they are you only have to add two more else-if-statements in the "create" function in the hook I just mentioned in ac_MOD.nut, just below the wardog, warhound and wolf:
+
+
+else if (this.isKindOf(this, "legend_warbear_item")) // whatever the script is named
+{
+this.m.ID = "accessory.legend_warbear"; // whatever you want the ID to be
+this.setType(this.Const.Companions.TypeList.Warbear); // whatever you decided to call the slot
+}
+else if (this.isKindOf(this, "legend_white_wolf_item")) // whatever the script is named
+{
+this.m.ID = "accessory.legend_white_warwolf"; // whatever you want the ID to be
+this.setType(this.Const.Companions.TypeList.Whitewolf); // whatever you decided to call the slot
+}
+
+
+This will make sure that the Warbear and Whitewolf will get setType:ed to the correct type of pet when their item is being created. That should be it. Now you just need to have this newly created mod (instead of this one) installed together with Legends.
+wuxiangjinxing
+member 
+2 kudos
+Report
+Reply
+21 Nov 2020, 5:42PM
+Thank you for the help.  I managed to make a sub-mod that can actually work.  You can download it here:
+https://drive.google.com/file/d/1f56337coLOfrFR2_yInao3VIVtQRQJFs/view?usp=sharing
+
+However, the current submod works by completely overwriting your mod_AC.nut and companions_library.nut.  I'm trying to use hook to improve its compatibility but I guess I'm stuck.  Could you help me take a look at this file?  It seems that this file is not executed in game at all. 
+https://drive.google.com/file/d/1aQDrWG2Lzom-Vux0Zyjj_lpj4blO5y_g/view?usp=sharing
+
+hackflow
+member 
+22 kudos
+Report
+Reply
+21 Nov 2020, 6:24PM
+I think you don't need to hook any classes you can simply queue your submod after AC mod and modify global structs in queue function:
+
+
+// This means require and load after mod_AC
+::mods_queue("mod_AC_legends", "mod_AC", function() {
+    local C = this.Const.Companions;
+    
+    // Add war bear
+    C.TypeList.Warbear <- C.TypeList.len();
+    C.Library.push({the_entire_Warbear_entry_you_made});
+    
+    // ...
+})
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 11:26PM
+Yes, that should work just fine, as long as it's loaded after mod_AC — based on zip-file name, that is, since mod_AC will need to create those root table constructs beforehand (outside of the hooks).
+hackflow
+member 
+22 kudos
+Report
+Reply
+22 Nov 2020, 4:13AM
+That's the points of `::mods_queue()`s second argument. It loads this only after `mod_AC` and won't load at all if `mod_AC` is not present.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+22 Nov 2020, 4:24AM
+Oh? I thought the queue was only to queue the various mods' hooks. Either way I have not been able to make use of it in this little Legends-experiment :\
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 10:50PM
+I would love some feedback on companions' experience gains and the game's difficulty increase due to companion levels. Are they leveling too fast? Too slow? Is the increasing difficulty from having many (high-leveled) pets too harsh? Too lenient? Are the companions making the game too easy in general?
+jongdeuck
+member 
+0 kudos
+Report
+Reply
+21 Nov 2020, 5:37PM
+I started a new game and downloaded mod version 1.10.
+But pets does not level up.
+Experience does not accumulate.
+Would you please confirm this symptom.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 6:08PM
+That is odd. I tested it before release. Do you mean pets do not get experience when a brother kills something, or does not get experience when a pet kills something? Also, are there any errors in the log, or are you just not seeing any exp being added?
+
+Or are you saying their levels do not increase even though they have enough experience gained?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 6:34PM
+You are right. I must have broken something in one of the latest releases. I will get right on fixing this.
+JackSipian
+supporter 
+0 kudos
+Report
+Reply
+21 Nov 2020, 6:01PM
+I just started a new game using this mod and my warhound killed two enemies in one battle and didn't gain any experience, is this a known bug or is it a mod incompatibility thing with some of the others i have running?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 6:08PM
+That is odd. I tested it before release. Are there any errors in the log, or are you just not seeing any exp being added?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 6:33PM
+You are right. I must have broken something in one of the latest releases. I will get right on fixing this.
+mpboyboy
+member 
+0 kudos
+Report
+Reply
+20 Nov 2020, 1:31AM
+Translator
+
+Version 1.03 and
+Are there any differences between versions 1.04 and 07?
+
+I am using version 1.03
+I know there's a higher version.
+I used the 07 version, but the game load was wrong.
+All versions 04 and 07 are the same.
+
+Brothers Version 1.43.0.63
+
+In version 1.03, he killed a hound, a war dog, and a hyena.
+Is animal accessory routing possible?
+Is market buy possible?
+
+Maybe my English mode is not working because I am a foreign language user.
+1.03 mode is normal operation.
+Thank you
+Vazl
+premium 
+6 kudos
+Report
+Reply
+20 Nov 2020, 3:05AM
+I'm not sure exactly what it is you are asking, but since the latest Battle Brothers update (version 1.4.0.46) this mod seems to be having problems getting loaded properly. I am currently working on a possible and hopeful fix for this as version 1.08 of this mod.
+
+There are of course differences between version 1.04 and 1.07. You can check the changelog to see what has changed. If you are using version 1.04 or higher you will not be able to load a savefile that was made using version 1.03 or lower.
+mpboyboy
+member 
+0 kudos
+Report
+Reply
+20 Nov 2020, 8:25AM
+My question is,
+
+If you kill a 1.03 version enemy animal (hound), can you root?
+Like version 1.07
+(Beasts may drop a loose accessory pet of their kind when killed)
+
+The error is:
+
+Run 1.04-1.07 version mode
+New Start Play
+Save After 2 Days
+Play My Company Dead
+load error
+
+But there's no load error for version 1.03.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+20 Nov 2020, 6:01PM
+Please show me the errors in your log that show up in \Users\YourUser\Documents\Battle Brothers\log.html for when you say there is a loading error.
+mpboyboy
+member 
+0 kudos
+Report
+Reply
+21 Nov 2020, 12:36AM
+del
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 12:55AM
+It looks like you're using version 1.04 or higher to load a savefile made with version 1.03 or lower. That does not work.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 12:59AM
+Wait, whaaat. That file path is the same as on my harddrive.. how is that possible? Hmm. This is really confusing me now.
+
+EDIT: Oh, it's probably just part of the compilation process, since that's the folder I had the files in when compiling the files. Still, if you are using version 1.04 or higher you cannot load a savefile that was made using 1.03 or lower.
+mpboyboy
+member 
+0 kudos
+Report
+Reply
+21 Nov 2020, 3:14AM
+I save as 1.03 / NO SAVE 1.03
+
+New Start Game
+Run 1.07
+First New Save -> lord Error
+
+*Check  this case Error 1.07*
+
+Village go in
+Check  accessory animal 
+
+First New Save -> lord Error 100%
+
+I don't think I can. T,,T
+
+I think only 1.03 is possible
+
+Don't be confused.
+I am a foreign language user.
+language patch
+hard drive Save to that location
+
+This mode is cool.
+I am 1.03 hyena accessory Looting
+Very good ^_^ b
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 3:23AM
+I'm glad you like version 1.03 and that it works for you :) I just uploaded version 1.08 and if you ever want to start a new game you could give that version a try. It should work properly now, at least if you're not using other mods that conflict with this mod.
+mpboyboy
+member 
+0 kudos
+Report
+Reply
+21 Nov 2020, 9:52AM
+Delete all modes
+but doesn't work.
+language Patch
+I think it's a script error
+Thank you for your efforts ^^
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 3:26AM
+Version 1.08 is up and running and should fix the problem of the mod not being initialized properly when starting the game. This will not help
+fixing issues for versions 1.03 or lower.
+
+Please let me know if any script errors pop up in your logs using this version.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+19 Nov 2020, 5:52PM
+Has anyone NOT had any issues since the developer update on november 18th (updating the game to 1.4.0.46)?
+
+I might have a solution to the problem of the mod not loading properly (at least it does not for me), and hopefully I'll have had time to start working on and fixing it by the end of this weekend.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+21 Nov 2020, 2:27AM
+ 
+Pages
+1
+...
+7
+8
+9
+10
+11
+Jump
+Jump
+=========== PAGE 10 ===========
+439 comments
+Pages
+1
+...
+8
+9
+10
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+hackflow
+member 
+22 kudos
+Report
+Reply
+19 Nov 2020, 2:30AM
+After Battle Brothers update to 1.4.0.46 I lost the ability to load any saves made with this mod v1.03, which are almost all of them. Is it possible to make some fix?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+19 Nov 2020, 3:35AM
+I haven't had time to start Battle Brothers since the latest update. I will look into it and see what must be done when I find the time for it. Thank you for notifying me :)
+
+Checking it out quickly myself just now.. it makes no sense to me why this is happening, but for some reason some files in the mod don't seem to be loading properly (?), or even the entire mod itself, which is preventing the mod from working as it should. I will look into this further as soon as I am able to, but right now I have no idea what's going on.
+
+Oh, also.. I will have a hard time giving support for versions below 1.04, because the mod has been reconstructed a lot since then, but this problem seems to affect even the current version. I will try to figure out what the heck is going on, however (when time permits!).
+
+For now, I'm off to bed.
+hackflow
+member 
+22 kudos
+Report
+Reply
+19 Nov 2020, 6:29AM
+Unfortunately, my saves are already tied to 1.03. Is there a way to untie them? Maybe some one off mod, that will permit to load game and save it in a new format? Maybe even simply removing all the modifications if needed, including all the dogs, etc  
+Vazl
+premium 
+6 kudos
+Report
+Reply
+20 Nov 2020, 4:25AM
+If you have a hexeditor and know what you are doing, I suppose you could edit the savefile to set the serialization version back to 63 and remove all of the entries of any pets in the company (and in the world). That would untie it for sure. Other than that I'm not sure what could be done, because I had made several mistakes in versions 1 to 1.03.
+
+The fix that I've started working on will hopefully fix the loading issues that started happening since the latest Battle Brothers update, but it will sadly not be a fix that will work for version 1.03.
+hackflow
+member 
+22 kudos
+Report
+Reply
+20 Nov 2020, 8:32AM
+Heh, using hexeditor to remove all the pets doesn't sound viable). I was thinking whether it's possible to make a special mod that loads an old save and then saves it without everything incompatible and with normal serialization version. E.g. take 1.03 mod, leave all onDeserialize as is (or maybe fix it to work with last BB update), but make onSerialize vanilla one so that things would be lost on save and become normal instead.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+20 Nov 2020, 6:10PM
+The problem is the serialization version. I have no idea how to load a game that's of serialization version 123 without using serialization version 123, and if currently using serialization version 123 the new savefile will also be of serialization version 123. Unless edited with a hexeditor, I suppose. But then you couldn't load it up again afterwards to save it with the current 1.03 version. It would crash the game, because of the onDeserialize function. It's a bad situation. You would need a special version, yes (after having reverted the serialization version to 63), but doable. However, not something I have the time to do for you at this time.
+hackflow
+member 
+22 kudos
+Report
+Reply
+20 Nov 2020, 6:53PM
+What if I somehow edit a version to 63 will this allow loading with a new mod? Or if I edit a new mod to use serialization version 123 will it allow to load my game?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+20 Nov 2020, 7:21PM
+Possibly. I'm still not sure exactly what the problem is you're having with the 1.03 version, since I would have to see log entries, but I'm guessing it's the same issue as I'm having with the current version: the mod simply doesn't load correctly, which in turn makes it unable to operate properly (including loading savefiles made with this mod). You will most likely have to make a special version of this mod to load the current savefile you have (once the serialization version is somehow reverted to 63), which most likely would require you to.. actually, just forget it. I appreciate your situation, but 1.03 and below is just gonna be headache to fix. I'm still not even sure I'm on the right track with my own fix for the current version.
+Aztygiles1
+supporter 
+0 kudos
+Report
+Reply
+20 Nov 2020, 6:10PM
+So I was just trying my luck with this mod + legends. And it seems to work..
+At least the stats and stuff showed up. Problem is I cant leave the city menu..
+Vazl
+premium 
+6 kudos
+Report
+Reply
+20 Nov 2020, 6:12PM
+I'm not promising any compatibility with Legends. I would go as far as promising incompatibility ;)
+
+That information alone does not help me to help you. I would need log information.
+deleted84042858
+account closed 
+0 kudos
+Report
+Reply
+26 Oct 2020, 3:14AM
+Hi,
+
+Probably a long shot but could these pets have a new slot, i will upload an image with my mad paint skills https://ibb.co/0rfLs3Z to better illustrate what i mean. And well because i figure that's unlikely another idea would propose for a more compatible version that can be used on old saves that for ex don't have any pets on bros or in inventory, like get them all killed or sold and get the mod and use it after for a form of pseudo-compatibility?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+26 Oct 2020, 10:59AM
+Hi there!
+Nice paint skills  I like the idea of pets having an equipment slot of their own! I will add that to my list of ideas and give it some serious consideration when I'm done with the plans I already have.
+
+I see what you mean. If the player gets rid of all of their pet accessories before installing this mod, that could possibly be a way to circumvent the problem. I suspect the game will still crash if there are pets available in any settlement stores, since their inventory/stash is saved as well. I will look into fixing the save file issue. I just haven't had the time to do so yet 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+26 Oct 2020, 11:59PM
+Unless you are using other mods that also change the game's serialization version you should be able to load savefiles properly with the new version (1.01).
+deleted84042858
+account closed 
+0 kudos
+Report
+Reply
+28 Oct 2020, 12:29AM
+I don't know which mods change game serialization, these are the ones i use https://ibb.co/860NL8V and i've tried them with the 1.01 version, i could load the save but all my Warhounds changed to Wardogs, also they had Heavy Armor that changed to Normal Armor or was gone (this happens randomly because i tried loading the same save file more times to see if there is a pattern, they all change to Wardogs even an old Wardog and the armor is either normal or none).
+
+That wasn't a real issue for me but instead what i found out was that the new save i made with the mod can't be loaded without the mod, it's grayed out and says "Incompatible Version or DLC missing" under it's name. Could you look into a fix for this somehow? Like to auto delete the pets or also randomize pets if the mod is removed? This would help with vanilla game updates or anything really that breaks the mod, so it wouldn't brick the save if anything happens.
+
+Also how does the XP work? From reading i understood something but unsure so let me know if these are true or please correct them.
+1. If 11 Bros +1 Pet fight and any Bro not owner of Pet does 1 kill, he gets 20%, rest of 10 Bros each gets 8% and Pet gets an extra 8%?
+2. If 11 Bros +1 Pet fight and the Bro owner of Pet does 1 kill, he gets 20% and, rest of 10 Bros each get 8% and Pet gets an extra 20%?
+3. If 11 Bros +1 Pet fight and the Pet does 1 kill, XP is divided between 11 Bros and each gets 9.09% and Pet also gets an extra 9.09%?
+
+I ask because i fought a battle to see how they gain XP but looking back it was the worst choice to test it vs Wiedergangers and Geists but i was only thinking of something easy to feed the dogs some kills, unsure how Wiedergangers give or maybe regive XP cause they resurrect, enemies were 21 to begin i had 25 kills on Bros, does that count on the Bros the dog kills too or are they rekills, i don't know. Thou i'm sure i've had 3 dogs do kills/rekills, unfortunately one has the same name as another one which makes it even more confusing which one did get the kill, and i'm unsure how it's supposed to work in the first place, anyway this is how it looks https://ibb.co/VwhcdQw with kills for sure done by one of the Ritters, Wolf and Quickpaw. Finch was too lazy to kill but strangely still got same XP as Wolf and Quickpaw, and the falcon got nothing #LoveForFalcons.
+
+So at least i found out they gain XP but now just wasn't the moment to better understand how. Still i'd like to suggest an increase in the amount of XP received, imo it's too low and i think it would be better to level them up faster, it's already tedious to keep switching in and out Bros from Reserve to keep up levels, and i feel like i may be driven to take the pets out just to have them gain free XP in each fight even thou the battle does not require them. Also probably it's best to not feel so guilty if i have to sacrifice a pet to a Lindwurm rotate or as Necrosavant bait or chasing that Champion with sweet gear that tries to run away cause you killed and/or broke all his troops round 1 or really anything that requires pets to likely get killed. I say this cause i want better pets but not extra pair of throwaway pets, maybe that's just me.
+
+Anyway whatever you decide to do i'm sure is for the best and i'll adapt, i appreciate what you did with the mod and i'll trying it again when i'll see the vanilla updates have stopped or if saves could work even after removing the mod, i already have a mod that breaks my save and i regret using it cause i try to avoid issues as much as possible. Also thank you for taking the time to read all this text.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Oct 2020, 12:05PM
+The mod turning pets into random ones was on purpose, but hastily made. It was to simply make it possible to load saves at all without crashing the game. It has since v1.02 been fixed.
+
+The whole point of making the mod have a different version than the base game was so that I could load the pets differently depending on if the savefile is of this mod's version or not. I have no idea how to make saves made with this mod installed loadable without having this mod installed. I'm not even sure it's possible.
+
+Here's how the XP works. It has worked just fine for me and I've even considered lowering the amount of XP the pets get. I'll look into the functions again to make sure they work as intended.
+A brother kills an enemy: that brother gets killer bonus XP, that brother's unleashed pet gets killer bonus XP, all brothers share what's left of the (XP - killer bonus), all brothers' unleashed pets get the same XP as their masters.
+A pet kills an enemy: all brothers share the XP, all brothers' unleashed pets get the same XP as their masters.
+deleted84042858
+account closed 
+0 kudos
+Report
+Reply
+20 Nov 2020, 5:00PM
+Hi,
+
+First off i want to say that about a week ago i was done with anything "accomplishable" for my current run and i wanted more and made a backup and started using this mod as a test, cause i've really like it since you shared it a month ago and want to use it but was afraid to mess my save. Anyway now since last weekend i've used it and can't go back, all my pets absolutely need to be fed enemies and level up. Also this most recent update 1.4.0.46 did not break it for me. And lastly thank you for taking the time to implement it and make it available.
+mithc
+supporter 
+2 kudos
+Report
+Reply
+16 Nov 2020, 7:20PM
+I think it'd be cool to have a new start that increased the base 1% tame/enslave chance to 5-10% and started with a hyena or direwolf. To balance it out the start could get the 10% worse prices malus.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+17 Nov 2020, 12:13AM
+I will put this in the list of ideas :)
+Gadenosh
+member 
+0 kudos
+Report
+Reply
+15 Nov 2020, 10:39AM
+Hail there! I guess with this mod Houndmaster background becomes useless as dogs will not get confident morale after releasing? Or is it just confrontation with MrBrut's mod Recall and Unleash?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+17 Nov 2020, 12:13AM
+Oops. That was just an oversight on my part and was fixed in the latest release. I would, however, recommend not using this mod in combination wih other mods that also changes how pets work, just to be on the safe side of things. This mod already lets you recall your pets, inspired by MrBrut's mod.
+cuthanhnam
+member 
+0 kudos
+Report
+Reply
+13 Nov 2020, 3:40PM
+How tamed lindwurm?? I just download this mod now
+
+Vazl
+premium 
+6 kudos
+Report
+Reply
+13 Nov 2020, 3:47PM
+1% chance to tame/enslave beasts listed in the description upon killing them.
+cuthanhnam
+member 
+0 kudos
+Report
+Reply
+14 Nov 2020, 1:41AM
+tks bro
+pphhyy
+member 
+0 kudos
+Report
+Reply
+15 Nov 2020, 12:04AM
+just got one after killing like 40 of them through the whole game, WORTH IT. super kool.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+17 Nov 2020, 12:12AM
+Grats! :)
+quang511
+member 
+0 kudos
+Report
+Reply
+14 Nov 2020, 11:14AM
+Can you make a version pet drop chance increase. i'm try to kill many wolf and hyena but not drop
+Vazl
+premium 
+6 kudos
+Report
+Reply
+17 Nov 2020, 12:11AM
+I might make a "just for fun" version later, yeah.
+pphhyy
+member 
+0 kudos
+Report
+Reply
+12 Nov 2020, 9:30AM
+Im not sure if someone has said this yet, but you should make the first screenshot express that the mod allows you to tame animals.
+The mod kinda looks like just an upgrade to dogs unless you look deeper and read that you've put a ton of work into other animals as tames.
+I think alot more people would be interested if they saw that.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+12 Nov 2020, 5:20PM
+Noone has mentioned it, and I'm glad you did :) I will update the short description of the mod, and add some more alluring images!
+pphhyy
+member 
+0 kudos
+Report
+Reply
+12 Nov 2020, 9:00PM
+nice!
+doktor666son
+member 
+0 kudos
+Report
+Reply
+12 Nov 2020, 11:42AM
+Stopped working with legends(
+Vazl
+premium 
+6 kudos
+Report
+Reply
+12 Nov 2020, 5:19PM
+I didn't even know it ever worked together with Legends in the first place, heh. Yeah, it would take some doing to make both mods work with eachother.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+05 Nov 2020, 10:50AM
+Version 1.04 restructures the mod and no longer changes the serialization version of the game. As long as no conflicts with other mods mess things up, savefiles made without this mod installed can now be loaded, and savefiles made with this mod installed can now be loaded without it, BUT.. you won't be able to load savefiles made with previous versions (1.03 or lower) of this mod. Apologies for this, but changing the serialization version was a mistake in the first place, so this is to remedy that as well as make the mod more savefile-friendly in general.
+Pages
+1
+...
+8
+9
+10
+11
+Jump
+Jump
+=========== PAGE 11 ===========
+439 comments
+Pages
+1
+...
+9
+10
+11
+Jump
+Jump
+Add comment
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+02 Mar 2022, 9:43PM
+This mod is abandoned and is no longer being updated. I might redo the entire mod some day and fix all the bugs.
+Vazl
+premium 
+6 kudos
+Report
+LOCKED
+STICKY
+26 Dec 2020, 5:00PM
+Please be specific when reporting an issue, error or bug. Always look in documents\battle brothers\log.html for information when the game crashes or behaves peculiarly, and consider taking in-game screenshots of whatever the issue is (when possible), to help out with the report.
+RocKRebel
+supporter 
+0 kudos
+Report
+Reply
+27 Oct 2020, 3:13AM
+Hey there,
+
+I'm using another mod that does change the game's serialization. Since I'm planning on creating a new save anyway, I don't suppose you could update a version without that change?
+Thanks
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Oct 2020, 8:11AM
+Greetings!
+It's just one little line of code that's responsible for changing the serialization version and, since I have neither compiled nor encrypted the files, removing that one line is both quick and easy. Download the packaged mod, unpack the "scripts/!mods_preload/mod_AC.nut" file within it, open that file with your text editor/notepad of choice, remove line 5 that goes "this.Const.Serialization <- { Version = 64 };", put the file back where it was in the package and then you're done 
+Vazl
+premium 
+6 kudos
+Report
+Reply
+01 Nov 2020, 2:14PM
+What was I saying? That wouldn't have fixed it at all. That was just the first step and you would've still had to change the (de)serialize functions. I'm sorry! I will be reverting back to not changing serialization version at all with the next version. That should make things easier for you when you decide to play with another mod that does change serialization version.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Oct 2020, 12:42PM
+I accidently uploaded my development version of mod_AC.nut in the first upload of version 1.02, which contained some things that were not supposed to be in the released version, so I've now re-uploaded a correct version of 1.02.
+hackflow
+member 
+22 kudos
+Report
+Reply
+01 Nov 2020, 7:27AM
+So wolfs and hyenas of various level summoned to inventory is not a bug?) It was really fun. Level 14 wolfs die to easy though or at least it feels like it.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+01 Nov 2020, 9:35AM
+Haha. It was an oversight leaving those functions in the code. I use them to try stuff out as I'm adding new things to the code.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Oct 2020, 3:23PM
+***** IMPORTANT *****
+
+Version 1.03 changes the Serialization Version to the silly value of 123 in order to make possible vanilla version changes not matter for this mod. If you already have a savefile that uses this mod and you want to continue playing with it: please remove any installed ac_MOD, download and install ac_MOD_fix, load your savefile, re-save it, quit the game, remove mod_AC_fix and then download and install the regular mod_AC.
+
+Changing the serialization version was a bad idea, in hindsight, since it might break parts of the code (that this mod does not necessarily touch) when and if the developers make changes and increase the version of the base game. I apologize for the inconvenience, but I will revert back to not changing the serialization version at all, soon, and once again (de)serialize savefiles like in the initial release (version 1). This means that savefiles made without this mod installed cannot be loaded, and that savefiles made with this mod installed cannot loaded without it, but it shouldn't possibly break anything if and when the developers make serialization version changes of their own.
+
+I am aware of a way to restructure the entire mod to make it possible to load savefiles made without this mod installed, and to make savefiles made with this mod installed loadable without it. It is something I will most likely take care of once I've finished up on various main plans, because it will require quite some doing, but I might just go ahead and make it priority one.. after I've rested up a bit :)
+Rottenbeggar
+member 
+0 kudos
+Report
+Reply
+29 Oct 2020, 8:05AM
+I just want to say thanks for this mod i am enjoying it and have waited for something like this for a long while. Its great your keeping on top of the probs and/or requests cant wait to see how far you go with this  animal tamers animal trainers  @@.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+30 Oct 2020, 12:07PM
+Thank you :) Glad you like it!
+brickme
+premium 
+0 kudos
+Report
+Reply
+27 Oct 2020, 3:02PM
+I downloaded version 1.1 and it seemed to break the looting of all weapons and armor, as well as the animation of bodies dropping. I reverted back to version 1.0 and it seems to be working fine. I really like the mod and find it a challenge to keep those doggies alive. I am guessing it is probably an easy fix for you. I am eagerly awaiting the fix for the new trainable mobs... farming them will be fun.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Oct 2020, 4:56PM
+Hmm. That's odd. Do you happen to have any other mods installed, besides this one? Which ones, if so? Could you re-install 1.01 again, try to make those weird things happen and then take a look in Users\YourUserName\Documents\Battle Brothers\log.html when and if they do? Keep an eye out for "script error" messages. Copy-paste them for me so I can see what's going on.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Oct 2020, 5:20PM
+Yeah, I'm not finding anything in the code that should cause these problems. I've loaded up 1.01 and gone around killing stuff as well, and I can loot just fine. Peculiar.
+
+EDIT: Oh no! I'm not receiving loot as usual. You are right! I made some sloppy hooking when I set the new taming/enslaving code up. I will make a quick fix right now.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Oct 2020, 7:18PM
+Okay, there we go. I have re-uploaded version 1.01 and this time the taming/enslaving code should not break the onDeath functions. My apologies!
+
+It's still a sloppy hook made in haste -- all of them are, really -- but I shall see to making them better.
+ProfessorDesi
+member 
+0 kudos
+Report
+Reply
+27 Oct 2020, 5:19AM
+This is an amazing idea honestly surprised that the devs have not implemented this.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+27 Oct 2020, 8:13AM
+I am glad that you like it 
+anl93
+member 
+2 kudos
+Report
+Reply
+25 Oct 2020, 5:30PM
+hi, is this compatible with BBEdit?
+Vazl
+premium 
+6 kudos
+Report
+Reply
+25 Oct 2020, 6:05PM
+I'm afraid not. I suppose it would be possible to make a special version of BB-Edit that would be compatible, but I haven't looked into that at all. Maybe later, if I get the time, but probably not. You are welcome to make such a version if you'd like, of course!
+VolkLogan
+premium 
+0 kudos
+Report
+Reply
+25 Oct 2020, 7:25PM
+I guess a Legends version is nearly impossible. However. This looks fantastic if i ever play vanilla again. Thanks for your work.
+Vazl
+premium 
+6 kudos
+Report
+Reply
+26 Oct 2020, 12:20PM
+Heh, yeah, it would take quite some time and effort to work this into the Legends mod. Maybe one day 
+Pages
+1
+...
+9
+10
+11
+Jump
+Jump

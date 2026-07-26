@@ -132,7 +132,10 @@ def main() -> int:
     errors, warnings = [], []
     files = []
     for dirpath, dirs, fs in os.walk(HERE):
-        dirs[:] = [d for d in dirs if d not in (".git", "tools", "__pycache__")]
+        # .refs holds the vanilla/framework trees we check *against*, not our own
+        # sources, so it must never be walked as mod content.
+        dirs[:] = [d for d in dirs
+                   if d not in (".git", "tools", "docs", "dist", "__pycache__", ".refs")]
         files += [os.path.join(dirpath, f) for f in fs if f.endswith(".nut")]
 
     for path in sorted(files):
