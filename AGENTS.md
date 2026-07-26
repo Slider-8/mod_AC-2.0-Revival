@@ -19,7 +19,7 @@ Revive and modernise [Accessory Companions](https://www.nexusmods.com/battlebrot
 - **Version requirements:** [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) (hard: `mod_msu >= 1.7.0`, `mod_modern_hooks >= 0.4.0`; game BB 1.5.2.3; Reforged optional).
 - Game install: `C:\Games\Steam\steamapps\common\Battle Brothers`. Log: `C:\Users\igorl\Documents\Battle Brothers\log.html`.
 - **BB framework research (default consult):** `C:\Users\igorl\Documents\05_Games_&_Entertainment\Modding\BB_modding_research`
-  - Start with `README.md`, `frameworks.md`, `mod_structure.md`
+  - Start with `README.md`, **`runtime_gotchas.md`**, **`case_mod_ac_revival.md`**, then `frameworks.md` / `mod_structure.md`
   - Unpacked sources under `temp/` (`mod_modern_hooks`, `mod_msu`, `mod_modular_vanilla`, `mod_hooks`, …)
   - Use this for Hooks/MSU/queue/UI registration questions **before** guessing; also use `mod_AC/.refs/` and `docs/reference/PORTING-GUIDE.md`
 
