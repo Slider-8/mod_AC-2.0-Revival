@@ -41,8 +41,20 @@ this.companions_nightmare_skill <- this.inherit("scripts/skills/skill", {
 
 	function getDamage( _actor )
 	{
-		local bonusMin = this.getContainer().getActor().getSkills().hasSkill("quirk.good_boy") ? (this.getContainer().getActor().m.Item.m.Level - 10.0) * 0.5 : 0;
-		local bonusMax = this.getContainer().getActor().getSkills().hasSkill("quirk.good_boy") ? (this.getContainer().getActor().m.Item.m.Level - 10.0) * 1.0 : 0;
+		// The nightmare hit is resolved 400ms after onUse. If the alp dies inside
+		// that window its onDeath has already cleared m.Item, so the Good Boy bonus
+		// has to tolerate the item being gone.
+		local bonusMin = 0;
+		local bonusMax = 0;
+		local container = this.getContainer();
+		local user = container == null ? null : container.getActor();
+
+		if (user != null && user.m.Item != null && user.getSkills().hasSkill("quirk.good_boy"))
+		{
+			bonusMin = (user.m.Item.m.Level - 10.0) * 0.5;
+			bonusMax = (user.m.Item.m.Level - 10.0) * 1.0;
+		}
+
 		local bonusRng = this.Math.floor(this.Math.rand(bonusMin, bonusMax));
 		return this.Math.max(5 + bonusRng, (25 - this.Math.floor(_actor.getCurrentProperties().getBravery() * 0.25)) + bonusRng);
 	}
@@ -71,14 +83,15 @@ this.companions_nightmare_skill <- this.inherit("scripts/skills/skill", {
 
 	function onVerifyTarget( _originTile, _targetTile )
 	{
-		local sleeping = _targetTile.getEntity().getSkills().getSkillByID("effects.sleeping");
-
-		if (sleeping == null)
+		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
 		{
 			return false;
 		}
 
-		return this.skill.onVerifyTarget(_originTile, _targetTile);
+		// Only valid against a sleeping target. Checked after the base class so
+		// that its empty-tile guard runs first.
+		local target = _targetTile.getEntity();
+		return target != null && target.getSkills().getSkillByID("effects.sleeping") != null;
 	}
 
 	function onUpdate( _properties )
@@ -111,7 +124,20 @@ this.companions_nightmare_skill <- this.inherit("scripts/skills/skill", {
 	{
 		local targetTile = _tag.TargetTile;
 		local user = _tag.User;
+
+		// 400ms is long enough for either side to die or be removed from the map.
+		if (user == null || !user.isAlive() || targetTile == null || targetTile.IsEmpty)
+		{
+			return;
+		}
+
 		local target = targetTile.getEntity();
+
+		if (target == null || !target.isAlive())
+		{
+			return;
+		}
+
 		local hitInfo = clone this.Const.Tactical.HitInfo;
 		hitInfo.DamageRegular = this.Math.rand(this.getDamage(target), this.getDamage(target) + 5);
 		hitInfo.DamageDirect = 1.0;
