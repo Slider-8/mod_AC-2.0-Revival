@@ -44,13 +44,13 @@ mod_AC/hooks/            modern hook files
 scripts/!mods_preload/mod_AC.nut   Hooks + MSU registration
 docs/                    defects, compatibility, handoff, references
 tools/check_mod.py       static checker
-dist/mod_AC.zip          Vortex/data package
+dist/mod_AC_<version>.zip   Vortex/data package (e.g. mod_AC_2.1.1.zip)
 ```
 
-Build:
+Build (reads version from the preload entry):
 
 ```bash
-powershell -ExecutionPolicy Bypass -Command "Compress-Archive -Path scripts,gfx,ui,mod_AC -DestinationPath dist/mod_AC.zip -Force"
+powershell -ExecutionPolicy Bypass -File tools/package.ps1
 ```
 
 ## Verification
@@ -60,7 +60,7 @@ python tools/check_mod.py --refs .refs
 # expect: 0 errors
 ```
 
-**In-game** (after deploying `dist/mod_AC.zip`):
+**In-game** (after deploying `dist/mod_AC_<version>.zip`):
 
 1. Log: `Documents\Battle Brothers\log.html` — no new `mod_AC` errors.
 2. Unleash / leash companion; save / reload levelled quirked pet.

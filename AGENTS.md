@@ -6,7 +6,7 @@ Revive and modernise [Accessory Companions](https://www.nexusmods.com/battlebrot
 
 ## Ownership
 
-- **Ship surface:** `scripts/`, `gfx/`, `ui/`, `mod_AC/` (what goes into `dist/mod_AC.zip`)
+- **Ship surface:** `scripts/`, `gfx/`, `ui/`, `mod_AC/` (packaged as `dist/mod_AC_<version>.zip`)
 - **Docs / handoff:** `docs/`
 - **Tooling:** `tools/`
 
@@ -38,7 +38,8 @@ python tools/check_mod.py
 Package:
 
 ```bash
-powershell -ExecutionPolicy Bypass -Command "Compress-Archive -Path scripts,gfx,ui,mod_AC -DestinationPath dist/mod_AC.zip -Force"
+powershell -ExecutionPolicy Bypass -File tools/package.ps1
+# → dist/mod_AC_<SemVer>.zip (version from scripts/!mods_preload/mod_AC.nut)
 ```
 
 ## Child DOX Index
