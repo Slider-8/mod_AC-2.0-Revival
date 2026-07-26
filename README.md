@@ -7,7 +7,7 @@ Tame beasts, equip them as accessories, unleash them in battle, level them with
 quirks, and raise fallen companions. Ported to **Modern Hooks + MSU**.
 
 **Current version: [v2.1.9](docs/REQUIREMENTS.md)**  
-Repository: [github.com/Slider-8/mod_AC](https://github.com/Slider-8/mod_AC)
+Repository: [github.com/Slider-8/mod_AC-2.0-Revival](https://github.com/Slider-8/mod_AC-2.0-Revival)
 
 ---
 
