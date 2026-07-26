@@ -2,32 +2,32 @@
 // rawHookTree applies once per descendant; skip non-pet accessories via setEntity.
 // Already-applied marker guards against double serialisation wraps (PHASE2 constraint 3).
 
-::AC.HooksMod.rawHookTree("scripts/items/accessory/accessory", function(o)
+::AC.HooksMod.rawHookTree("scripts/items/accessory/accessory", function(p)
 {
-		if ("setEntity" in o)
+		if ("setEntity" in p)
 		{
 			// Already-applied marker: prevent double-wrap if a class is visited twice.
-			if ("mod_AC_FoundationApplied" in o.m)
+			if ("mod_AC_FoundationApplied" in p.m)
 				return;
 
 			// Decision 3: yield wolf_item entirely to Reforged when present.
-			if (::Hooks.hasMod("mod_reforged") && "Script" in o.m && o.m.Script == "scripts/entity/tactical/warwolf")
+			if (::Hooks.hasMod("mod_reforged") && "Script" in p.m && p.m.Script == "scripts/entity/tactical/warwolf")
 				return;
 
-			o.m.mod_AC_FoundationApplied <- true;
+			p.m.mod_AC_FoundationApplied <- true;
 
-			o.m.Skill <- null;
-			o.m.Entity <- null;
-			o.m.Script <- null;
-			o.m.ArmorScript <- null;
-			o.m.UnleashSounds <- null;
-			o.m.InventorySounds <- null;
-			o.m.Type <- null;
-			o.m.Level <- 1;
-			o.m.XP <- 0;
-			o.m.Wounds <- 0;
-			o.m.Quirks <- [];
-			o.m.Attributes <- {	Hitpoints = 0,
+			p.m.Skill <- null;
+			p.m.Entity <- null;
+			p.m.Script <- null;
+			p.m.ArmorScript <- null;
+			p.m.UnleashSounds <- null;
+			p.m.InventorySounds <- null;
+			p.m.Type <- null;
+			p.m.Level <- 1;
+			p.m.XP <- 0;
+			p.m.Wounds <- 0;
+			p.m.Quirks <- [];
+			p.m.Attributes <- {	Hitpoints = 0,
 								Stamina = 0,
 								Bravery = 0,
 								Initiative = 0,
@@ -37,8 +37,8 @@
 								RangedDefense = 0	};
 
 			// D6: wrap subclass create instead of jumping to accessory.create.
-			local _ac_create = o.create;
-			o.create = function()
+			local _ac_create = p.create;
+			p.create = function()
 			{
 				_ac_create();
 
@@ -84,12 +84,12 @@
 				}
 			}
 
-			o.getType <- function()
+			p.getType <- function()
 			{
 				return this.m.Type;
 			}
 
-			o.setType <- function(_t)
+			p.setType <- function(_t)
 			{
 				this.m.Type = _t;
 				this.m.Name = this.Const.Companions.Library[this.m.Type].Name();
@@ -114,11 +114,11 @@
 				this.updateCompanion();
 			}
 
-			o.updateVariant <- function()
+			p.updateVariant <- function()
 			{
 			}
 
-			o.updateCompanion <- function()
+			p.updateCompanion <- function()
 			{
 				this.m.ID = this.Const.Companions.Library[this.m.Type].ID;
 				this.m.Description = this.Const.Companions.Library[this.m.Type].Description;
@@ -130,12 +130,12 @@
 				this.setEntity(this.m.Entity);
 			}
 
-			o.getEntity <- function()
+			p.getEntity <- function()
 			{
 				return this.m.Entity;
 			}
 
-			o.setEntity <- function(_e)
+			p.setEntity <- function(_e)
 			{
 				this.m.Entity = _e;
 
@@ -149,7 +149,7 @@
 				}
 			}
 
-			o.getName <- function()
+			p.getName <- function()
 			{
 				if (this.m.Entity == null)
 				{
@@ -162,12 +162,12 @@
 				}
 			}
 
-			o.setName <- function(_n)
+			p.setName <- function(_n)
 			{
 				this.m.Name = _n;
 			}
 
-			o.getDescription <- function()
+			p.getDescription <- function()
 			{
 				if (this.m.Entity == null)
 				{
@@ -179,28 +179,28 @@
 				}
 			}
 
-			o.getScript <- function()
+			p.getScript <- function()
 			{
 				return this.m.Script;
 			}
 
-			o.getArmorScript <- function()
+			p.getArmorScript <- function()
 			{
 				return this.m.ArmorScript;
 			}
 
-			o.playInventorySound <- function(_eventType)
+			p.playInventorySound <- function(_eventType)
 			{
 				if (this.m.InventorySounds != null && this.m.InventorySounds.len() > 0)
 					this.Sound.play(this.m.InventorySounds[this.Math.rand(0, this.m.InventorySounds.len() - 1)], this.Const.Sound.Volume.Inventory);
 			}
 
-			o.isUnleashed <- function()
+			p.isUnleashed <- function()
 			{
 				return this.m.Entity != null;
 			}
 
-			o.getTooltip <- function()
+			p.getTooltip <- function()
 			{
 				local xpMax = this.m.XP;
 				if (this.m.Level < this.Const.LevelXP.len())
@@ -477,7 +477,7 @@
 				return result;
 			}
 
-			o.onEquip <- function()
+			p.onEquip <- function()
 			{
 				this.accessory.onEquip();
 				local unleash = this.new(this.Const.Companions.Library[this.m.Type].Unleash.Script);
@@ -491,7 +491,7 @@
 				this.addSkill(leash);
 			}
 
-			o.onCombatFinished <- function()
+			p.onCombatFinished <- function()
 			{
 				if (this.m.Entity != null)
 				{
@@ -501,7 +501,7 @@
 				this.setEntity(null);
 			}
 
-			o.onActorDied <- function(_onTile)
+			p.onActorDied <- function(_onTile)
 			{
 				if (this.m.Type != null && !this.isUnleashed() && _onTile != null && this.getScript() != null && this.Const.Companions.Library[this.m.Type].Unleash.onActorDied)
 				{
@@ -532,17 +532,17 @@
 				}
 			}
 
-			o.isAmountShown <- function()
+			p.isAmountShown <- function()
 			{
 				return true;
 			}
 
-			o.getAmountString <- function()
+			p.getAmountString <- function()
 			{
 				return "Level " + this.m.Level;
 			}
 
-			o.getXPToNextLevelPercentage <- function()
+			p.getXPToNextLevelPercentage <- function()
 			{
 				if (this.m.Level >= this.Const.LevelXP.len())
 					return "MAX";
@@ -555,7 +555,7 @@
 				return "" + tnl + "%";
 			}
 
-			o.addXP <- function(_xp)
+			p.addXP <- function(_xp)
 			{
 				if (this.m.Level >= this.Const.LevelXP.len())
 				{
@@ -594,7 +594,7 @@
 				this.updateLevel();
 			}
 
-			o.updateLevel <- function()
+			p.updateLevel <- function()
 			{
 				local applyAttributeBonus = function(attribute)
 				{
@@ -705,37 +705,37 @@
 				}
 			}
 
-			o.getLevel <- function()
+			p.getLevel <- function()
 			{
 				return this.m.Level;
 			}
 
-			o.setLevel <- function(_l)
+			p.setLevel <- function(_l)
 			{
 				this.m.Level = _l;
 			}
 
-			o.getXP <- function()
+			p.getXP <- function()
 			{
 				return this.m.XP;
 			}
 
-			o.setXP <- function(_xp)
+			p.setXP <- function(_xp)
 			{
 				this.m.XP = _xp;
 			}
 
-			o.getQuirks <- function()
+			p.getQuirks <- function()
 			{
 				return this.m.Quirks;
 			}
 
-			o.setQuirks <- function(_q)
+			p.setQuirks <- function(_q)
 			{
 				this.m.Quirks = _q;
 			}
 
-			o.getAttributes <- function()
+			p.getAttributes <- function()
 			{
 				local attr =
 				{
@@ -752,7 +752,7 @@
 				return attr;
 			}
 
-			o.setAttributes <- function(_a)
+			p.setAttributes <- function(_a)
 			{
 				this.m.Attributes.Hitpoints = _a.Hitpoints;
 				this.m.Attributes.Stamina = _a.Stamina;
@@ -764,17 +764,17 @@
 				this.m.Attributes.RangedDefense = _a.RangedDefense;
 			}
 
-			o.getWounds <- function()
+			p.getWounds <- function()
 			{
 				return this.m.Wounds;
 			}
 
-			o.setWounds <- function(_w)
+			p.setWounds <- function(_w)
 			{
 				this.m.Wounds = _w;
 			}
 
-			o.serializeCompanionName <- function()
+			p.serializeCompanionName <- function()
 			{
 				local nameCopy = this.m.Name;
 				local serializedName = nameCopy += "\nmod_AC=" + this.m.Type + "," + this.m.Level + "," + this.m.XP + "," + this.m.Wounds + ",A=" + this.m.Attributes.Hitpoints + "," + this.m.Attributes.Stamina + "," + this.m.Attributes.Bravery + "," + this.m.Attributes.Initiative + "," + this.m.Attributes.MeleeSkill + "," + this.m.Attributes.RangedSkill + "," + this.m.Attributes.MeleeDefense + "," + this.m.Attributes.RangedDefense + ",Q=";
@@ -807,7 +807,7 @@
 			// tointeger() is not total in Squirrel -- an empty or non-numeric field
 			// throws, and this runs during savegame load. Returns null on anything
 			// that is not a plain integer so callers can decide what to do.
-			o.parseCompanionInt <- function(_s)
+			p.parseCompanionInt <- function(_s)
 			{
 				if (_s == null || _s.len() == 0)
 				{
@@ -823,7 +823,7 @@
 				return _s.tointeger();
 			}
 
-			o.deserializeCompanionName <- function(_cn)
+			p.deserializeCompanionName <- function(_cn)
 			{
 				local nameMod = "\nmod_AC=";
 				local findMod = _cn.find(nameMod);
@@ -922,8 +922,8 @@
 			}
 
 			// D1: wrap parent serialisation; keep one-string stream shape.
-			local _ac_onSerialize = o.onSerialize;
-			o.onSerialize = function( _out )
+			local _ac_onSerialize = p.onSerialize;
+			p.onSerialize = function( _out )
 			{
 				local oldName = this.m.Name;
 				this.m.Name = this.serializeCompanionName();
@@ -931,8 +931,8 @@
 				this.m.Name = oldName;
 			}
 
-			local _ac_onDeserialize = o.onDeserialize;
-			o.onDeserialize = function( _in )
+			local _ac_onDeserialize = p.onDeserialize;
+			p.onDeserialize = function( _in )
 			{
 				_ac_onDeserialize(_in);
 				this.deserializeCompanionName(this.m.Name);
