@@ -16,6 +16,7 @@ Revive and modernise [Accessory Companions](https://www.nexusmods.com/battlebrot
 - **Frozen public API** (other mods reach in by name): script path `scripts/companions/onequip/companions_unleash`; IDs `actives.companions_tame`, `actives.raise_companion`, `actives.unleash_companion`, `background.companions_beastmaster`. Full list in `docs/COMPATIBILITY.md`.
 - **Save stream shape** is one string payload on the item name; do not add/remove serialised fields without a migration plan.
 - **Decisions locked:** port to Hooks/MSU; soft-detect Reforged and yield `wolf_item` when present; nachzerer mid-swallow is not tamable.
+- **Version requirements:** [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) (hard: `mod_msu >= 1.7.0`, `mod_modern_hooks >= 0.4.0`; game BB 1.5.2.3; Reforged optional).
 - Game install: `C:\Games\Steam\steamapps\common\Battle Brothers`. Log: `C:\Users\igorl\Documents\Battle Brothers\log.html`.
 - **BB framework research (default consult):** `C:\Users\igorl\Documents\05_Games_&_Entertainment\Modding\BB_modding_research`
   - Start with `README.md`, `frameworks.md`, `mod_structure.md`
@@ -55,7 +56,7 @@ powershell -ExecutionPolicy Bypass -File tools/package.ps1
 
 | Path | Scope |
 |---|---|
-| `docs/` | Defects, compatibility, Phase 2 handoff, reference material (no separate AGENTS.md; contracts live in those docs) |
+| `docs/` | Defects, compatibility, **REQUIREMENTS.md** (deps/versions), Phase 2 handoff, reference material (no separate AGENTS.md; contracts live in those docs) |
 | `scripts/` | Runtime Squirrel sources (ship) |
 | `mod_AC/` | Modern entry helpers + per-target hook files (ship) |
 | `tools/` | Static checker, reference setup, scrapers |

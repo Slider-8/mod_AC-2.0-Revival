@@ -19,7 +19,8 @@ Start docs: **[docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md)**, defect table
 **[docs/DEFECTS.md](docs/DEFECTS.md)**, implementation review for the prior agent
 **[docs/PHASE2-REVIEW-REPORT.md](docs/PHASE2-REVIEW-REPORT.md)**.
 
-Requires **mod_msu ≥ 1.7.0** and **mod_modern_hooks ≥ 0.4.0**.
+**Requirements:** [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) — hard:
+**mod_msu ≥ 1.7.0**, **mod_modern_hooks ≥ 0.4.0**; BB **1.5.2.3**; Reforged soft.
 
 | Fix | Defect |
 |---|---|

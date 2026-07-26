@@ -1,5 +1,8 @@
 # Compatibility contract
 
+Hard/soft version requirements (MSU, Modern Hooks, BB, Reforged): see
+**[REQUIREMENTS.md](REQUIREMENTS.md)**.
+
 Other published mods reach into this one by name. These identifiers are a
 **public API** — renaming any of them silently breaks another mod, with no
 error message for the player. Verified against the mod archives actually
