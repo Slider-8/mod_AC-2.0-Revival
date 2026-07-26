@@ -4,7 +4,7 @@
 
 ::AC <- {
 	ID = "mod_AC",
-	Version = "2.1.5",
+	Version = "2.1.6",
 	Name = "Accessory Companions"
 };
 
@@ -19,9 +19,10 @@
 {
 	::AC.Mod <- ::MSU.Class.Mod(::AC.ID, ::AC.Version, ::AC.Name);
 
-	// Match original LateJS behaviour (mods_registerJS -> registerLateJS).
+	// CSS only for tall companion tooltips. Do NOT register LateJS that patches
+	// TooltipModule.setupUITooltip — that fights MSU Nested Tooltips / Reforged
+	// and can blank tooltips on non-companion items.
 	::Hooks.registerCSS("ui/mods/companions_tooltip.css");
-	::Hooks.registerLateJS("ui/mods/companions_tooltip.js");
 
 	foreach (file in ::IO.enumerateFiles("mod_AC/hooks"))
 	{
