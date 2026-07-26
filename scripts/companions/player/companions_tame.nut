@@ -165,6 +165,16 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		return false;
 	}
 
+	// A nachzerer that has swallowed someone must not be tamable. Taming ends the
+	// beast without going through onDeath -> onAfterDeath, which is the only place
+	// a swallowed actor is put back on the map, so the victim would be stranded
+	// off-map and flagged Devoured forever. Kill it the normal way to get them back.
+	function hasSwallowedSomeone(_target)
+	{
+		local swallow = _target.getSkills().getSkillByID("actives.swallow_whole");
+		return swallow != null && swallow.getSwallowedEntity() != null;
+	}
+
 	function onVerifyTarget(_originTile, _targetTile)
 	{
 		if (_targetTile.IsEmpty)
@@ -187,6 +197,10 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 			return false;
 		}
 		if (this.isKindOf(target, "lindwurm_tail"))
+		{
+			return false;
+		}
+		if (this.hasSwallowedSomeone(target))
 		{
 			return false;
 		}
@@ -218,6 +232,15 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		local tameBeastmaster = this.Const.Companions.TameChance.Beastmaster;
 		local actor = this.getContainer().getActor();
 		local target = _targetTile.getEntity();
+
+		// Belt and braces: onVerifyTarget already rejects these, but the outcome
+		// here is unrecoverable, so never let the success branch run on a target
+		// that is holding one of ours.
+		if (target == null || this.hasSwallowedSomeone(target))
+		{
+			return false;
+		}
+
 		local chance = actor.getSkills().hasSkill("background.companions_beastmaster") ? (1.0 - target.getHitpointsPct()) * tameBeastmaster : (1.0 - target.getHitpointsPct()) * tameDefault;
 
 		if (target.getCurrentProperties().IsRooted)
