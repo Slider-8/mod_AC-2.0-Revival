@@ -2,28 +2,9 @@
 // rawHookTree applies once per descendant; skip non-pet accessories via setEntity.
 // Already-applied marker guards against double serialisation wraps (PHASE2 constraint 3).
 //
-// Armoured dog classes define setEntity/create but inherit onSerialize from the
-// parent prototype. Reading p.onSerialize on the child table throws
-// "the index 'onSerialize' does not exist" — climb SuperName like legacy hooks.
-
-local ac_findInProto = function( _proto, _name )
-{
-	local cur = _proto;
-	local guard = 0;
-	while (cur != null && guard < 32)
-	{
-		++guard;
-		if (_name in cur)
-			return cur[_name];
-		if (!("SuperName" in cur))
-			break;
-		local parent = cur[cur.SuperName];
-		if (parent == null || parent == cur)
-			break;
-		cur = parent;
-	}
-	return null;
-};
+// Squirrel: use <- to install methods that may not exist on the *child* table.
+// Armoured dogs define setEntity/create but inherit onSerialize from the parent;
+// p.onSerialize = ... throws "the index 'onSerialize' does not exist".
 
 ::AC.HooksMod.rawHookTree("scripts/items/accessory/accessory", function(p)
 {
@@ -59,12 +40,15 @@ local ac_findInProto = function( _proto, _name )
 								MeleeDefense = 0,
 								RangedDefense = 0	};
 
-			// D6: wrap subclass create instead of jumping to accessory.create.
-			local _ac_create = ac_findInProto(p, "create");
-			p.create = function()
+			// D6: call the class's existing create (all seven pets define it), then setType.
+			// Capture only when the slot exists on this table (it does for all pet accessories).
+			local _ac_create = ("create" in p) ? p.create : null;
+			p.create <- function()
 			{
 				if (_ac_create != null)
 					_ac_create();
+				else
+					this.accessory.create();
 
 				// Most specific armoured classes first (they also isKindOf the base).
 				if (this.isKindOf(this, "heavily_armored_wardog_item"))
@@ -945,35 +929,18 @@ local ac_findInProto = function( _proto, _name )
 				this.m.Name = slicedName;
 			}
 
-			// D1: wrap parent serialisation; keep one-string stream shape.
-			// Resolve via SuperName: armoured variants inherit ser/deser from wardog/warhound.
-			local _ac_onSerialize = ac_findInProto(p, "onSerialize");
-			local _ac_onDeserialize = ac_findInProto(p, "onDeserialize");
-
-			p.onSerialize = function( _out )
+			// D1: one-string stream (same shape as vanilla dog items).
+			// Must use <- : armoured classes have no own onSerialize slot.
+			p.onSerialize <- function( _out )
 			{
-				local oldName = this.m.Name;
-				this.m.Name = this.serializeCompanionName();
-				if (_ac_onSerialize != null)
-					_ac_onSerialize(_out);
-				else
-				{
-					this.accessory.onSerialize(_out);
-					_out.writeString(this.m.Name);
-				}
-				this.m.Name = oldName;
+				this.accessory.onSerialize(_out);
+				_out.writeString(this.serializeCompanionName());
 			}
 
-			p.onDeserialize = function( _in )
+			p.onDeserialize <- function( _in )
 			{
-				if (_ac_onDeserialize != null)
-					_ac_onDeserialize(_in);
-				else
-				{
-					this.accessory.onDeserialize(_in);
-					this.m.Name = _in.readString();
-				}
-				this.deserializeCompanionName(this.m.Name);
+				this.accessory.onDeserialize(_in);
+				this.deserializeCompanionName(_in.readString());
 				this.updateCompanion();
 			}
 		}
