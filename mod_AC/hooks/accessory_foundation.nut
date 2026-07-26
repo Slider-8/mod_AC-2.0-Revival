@@ -1,6 +1,29 @@
 // Companion foundation on wardog/warhound/wolf accessories.
 // rawHookTree applies once per descendant; skip non-pet accessories via setEntity.
 // Already-applied marker guards against double serialisation wraps (PHASE2 constraint 3).
+//
+// Armoured dog classes define setEntity/create but inherit onSerialize from the
+// parent prototype. Reading p.onSerialize on the child table throws
+// "the index 'onSerialize' does not exist" — climb SuperName like legacy hooks.
+
+local ac_findInProto = function( _proto, _name )
+{
+	local cur = _proto;
+	local guard = 0;
+	while (cur != null && guard < 32)
+	{
+		++guard;
+		if (_name in cur)
+			return cur[_name];
+		if (!("SuperName" in cur))
+			break;
+		local parent = cur[cur.SuperName];
+		if (parent == null || parent == cur)
+			break;
+		cur = parent;
+	}
+	return null;
+};
 
 ::AC.HooksMod.rawHookTree("scripts/items/accessory/accessory", function(p)
 {
@@ -37,10 +60,11 @@
 								RangedDefense = 0	};
 
 			// D6: wrap subclass create instead of jumping to accessory.create.
-			local _ac_create = p.create;
+			local _ac_create = ac_findInProto(p, "create");
 			p.create = function()
 			{
-				_ac_create();
+				if (_ac_create != null)
+					_ac_create();
 
 				// Most specific armoured classes first (they also isKindOf the base).
 				if (this.isKindOf(this, "heavily_armored_wardog_item"))
@@ -922,19 +946,33 @@
 			}
 
 			// D1: wrap parent serialisation; keep one-string stream shape.
-			local _ac_onSerialize = p.onSerialize;
+			// Resolve via SuperName: armoured variants inherit ser/deser from wardog/warhound.
+			local _ac_onSerialize = ac_findInProto(p, "onSerialize");
+			local _ac_onDeserialize = ac_findInProto(p, "onDeserialize");
+
 			p.onSerialize = function( _out )
 			{
 				local oldName = this.m.Name;
 				this.m.Name = this.serializeCompanionName();
-				_ac_onSerialize(_out);
+				if (_ac_onSerialize != null)
+					_ac_onSerialize(_out);
+				else
+				{
+					this.accessory.onSerialize(_out);
+					_out.writeString(this.m.Name);
+				}
 				this.m.Name = oldName;
 			}
 
-			local _ac_onDeserialize = p.onDeserialize;
 			p.onDeserialize = function( _in )
 			{
-				_ac_onDeserialize(_in);
+				if (_ac_onDeserialize != null)
+					_ac_onDeserialize(_in);
+				else
+				{
+					this.accessory.onDeserialize(_in);
+					this.m.Name = _in.readString();
+				}
 				this.deserializeCompanionName(this.m.Name);
 				this.updateCompanion();
 			}
