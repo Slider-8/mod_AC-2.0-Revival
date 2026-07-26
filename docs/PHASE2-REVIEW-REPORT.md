@@ -29,7 +29,7 @@ Hard constraints treated as binding:
 | Frozen paths/IDs (`companions_unleash`, tame/raise/unleash/beastmaster) | Untouched script paths and skill/background IDs |
 | One-string save stream | Still one `writeString` of name+payload; wrap injects payload into `m.Name` then calls parent serialize |
 | Already-applied marker before wrap | `o.m.mod_AC_FoundationApplied` at start of foundation body |
-| `mod_modular_vanilla` replaces `setStartValuesEx` | Still hooked there; **risk remains** (see §6) |
+| `mod_modular_vanilla` replaces `setStartValuesEx` | **Resolved v2.1.1** — conversion on `houndmaster_background.onAdded` |
 
 Phase 1 (D1–D3 commits `1aada5d` / `f815b2c` / `caffee0`) was not re-litigated.
 
@@ -231,11 +231,8 @@ earlier 2.1 scaffolding smoke test exist.
    Functional intent matches handoff; style is hybrid. Double-apply protection is
    the marker, not Q idempotency.
 
-2. **`setStartValuesEx` Beastmaster conversion**  
-   Handoff warned modular_vanilla **replaces** without `__original`. We still
-   hang conversion there. If wrap is discarded, Beastmaster conversion silently
-   never runs. **Alternative anchors not implemented** (e.g. background
-   onAdded / hire flow).
+2. **`setStartValuesEx` Beastmaster conversion** — **resolved in v2.1.1**  
+   Conversion is on `houndmaster_background.onAdded` only.
 
 3. **Frenzied direwolf detection**  
    Uses presence of both overwhelm + relentless perks, not class name. Could

@@ -9,6 +9,13 @@ sources in `.refs/`, not accepted from the report.
 
 **Verdict: accept, with one item to resolve before release.**
 
+### Follow-up (implementing session, same day)
+
+**Release item resolved in v2.1.1:** Beastmaster conversion moved from
+`player.setStartValuesEx` to `houndmaster_background.onAdded` (see
+`mod_AC/hooks/houndmaster_background.nut`). Player hook only retains XP share.
+Also: `updateRoster` now restores `m.DraftList` in a `try`/`catch` before rethrow.
+
 Static check reproduced: **57 files, 0 errors, 15 warnings** — matches the report.
 The report says the work was uncommitted; it has since been committed as `078462d`,
 and the working tree is clean.

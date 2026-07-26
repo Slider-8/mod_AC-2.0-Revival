@@ -1,7 +1,8 @@
 # Defect register — Accessory Companions
 
 Baseline: the mod exactly as published (v1.26, commit `c66303f`).
-Current packaged version: **v2.1.0** (Phase 1 + full Phase 2 port).
+Current packaged version: **v2.1.1** (Phase 1 + full Phase 2 port; Beastmaster
+on `onAdded` so modular_vanilla cannot discard it).
 Target: Battle Brothers **1.5.2.3**, modern Hooks + MSU, coexisting with Reforged 0.9.1.
 
 Status values: `FIXED`, `CONFIRMED` (still open), `UNCONFIRMED`, `UNVERIFIED`, `WITHDRAWN`.

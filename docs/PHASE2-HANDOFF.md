@@ -70,10 +70,9 @@ not touch them, because patching them in place then porting would be double work
    serialisation and desyncs the stream. This is the single most likely way to
    corrupt saves during this port.
 
-4. **`mod_modular_vanilla` 0.7.2 is installed and *replaces*
-   `entity/tactical/player.setStartValuesEx`** without calling `__original`. A
-   replacement discards wrappers registered beneath it. The Beastmaster
-   conversion currently rides on that function — it needs a different anchor.
+4. **`mod_modular_vanilla` *replaces* `entity/tactical/player.setStartValuesEx`**
+   without calling `__original`. **Resolved in v2.1.1:** Beastmaster conversion
+   is on `houndmaster_background.onAdded`, not on `setStartValuesEx`.
 
 ## The work, in suggested order
 

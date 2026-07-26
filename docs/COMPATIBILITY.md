@@ -74,5 +74,5 @@ Ordered by how much care they need.
 3. Detect Reforged at runtime and defer to it for accessory stamina and
    tooltip handling rather than fighting it.
 4. Because `mod_modular_vanilla` *replaces* `setStartValuesEx`, do not depend
-   on wrapping it. Drive the Beastmaster conversion from a hook that survives
-   a replacement upstream.
+   on wrapping it. Beastmaster conversion is on `houndmaster_background.onAdded`
+   (v2.1.1+), which both vanilla and modular_vanilla reach via `Skills.add`.

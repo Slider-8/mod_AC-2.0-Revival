@@ -44,6 +44,29 @@
 		this.m.Level = this.Math.rand(1, 3);
 	}
 
+	// Beastmaster conversion lives here, not on player.setStartValuesEx.
+	// mod_modular_vanilla *replaces* setStartValuesEx without calling __original,
+	// which would silently drop a player-side wrap. onAdded is uncontested and
+	// runs from Skills.add(background) inside every setStartValuesEx path
+	// (vanilla and modular_vanilla), before attributes/equipment are built.
+	q.onAdded = @(__original) function()
+	{
+		if (this.m.IsNew && this.m.ID == "background.houndmaster")
+		{
+			if (!(("State" in this.Tactical) && this.Tactical.State != null && this.Tactical.State.isScenarioMode()))
+			{
+				local town = null;
+				if (("State" in this.World) && this.World.State != null)
+					town = this.World.State.getCurrentTown();
+
+				if (town != null && ("AC_isBeastmasterTown" in town) && town.AC_isBeastmasterTown())
+					this.applyBeastmasterModification();
+			}
+		}
+
+		__original();
+	}
+
 	// D10: match tooltip entries by id, not fixed array indices.
 	q.getTooltip = @(__original) function()
 	{

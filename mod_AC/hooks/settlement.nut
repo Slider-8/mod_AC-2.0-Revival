@@ -80,7 +80,18 @@
 			this.m.DraftList.push("houndmaster_background");
 		}
 
-		__original(_force);
+		// Restore even if roster generation throws, so injected entries never
+		// persist into the save (review: D7 reintroduction risk).
+		try
+		{
+			__original(_force);
+		}
+		catch (error)
+		{
+			this.m.DraftList = backup;
+			throw error;
+		}
+
 		this.m.DraftList = backup;
 	}
 });

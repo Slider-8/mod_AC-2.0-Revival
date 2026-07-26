@@ -3,7 +3,8 @@
 Revival of [Accessory Companions](https://www.nexusmods.com/battlebrothers/mods/314)
 (original `mod_AC` v1.26 by Vazl, abandoned 2021) for **Battle Brothers 1.5.2.3**.
 
-**Current release: v2.1.0** — Phase 1 bug fixes + Phase 2 modern Hooks/MSU port.
+**Current release: v2.1.1** — Phase 1 bug fixes + Phase 2 modern Hooks/MSU port
+(Beastmaster conversion on `houndmaster_background.onAdded`).
 `c66303f` is the mod exactly as published. Every commit after it is a change,
 so `git diff c66303f` is the complete delta.
 
