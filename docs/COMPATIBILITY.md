@@ -76,9 +76,12 @@ Ordered by how much care they need.
 4. Because `mod_modular_vanilla` *replaces* `setStartValuesEx`, do not depend
    on wrapping it. Beastmaster conversion is on `houndmaster_background.onAdded`
    (v2.1.1+), which both vanilla and modular_vanilla reach via `Skills.add`.
-5. **Item tooltips (v2.1.7+):** Reforged's `item.getTooltip` walks crafting
-   blueprints and calls `b.getName()` → `PreviewCraftable.getName()`. Broken
-   blueprints (missing Time Crossing / custom items) throw and blank *all*
-   non-companion tooltips. AC installs `zz_item_tooltip_guard` after
-   `mod_reforged` to catch and fall back. Root fix is repair/remove bad
-   crafting mods; the guard is a safety net.
+5. **Item tooltips (v2.1.7+ / cache v2.1.9):** Reforged's `item.getTooltip`
+   walks crafting blueprints and calls `b.getName()` →
+   `PreviewCraftable.getName()`. Broken blueprints (missing Time Crossing /
+   sniper rifle / custom items) throw *after* vanilla already built full
+   stats. AC installs early `item_tooltip_cache` (stores pre-RF result) and
+   late `zz_item_tooltip_guard` (after `mod_reforged`): companions always use
+   `buildCompanionItemTooltip`; other items recover the cache on throw so
+   damage/armor/etc. remain visible (RF craft-hint lines may be missing).
+   Root fix is still repair/remove bad crafting mods.

@@ -3,8 +3,9 @@
 Revival of [Accessory Companions](https://www.nexusmods.com/battlebrothers/mods/314)
 (original `mod_AC` v1.26 by Vazl, abandoned 2021) for **Battle Brothers 1.5.2.3**.
 
-**Current release: v2.1.8** — Phase 1 + Phase 2. Companion tooltips always use
-the full AC builder (not discarded when Reforged blueprint.getName throws).
+**Current release: v2.1.9** — Phase 1 + Phase 2. Companion tooltips use the full
+AC builder; non-companion items recover the pre-Reforged tooltip cache when RF
+blueprint.getName throws (stats restored; bare name/worth only as last resort).
 `c66303f` is the mod exactly as published. Every commit after it is a change,
 so `git diff c66303f` is the complete delta.
 

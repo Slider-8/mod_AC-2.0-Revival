@@ -4,7 +4,7 @@
 
 ::AC <- {
 	ID = "mod_AC",
-	Version = "2.1.8",
+	Version = "2.1.9",
 	Name = "Accessory Companions"
 };
 
@@ -39,6 +39,8 @@
 
 // After Reforged (when present) so our getTooltip try/catch is outside RF's
 // crafting-blueprint walk that throws on broken PreviewCraftable.getName().
+// Pairs with early item_tooltip_cache (included above) which stores the full
+// pre-RF tooltip so we can restore stats instead of a bare name/worth panel.
 ::AC.HooksMod.queue([
 	">mod_msu",
 	">mod_reforged"

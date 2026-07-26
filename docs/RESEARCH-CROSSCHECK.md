@@ -147,7 +147,7 @@ Caveats:
 | `actor` hookTree `onDeath` vargv warnings | Low | Log noise; drop logic still runs |
 | Frenzied direwolf = overwhelm+relentless | Low | Heuristic; research has no better API note |
 | Southern cities excluded | By design | Matches 1.26 prose lists |
-| Non-AC item tooltips | Env | If still broken after 2.1.6, check Reforged crafting `getName` in log |
+| Non-AC item tooltips | Env | 2.1.9 caches pre-RF tooltip; broken craft mods still in log but stats restored |
 | Play verification incomplete | High for release | Long test checklist still open |
 | Research docs partly legacy | Meta | Prefer `temp/mod_modern_hooks` over frameworks.md for API |
 
@@ -170,8 +170,11 @@ markdown summaries > training memory.
 | 2.1.3–2.1.4 | armoured `onSerialize` / `<-` |
 | 2.1.5 | getTooltip harden; JS chain attempt |
 | 2.1.6 | **no** LateJS tooltip patch |
+| 2.1.7 | outer try/catch minimal fallback |
+| 2.1.8 | companions always `buildCompanionItemTooltip` |
+| 2.1.9 | pre-RF tooltip cache → recover full stats on RF throw |
 
-Package: `dist/mod_AC_2.1.6.zip` via `tools/package.ps1`.
+Package: `dist/mod_AC_<SemVer>.zip` via `tools/package.ps1`.
 
 ---
 
@@ -183,7 +186,7 @@ Package: `dist/mod_AC_2.1.6.zip` via `tools/package.ps1`.
 | Did we apply Modern Hooks param / slot rules correctly *now*? | **Yes** (after runtime fixes) |
 | Did we ignore research early and pay for it? | **Yes** — document as lesson |
 | Release-ready without long playtest? | **No** — architecture OK; playproof incomplete |
-| Next code priority if tooltips still odd? | Confirm 2.1.6 deployed; then non-AC log errors (Reforged blueprint `getName`) |
+| Next code priority if tooltips still odd? | Confirm 2.1.9 deployed; optional: disable broken craft mods for RF craft-hint lines |
 
 **Overall:** Phase 2 design is consistent with BB research **modern** patterns
 and with the handoff review (post–2.1.1). Remaining work is **play verification**

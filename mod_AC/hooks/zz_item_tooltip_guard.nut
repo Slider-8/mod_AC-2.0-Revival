@@ -1,13 +1,12 @@
 // Outer safety net for item tooltips (registered after mod_reforged).
 //
 // Reforged wraps item.getTooltip and walks crafting blueprints with b.getName().
-// Broken PreviewCraftable → throw → no tooltip. Companion getTooltip often runs
-// first and builds a full panel, then RF throws and discards it — outer catch
-// used to return a minimal fallback (title/desc/worth only). That matched the
-// "King" dog screenshot: name + description + worth, no level/attrs/quirks.
+// Broken PreviewCraftable → throw after __original() already built full stats.
+// item_tooltip_cache (early queue) stores that result on this.__AC_TooltipCache.
 //
-// Fix: companions (m.Type set) always use ::AC.buildCompanionItemTooltip and
-// never rely on RF's blueprint walk. Other items try/catch with a richer fallback.
+// Companions (m.Type set): always ::AC.buildCompanionItemTooltip (skip RF walk).
+// Other items: try RF path; on throw return cached full tooltip (stats intact),
+// losing only RF craft-hint extras. Minimal name/desc/worth is last resort.
 
 ::AC.HooksMod.hookTree("scripts/items/item", function(q)
 {
@@ -26,8 +25,19 @@
 		}
 		catch (error)
 		{
-			::logError("mod_AC: item getTooltip failed (" + error + "); using fallback. Often Reforged crafting blueprints with broken PreviewCraftable/getName.");
+			if (!("_TooltipFallbackLogged" in ::AC) || !::AC._TooltipFallbackLogged)
+			{
+				::AC._TooltipFallbackLogged <- true;
+				::logError("mod_AC: item getTooltip failed (" + error + "); recovering cached tooltip if present. Often Reforged crafting blueprints with broken PreviewCraftable/getName. (logged once per session)");
+			}
 
+			// Prefer the full panel cached under RF (see item_tooltip_cache.nut).
+			if ("__AC_TooltipCache" in this && this.__AC_TooltipCache != null)
+			{
+				return this.__AC_TooltipCache;
+			}
+
+			// Last resort: title / description / worth only.
 			local ret = [];
 			try
 			{
