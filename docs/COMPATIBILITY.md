@@ -9,7 +9,7 @@ installed in `C:/Games/Steam/steamapps/common/Battle Brothers/data`.
 
 | Identifier | Kind | Who depends on it |
 |---|---|---|
-| `mod_AC` | mod ID | `mod_druid` 0.5.1 — `::Hooks.hasMod("mod_AC")`, `scripts/!mods_preload/mod_druid.nut:190` |
+| `mod_AC` | mod ID | `mod_druid` 0.5.1 — `::Hooks.hasMod("mod_AC")`, `scripts/!mods_preload/mod_druid.nut:190` — **currently disabled, see below** |
 | `scripts/companions/onequip/companions_unleash` | script path | `mod_druid` 0.5.1, same line — pushed into its `unleashSkills` list |
 | `actives.companions_tame` | skill ID | `mod_autopilot_new` 2.7.0 — `autopilot/hooks/player.nut:107`, `scripts/ai/autopilot_tame.nut:7` |
 | `actives.raise_companion` | skill ID | `mod_autopilot_new` 2.7.0 — `autopilot/better_raise_undead.nut:14`, `autopilot/hooks/player.nut:115` |
@@ -18,6 +18,33 @@ installed in `C:/Games/Steam/steamapps/common/Battle Brothers/data`.
 
 Internal refactoring is fine as long as these keep resolving to something with
 the same meaning.
+
+### Open: `mod_druid` errors at launch (disabled 2026-07-26)
+
+Igor disabled `mod_druid` 0.5.1 because Battle Brothers reported an error at
+launch. It is not a required mod, and fixing it is deferred.
+
+**Untested hypothesis, worth checking first.** Druid's mod_AC integration is
+gated: `mod_druid.nut:190` only pushes
+`scripts/companions/onequip/companions_unleash` into its `unleashSkills` list
+when `::Hooks.hasMod("mod_AC")` is true, and then `mod.hook`s each entry. That
+condition became true for the first time when mod_AC was enabled, so enabling
+mod_AC may have activated a previously dormant code path. The timing fits, but
+nothing is proven — druid may simply be stale against the current stack.
+
+Note it is a **modern** `mod.hook` aimed at a script owned by a **legacy**
+(`::mods_registerMod`) mod. Druid's author clearly knew about mod_AC — the
+comment there explicitly handles mod_AC exposing `getEntity()` where vanilla
+uses `m.Entity` — so the integration was written deliberately.
+
+To capture the actual error: re-enable `mod_druid`, launch, quit, then read
+`C:\Users\igorl\Documents\Battle Brothers\log.html`. BB overwrites that file on
+every launch, so the error from the failing run is already gone.
+
+**This does not relax the frozen-identifier rule.** `mod_autopilot_new` is still
+enabled and still pins four IDs, and druid will pin the mod ID and script path
+again the moment it is re-enabled — including for anyone else running the
+revived mod.
 
 ## Mods that fight for the same vanilla functions
 

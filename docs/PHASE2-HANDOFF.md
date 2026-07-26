@@ -40,7 +40,9 @@ not touch them, because patching them in place then porting would be double work
 ## Hard constraints — violating these breaks things silently
 
 1. **Frozen public API.** `mod_druid` and `mod_autopilot_new` reach into this mod
-   by name. The mod ID `mod_AC`, the script path
+   by name. (`mod_druid` is disabled right now — it errored at launch, see the
+   open item in `docs/COMPATIBILITY.md` — but `mod_autopilot_new` is still
+   enabled, and druid re-pins these the moment anyone enables it.) The mod ID `mod_AC`, the script path
    `scripts/companions/onequip/companions_unleash`, and the IDs
    `actives.companions_tame`, `actives.raise_companion`,
    `actives.unleash_companion`, `background.companions_beastmaster` **must keep

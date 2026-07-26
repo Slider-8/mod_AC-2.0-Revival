@@ -13,8 +13,15 @@ so `git diff c66303f` is the complete delta.
 **Phase 2 (port to modern Hooks + MSU) — not started.**
 Picking it up? Start at **[docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md)**.
 
-In-game verification so far confirms the mod loads and plays. The three
-individual defect repros in *Verification* below have not each been exercised.
+In-game verification so far: the mod loads and plays, and the game log for that
+run contains **no `mod_AC` script errors** — only pre-existing errors from other
+mods (`TimeCrossingGunsmith_GetText`, `Statistics`, an Item Tables `create`
+failure on a Time-Crossing item). The three individual defect repros in
+*Verification* below have not each been exercised.
+
+`mod_druid` is currently **disabled** — it errored at launch and is not required.
+See the open item in [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md); it does not
+relax the frozen-identifier rule.
 
 | Fix | Defect | Commit |
 |---|---|---|
