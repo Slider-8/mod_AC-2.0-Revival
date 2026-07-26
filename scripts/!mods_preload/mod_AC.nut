@@ -4,7 +4,7 @@
 
 ::AC <- {
 	ID = "mod_AC",
-	Version = "2.1.7",
+	Version = "2.1.8",
 	Name = "Accessory Companions"
 };
 
@@ -23,6 +23,9 @@
 	// TooltipModule.setupUITooltip — that fights MSU Nested Tooltips / Reforged
 	// and can blank tooltips on non-companion items.
 	::Hooks.registerCSS("ui/mods/companions_tooltip.css");
+
+	// Shared full companion tooltip builder (used by foundation + outer guard).
+	::include("mod_AC/companion_tooltip");
 
 	foreach (file in ::IO.enumerateFiles("mod_AC/hooks"))
 	{
