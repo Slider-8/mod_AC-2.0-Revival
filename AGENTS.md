@@ -28,6 +28,10 @@ Revive and modernise [Accessory Companions](https://www.nexusmods.com/battlebrot
 - In-game verification is the only proof a fix works; static check is necessary but not sufficient.
 - Baseline log noise from other mods is expected; only new `mod_AC` lines are regressions.
 
+## User Preferences
+
+- **Always commit** completed work in this repo without waiting to be asked. After a coherent change (fix, feature, docs, package script): stage relevant files, write a clear commit message, commit. Still do not force-push, amend published history, or push unless asked.
+
 ## Verification
 
 ```bash
