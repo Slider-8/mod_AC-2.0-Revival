@@ -239,7 +239,7 @@ gt.Const.Companions.Library <- [
 		NameUnleashed = "Wolf Collar",
 		Description = "A strong and wild wolf, tamed to be a loyal companion in battle. Can be unleashed in battle for scouting, tracking or running down routing enemies.",
 		DescriptionUnleashed = "The collar of a wolf that has been unleashed onto the battlefield.",
-		IconLeashed = function(variant) { if (variant == 1)	{ return "tools/wolf_02_70x70.png"; } else { return "tools/wolf_01_70x70.png"; } },
+		IconLeashed = function(variant) { if (variant == 1)	{ return "tools/wolf_01_70x70.png"; } else { return "tools/wolf_02_70x70.png"; } },
 		IconUnleashed = "tools/hound_01_leash_70x70.png",
 		Value = 800,
 		PartyStrength = 13,
@@ -653,3 +653,81 @@ gt.Const.Companions.Library <- [
 					Overlay = ""	}
 	}
 ];
+
+// D9: Library is indexed by TypeList value. Assert positional agreement at load.
+foreach (i, entry in gt.Const.Companions.Library)
+{
+	if (entry.Type != i)
+	{
+		throw "mod_AC: Companions.Library[" + i + "].Type is " + entry.Type + " (expected " + i + ")";
+	}
+}
+
+// D5/D9: tame by Const.EntityType (+ frenzied class), not display names.
+gt.Const.Companions.resolveTameType <- function( _entity )
+{
+	if (_entity == null || !_entity.isAlive())
+		return null;
+
+	local et = _entity.getType();
+	local ETC = this.Const.EntityType;
+	local TL = this.Const.Companions.TypeList;
+
+	if (et == ETC.Direwolf)
+	{
+		// direwolf_high gets both perks in onInit; base direwolf does not.
+		local skills = _entity.getSkills();
+		if (skills != null && skills.hasSkill("perk.overwhelm") && skills.hasSkill("perk.relentless"))
+			return TL.DirewolfFrenzied;
+		return TL.Direwolf;
+	}
+
+	if (et == ETC.Hyena)
+	{
+		if (("IsHigh" in _entity.m) && _entity.m.IsHigh)
+			return TL.HyenaFrenzied;
+		return TL.Hyena;
+	}
+
+	if (et == ETC.Wardog)
+		return TL.Wardog;
+
+	if (et == ETC.Warhound)
+		return TL.Warhound;
+
+	if (et == ETC.Wolf)
+	{
+		if (::Hooks.hasMod("mod_reforged"))
+			return null;
+		return TL.Warwolf;
+	}
+
+	if (et == ETC.Spider)
+		return TL.Spider;
+
+	if (et == ETC.Serpent)
+		return TL.Snake;
+
+	if (et == ETC.Ghoul)
+		return TL.Nacho;
+
+	if (et == ETC.Alp)
+		return TL.Alp;
+
+	if (et == ETC.Schrat)
+		return TL.Schrat;
+
+	if (et == ETC.Lindwurm)
+	{
+		// Tail is rejected by the tame skill via isKindOf; body maps to Noodle.
+		return TL.Noodle;
+	}
+
+	if (et == ETC.Unhold || et == ETC.UnholdFrost || et == ETC.UnholdBog)
+		return TL.Unhold;
+
+	if (et == ETC.BarbarianUnhold || et == ETC.BarbarianUnholdFrost)
+		return TL.UnholdArmor;
+
+	return null;
+};

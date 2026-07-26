@@ -612,10 +612,12 @@ this.companions_noodle_tail <- this.inherit("scripts/entity/tactical/actor", {
 		this.m.Hitpoints = propertiesBase.Hitpoints;
 
 
-		foreach(quirk in this.m.Item.m.Quirks)
+		// D17: vanilla file is perk_adrenalin.nut (ID perk.adrenaline). Skip it on the tail.
+		foreach (quirk in this.m.Item.m.Quirks)
 		{
-			if (quirk != "scripts/skills/perks/perk_adrenalin")
-				this.m.Skills.add(this.new(quirk));
+			if (quirk == "scripts/skills/perks/perk_adrenalin")
+				continue;
+			this.m.Skills.add(this.new(quirk));
 		}
 		this.m.AIAgent.addQuirkBehaviors();
 	}

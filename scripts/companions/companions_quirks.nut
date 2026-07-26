@@ -230,3 +230,15 @@ gt.Const.Companions.DeserializeQuirks <- [
 	"scripts/companions/quirks/companions_soften_blows",
 	"scripts/companions/quirks/companions_regenerative"
 ];
+
+// D9: save format is index-based; keep arrays aligned and index by skill ID.
+if (gt.Const.Companions.SerializeQuirks.len() != gt.Const.Companions.DeserializeQuirks.len())
+{
+	throw "mod_AC: SerializeQuirks/DeserializeQuirks length mismatch (" + gt.Const.Companions.SerializeQuirks.len() + " vs " + gt.Const.Companions.DeserializeQuirks.len() + ")";
+}
+
+gt.Const.Companions.SerializeQuirksByID <- {};
+foreach (i, id in gt.Const.Companions.SerializeQuirks)
+{
+	gt.Const.Companions.SerializeQuirksByID[id] <- i;
+}

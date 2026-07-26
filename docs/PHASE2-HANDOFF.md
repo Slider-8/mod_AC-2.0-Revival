@@ -13,7 +13,14 @@ that did Phase 1 is gone. Read this file, then `docs/DEFECTS.md`, then
 ## Where things stand
 
 Phase 1 fixed three defects on the mod's original legacy structure and
-**was confirmed working in-game by Igor on 2026-07-26**. Do not re-litigate it.
+**was confirmed working in-game by Igor on 2026-07-26**. Packaged as **v2.0.0**
+(SemVer via modern Hooks). Do not re-litigate it.
+
+**Phase 2 complete (v2.1.0).** Registration, hook conversion (D4), D5–D7, D6,
+D9, Reforged wolf yield, and D10–D15/D17 are in tree. See `docs/DEFECTS.md`.
+
+**Review for the handoff author:** `docs/PHASE2-REVIEW-REPORT.md` — what was
+done, deviations, unverified claims, residual risks.
 
 | Commit | What |
 |---|---|
@@ -72,37 +79,22 @@ not touch them, because patching them in place then porting would be double work
 
 Keep phases to **5 files or fewer**, run the checker, and commit each separately.
 
-1. **Registration + scaffolding.** Replace `::mods_registerMod` / `::mods_queue`
+1. **Registration + scaffolding.** ~~Replace `::mods_registerMod` / `::mods_queue`
    with `::Hooks.register` + `require(["mod_msu >= 1.7.0"])`, and an
-   `::MSU.Class.Mod`. Split the 1812-line `mod_AC.nut` into per-target hook files.
-   Keep the mod ID string exactly `mod_AC`.
-2. **Convert hooks, fixing D4 as you go.** Every
-   `mods_hookBaseClass` + `while(!("fn" in o)) o = o[o.SuperName];` becomes
-   `hookTree`, which registers once and applies per descendant without
-   re-wrapping the shared parent. This is the fix for the map-wide tile scan
-   running dozens of times per actor death.
-3. **Replace prose matching (D5).** Two sites:
-   - settlements keyed on 22 hardcoded English descriptions
-     (`mod_AC.nut:453-507`, `:646`) → key on settlement script class / `m.Size` /
-     culture instead. The intent of the original lists, decoded: *all* size-3
-     settlements are "Beastmaster large"; medium forest/mountain/swamp
-     forts and villages are "Beastmaster medium"; small lumber/swamp villages are
-     "Houndmaster small".
-   - `TameList.find(target.getName())` (`companions_tame.nut:201`,
-     `companions_library.nut`) → key on `Const.EntityType`. **This is the fix for
-     the single most-reported community complaint** ("taming does nothing with a
-     translation mod installed", 4+ users).
-4. **Stop mutating `m.DraftList` (D7).** Vanilla clones the draft list before
-   letting contributors add to it (`settlement.nut:1416`), specifically so the
-   additions do not persist. Contribute the same way; never write the persistent field.
-5. **Reforged integration.** Wrap instead of replace on
-   `items/accessory/accessory`, `wardog_item`, `warhound_item`. Detect via
-   `::Hooks.hasMod("mod_reforged")` and yield `wolf_item` per decision 3.
-6. **Keyed tables (D9).** `TameList` / `TypeList` / `Library` are three
-   positionally-coupled arrays with nothing enforcing alignment; so are
-   `SerializeQuirks` / `DeserializeQuirks` (63 entries each, and those two *are*
-   the save format). Convert to keyed structures, and assert agreement at load.
-7. **Remaining Medium/Low** — D10-D17 in `docs/DEFECTS.md`.
+   `::MSU.Class.Mod`. Split into per-target hook files.~~ **DONE** — entry is
+   `scripts/!mods_preload/mod_AC.nut`; hooks live in `mod_AC/hooks/`.
+2. **Convert hooks, fixing D4 as you go.** ~~Every
+   `mods_hookBaseClass` + SuperName climb becomes `hookTree`.~~ **DONE** —
+   see `mod_AC/hooks/*.nut`. Foundation uses `rawHookTree` + already-applied
+   marker on `mod_AC_FoundationApplied`.
+3. **Replace prose matching (D5).** ~~DONE~~ — settlements use Size/class;
+   taming uses `resolveTameType` / EntityType.
+4. **Stop mutating `m.DraftList` (D7).** ~~DONE~~ — temp inject + restore around
+   `updateRoster`.
+5. **Reforged integration.** ~~DONE~~ — wrap create/serialize; yield `wolf_item`
+   when `mod_reforged` is present.
+6. **Keyed tables (D9).** ~~DONE~~ — library Type asserts; `SerializeQuirksByID`.
+7. **Remaining Medium/Low** — ~~DONE~~ for D10–D15, D17; D16 partial.
 
 ## Reference material in this repo
 
@@ -126,8 +118,9 @@ bash tools/setup_refs.sh          # clones vanilla + unzips MSU/Reforged/hooks i
 python tools/check_mod.py --refs .refs
 ```
 
-Expected right now: **45 files, 0 errors, 18 warnings**. The warnings are
+Expected after Phase 2.1: **57 files, 0 errors, 18 warnings**. The warnings are
 catalogued as D7/D16 — do not treat them as new. Keep errors at zero.
+Run as `python tools/check_mod.py --refs .refs` from the repo root.
 
 Two things about the vanilla reference:
 - It is a **Chinese-localised** decompile. Structure and identifiers are

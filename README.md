@@ -1,102 +1,83 @@
 # Accessory Companions — revival
 
 Revival of [Accessory Companions](https://www.nexusmods.com/battlebrothers/mods/314)
-(`mod_AC` v1.26, by Vazl, abandoned 2021) for **Battle Brothers 1.5.2.3**.
+(original `mod_AC` v1.26 by Vazl, abandoned 2021) for **Battle Brothers 1.5.2.3**.
 
+**Current release: v2.1.0** — Phase 1 bug fixes + Phase 2 modern Hooks/MSU port.
 `c66303f` is the mod exactly as published. Every commit after it is a change,
 so `git diff c66303f` is the complete delta.
 
 ## Status
 
-**Phase 1 (bug fixes on the original structure) — done, loads and runs in-game
-(verified 2026-07-26).**
-**Phase 2 (port to modern Hooks + MSU) — not started.**
-Picking it up? Start at **[docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md)**.
+**Phase 1** — done (D1–D3). In-game load verified 2026-07-26.
+**Phase 2** — done for planned work (registration, hook conversion, D4–D15/D17,
+Reforged wolf yield). Ready for full in-game regression.
 
-In-game verification so far: the mod loads and plays, and the game log for that
-run contains **no `mod_AC` script errors** — only pre-existing errors from other
-mods (`TimeCrossingGunsmith_GetText`, `Statistics`, an Item Tables `create`
-failure on a Time-Crossing item). The three individual defect repros in
-*Verification* below have not each been exercised.
+Start docs: **[docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md)**, defect table
+**[docs/DEFECTS.md](docs/DEFECTS.md)**, implementation review for the prior agent
+**[docs/PHASE2-REVIEW-REPORT.md](docs/PHASE2-REVIEW-REPORT.md)**.
 
-`mod_druid` is currently **disabled** — it errored at launch and is not required.
-See the open item in [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md); it does not
-relax the frozen-identifier rule.
+Requires **mod_msu ≥ 1.7.0** and **mod_modern_hooks ≥ 0.4.0**.
 
-| Fix | Defect | Commit |
-|---|---|---|
-| Alp nightmare crash | D2 — *Nexus bug 3* | `1aada5d` |
-| Nachzerer taming loses swallowed brother | D3 — *Nexus bug 2* | `f815b2c` |
-| Savegame payload parsing made total | D1 | `caffee0` |
+| Fix | Defect |
+|---|---|
+| Alp nightmare crash | D2 |
+| Nachzerer mid-swallow refuse | D3 |
+| Total save payload parse | D1 |
+| hookTree (no SuperName double-wrap) | D4 |
+| EntityType taming + class/size settlements | D5 |
+| Wrap create / serialize | D6 / D1 |
+| Non-persistent draft inject | D7 |
+| Keyed quirk lookup + library asserts | D9 |
+| Tooltip id match, pitch, corpse, icons, regen | D10–D15, D17 |
+| Yield `wolf_item` to Reforged | decision 3 |
 
-Still open: D4–D17 in [docs/DEFECTS.md](docs/DEFECTS.md), most of which are
-resolved by the Phase 2 port rather than by patching in place.
+`mod_druid` is currently **disabled** on this install — see
+[docs/COMPATIBILITY.md](docs/COMPATIBILITY.md). Frozen identifiers unchanged.
 
 ## Layout
 
 ```
-scripts/ gfx/ ui/        the mod itself — this is what ships
-docs/PHASE2-HANDOFF.md   start here to continue the work
-docs/DEFECTS.md          17 defects, root causes, and what is still unproven
-docs/COMPATIBILITY.md    identifiers other mods depend on; who fights us for hooks
-docs/reference/          modern Hooks/MSU porting guide, compat survey, Nexus scrape
-tools/check_mod.py       static checker, stands in for a compile step
-tools/setup_refs.sh      rebuilds the reference trees the checker needs
-dist/mod_AC.zip          packaged build, installable via Vortex
+scripts/ gfx/ ui/        companion scripts + assets
+mod_AC/hooks/            modern hook files
+scripts/!mods_preload/mod_AC.nut   Hooks + MSU registration
+docs/                    defects, compatibility, handoff, references
+tools/check_mod.py       static checker
+dist/mod_AC.zip          Vortex/data package
 ```
 
-Build the zip with:
+Build:
 
 ```bash
-powershell -ExecutionPolicy Bypass -Command "Compress-Archive -Path scripts,gfx,ui -DestinationPath dist/mod_AC.zip -Force"
+powershell -ExecutionPolicy Bypass -Command "Compress-Archive -Path scripts,gfx,ui,mod_AC -DestinationPath dist/mod_AC.zip -Force"
 ```
 
 ## Verification
 
-Squirrel has no test harness outside the game, so verification is two-layer.
-
-**Static** — must be clean before any commit:
-
 ```bash
-python tools/check_mod.py
+python tools/check_mod.py --refs .refs
+# expect: 0 errors
 ```
 
-Current: 45 files, **0 errors, 18 warnings**. The warnings are pre-existing
-`rand(0, len-1)` and `.find()` patterns catalogued as D16/D7.
+**In-game** (after deploying `dist/mod_AC.zip`):
 
-**In-game** — not yet done, and it is the part that actually matters:
+1. Log: `Documents\Battle Brothers\log.html` — no new `mod_AC` errors.
+2. Unleash / leash companion; save / reload levelled quirked pet.
+3. Tame a beast (works under translation mods).
+4. Visit a large town — houndmaster/beastmaster drafts appear without growing forever.
+5. With Reforged: vanilla/Reforged wolf item not claimed as AC warwolf.
 
-1. Deploy `dist/mod_AC.zip` via Vortex and start the game.
-2. Check `Documents\Battle Brothers\log.html` for `mod_AC` errors.
-   Note the baseline: that log already contains unrelated errors from other
-   mods (`the index 'Statistics' does not exist`, `TimeCrossingGunsmith_GetText`).
-   Only new `mod_AC` lines count as regressions.
-3. Targeted repros:
-   - **D2** — have a companion Alp cast Nightmare, then kill it within the
-     400 ms delay. Previously crashed.
-   - **D3** — let a tier-3 Nachzerer swallow a brother, then try to tame it.
-     It should now refuse; killing it normally should still return the brother.
-   - **D1** — save and reload with a levelled, quirked companion equipped.
-     Level, XP, wounds, attributes and quirks should all survive.
-   - **Unfixed, needs a repro:** enter a southern city (`city_state`) and check
-     whether the recruit pool is empty. This is Nexus bug 1 and its cause is
-     still unknown — see the note in DEFECTS.md.
+Baseline log noise from other mods (`TimeCrossingGunsmith_GetText`, `Statistics`,
+Legends helmet paths) is expected.
 
-## Constraints worth knowing before editing
+## Constraints
 
-- `mod_druid` and `mod_autopilot_new` reach into this mod **by name**. The mod
-  ID, one script path and four skill/background IDs are frozen public API —
-  see [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
-- The foundation is registered on overlapping class trees, so some classes are
-  visited twice. Every slot currently uses `<-`, which is idempotent. **Do not
-  convert serialisation to wrap-with-`__original` without first adding an
-  already-applied marker**, or the save stream will be double-written.
-- Companion state travels in a payload appended to the item's name string.
-  Phase 2 should keep the one-string stream shape; changing it breaks every
-  existing save.
+- Frozen public API: mod ID `mod_AC`, path `scripts/companions/onequip/companions_unleash`,
+  IDs `actives.companions_tame`, `actives.raise_companion`, `actives.unleash_companion`,
+  `background.companions_beastmaster`.
+- Save stream: one string on the item name; do not change shape without migration.
 
 ## Credits
 
-Original mod by **Vazl**. Vanilla reference from the community decompile at
-[ninkjin/Battle-Brothers-Scripts](https://github.com/ninkjin/Battle-Brothers-Scripts)
-(structurally accurate; string literals are Chinese-localised).
+Original mod by **Vazl**. Vanilla reference:
+[ninkjin/Battle-Brothers-Scripts](https://github.com/ninkjin/Battle-Brothers-Scripts).

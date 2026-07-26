@@ -88,9 +88,8 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		return chance;
 	}
 
-	function hasMaxTamed(check)
+	function hasMaxTamed(type)
 	{
-		local type = this.Const.Companions.Library[check].Type;
 		local matchNum = 0;
 		local size = this.Tactical.getMapSize();
 		for( local x = 0; x < size.X; x = ++x )
@@ -212,13 +211,14 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 			return false;
 		}
 
-		local tamable = this.Const.Companions.TameList.find(target.getName());
+		// D5: match Const.EntityType (and frenzied class), not localised getName().
+		local tameType = this.Const.Companions.resolveTameType(target);
 
-		if (tamable == null)
+		if (tameType == null)
 		{
 			return false;
 		}
-		if (tamable != null && hasMaxTamed(tamable))
+		if (this.hasMaxTamed(tameType))
 		{
 			return false;
 		}
@@ -252,9 +252,14 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		{
 			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(actor) + " successfully tamed " + this.Const.UI.getColorizedEntityName(target));
 			local loot = this.new("scripts/items/accessory/wardog_item");
-			loot.setType(this.Const.Companions.Library[this.Const.Companions.TameList.find(target.getName())].Type);
+			local tameType = this.Const.Companions.resolveTameType(target);
+			if (tameType == null)
+			{
+				return false;
+			}
+			loot.setType(tameType);
 
-			local ET = _targetTile.getEntity().m.Type;
+			local ET = target.getType();
 			local ETC = this.Const.EntityType;
 
 			if (ET == ETC.Unhold)

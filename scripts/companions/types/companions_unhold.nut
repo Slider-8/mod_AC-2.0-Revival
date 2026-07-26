@@ -48,7 +48,8 @@ this.companions_unhold <- this.inherit("scripts/entity/tactical/actor", {
 			"sounds/enemies/unhold_confused_03.wav",
 			"sounds/enemies/unhold_confused_04.wav"
 		];
-		this.m.SoundPitch = this.Math.rand(0.9, 1.1);
+		// D12: Math.rand truncates floats; match vanilla unhold pitch.
+		this.m.SoundPitch = this.Math.rand(9, 11) * 0.1;
 		this.m.SoundVolumeOverall = 1.25;
 		this.m.AIAgent = this.new("scripts/companions/types/companions_unhold_agent");
 		this.m.AIAgent.setActor(this);

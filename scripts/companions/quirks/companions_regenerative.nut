@@ -35,7 +35,16 @@ this.companions_regenerative <- this.inherit("scripts/skills/skill", {
 		local healthMissing = actor.getHitpointsMax() - actor.getHitpoints();
 		local healthAdded = this.Math.min(healthMissing, this.Math.floor(actor.getHitpointsMax() * 0.1));
 
-		if (this.isKindOf(actor, "companions_noodle") || this.isKindOf(actor, "companions_noodle_tail") || this.isKindOf(actor, "companions_unhold") || this.isKindOf(actor, "companions_schrat"))
+		// D15: key on companion Type, not hard-coded class-name strings.
+		local reduced = false;
+		if (("m" in actor) && ("Item" in actor.m) && actor.m.Item != null && ("getType" in actor.m.Item) && actor.m.Item.getType() != null)
+		{
+			local t = actor.m.Item.getType();
+			local TL = this.Const.Companions.TypeList;
+			if (t == TL.Noodle || t == TL.Unhold || t == TL.UnholdArmor || t == TL.Schrat)
+				reduced = true;
+		}
+		if (reduced)
 		{
 			healthAdded = this.Math.min(healthMissing, this.Math.floor(actor.getHitpointsMax() * 0.05));
 		}

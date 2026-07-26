@@ -97,6 +97,7 @@ this.companions_warwolf <- this.inherit("scripts/entity/tactical/actor", {
 				decal.Scale = 0.95;
 			}
 
+			// D13: arrow/javelin corpse decals must not ride else-if of an exhaustive head branch.
 			if (_fatalityType != this.Const.FatalityType.Decapitated)
 			{
 				decal = _tile.spawnDetail(this.getSprite("head").getBrush().Name + "_dead", this.Const.Tactical.DetailFlag.Corpse, flip);
@@ -112,7 +113,8 @@ this.companions_warwolf <- this.inherit("scripts/entity/tactical/actor", {
 				decap[0].setBrightness(0.9);
 				decap[0].Scale = 0.95;
 			}
-			else if (_skill && _skill.getProjectileType() == this.Const.ProjectileType.Arrow)
+
+			if (_skill && _skill.getProjectileType() == this.Const.ProjectileType.Arrow)
 			{
 				decal = _tile.spawnDetail(this.getSprite("body").getBrush().Name + "_dead_arrows", this.Const.Tactical.DetailFlag.Corpse, flip);
 				decal.Scale = 0.95;
