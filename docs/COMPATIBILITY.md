@@ -76,3 +76,9 @@ Ordered by how much care they need.
 4. Because `mod_modular_vanilla` *replaces* `setStartValuesEx`, do not depend
    on wrapping it. Beastmaster conversion is on `houndmaster_background.onAdded`
    (v2.1.1+), which both vanilla and modular_vanilla reach via `Skills.add`.
+5. **Item tooltips (v2.1.7+):** Reforged's `item.getTooltip` walks crafting
+   blueprints and calls `b.getName()` → `PreviewCraftable.getName()`. Broken
+   blueprints (missing Time Crossing / custom items) throw and blank *all*
+   non-companion tooltips. AC installs `zz_item_tooltip_guard` after
+   `mod_reforged` to catch and fall back. Root fix is repair/remove bad
+   crafting mods; the guard is a safety net.

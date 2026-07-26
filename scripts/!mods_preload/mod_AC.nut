@@ -4,7 +4,7 @@
 
 ::AC <- {
 	ID = "mod_AC",
-	Version = "2.1.6",
+	Version = "2.1.7",
 	Name = "Accessory Companions"
 };
 
@@ -26,6 +26,20 @@
 
 	foreach (file in ::IO.enumerateFiles("mod_AC/hooks"))
 	{
+		// Tooltip guard is registered in a later queue so it wraps Reforged.
+		if (file.find("zz_item_tooltip_guard") != null)
+			continue;
+
 		::include(file);
 	}
+});
+
+// After Reforged (when present) so our getTooltip try/catch is outside RF's
+// crafting-blueprint walk that throws on broken PreviewCraftable.getName().
+::AC.HooksMod.queue([
+	">mod_msu",
+	">mod_reforged"
+], function()
+{
+	::include("mod_AC/hooks/zz_item_tooltip_guard");
 });

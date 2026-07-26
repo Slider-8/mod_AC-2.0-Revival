@@ -3,8 +3,8 @@
 Revival of [Accessory Companions](https://www.nexusmods.com/battlebrothers/mods/314)
 (original `mod_AC` v1.26 by Vazl, abandoned 2021) for **Battle Brothers 1.5.2.3**.
 
-**Current release: v2.1.6** — Phase 1 + Phase 2 port. No LateJS tooltip patch
-(restores item tooltips under Nested Tooltips / Reforged).
+**Current release: v2.1.7** — Phase 1 + Phase 2. Item tooltip fallback if
+Reforged crafting blueprint.getName throws (broken PreviewCraftable).
 `c66303f` is the mod exactly as published. Every commit after it is a change,
 so `git diff c66303f` is the complete delta.
 
