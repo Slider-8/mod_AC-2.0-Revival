@@ -1,3 +1,0 @@
-Restore non-companion item tooltips when Reforged blueprints throw (v2.1.7).
-
-Log showed getTooltip dying in mod_reforged/hooks/items/item.nut calling blueprint.getName with broken PreviewCraftable. Companions still worked because AC replaces their getTooltip. Add hookTree try/catch guard registered after mod_reforged.
