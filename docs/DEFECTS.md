@@ -19,19 +19,36 @@ checked with the available reference).
 are encoded into `m.Name` behind a `"\nmod_AC="` marker; `onSerialize` writes
 only that string.
 
-- Marker stripped by any mod that renames accessories (**translation mods**) →
-  `deserializeCompanionName` falls through to `m.Name = _cn` and the companion
-  silently resets to its class default. Explains the single most-reported
-  community complaint (4+ users) and "pets revert to wardogs on load" (2+).
+- `onSerialize`/`onDeserialize` are installed with `<-` (**replace**, not wrap),
+  so the last mod to register wins. If any other mod also replaces accessory
+  serialisation, this mod's payload is never written or never read, and
+  `deserializeCompanionName` falls through to `m.Name = _cn`, silently resetting
+  the companion to its class default. This — not renaming — is the provable
+  mechanism behind "pets revert to base wardogs on load" (2+ users). A load-order
+  change between saving and loading is enough to trigger it.
 - `arrayBasics[1..3]` / `arrayAttributes[0..7]` are indexed with no length
-  check, and `find` results are used without null checks (`:1754`, `:1766`) →
-  throws **during savegame load**.
-- `onSerialize`/`onDeserialize` are installed with `<-` (replace), so the last
-  mod to register wins, and `this.accessory.onSerialize` skips intermediate
-  classes → stream desync.
+  check, and `find` results feed `slice(0, findAttributes - 1)` / `(findQuirks - 1)`
+  with no null check (`:1754`, `:1766`) → throws **during savegame load**.
+- The payload is only ever *written* by this mod. A save made without mod_AC (or
+  with another mod holding the `onSerialize` slot) contains vanilla's plain
+  `writeString(m.Name)`; loading it with mod_AC then finds no marker and resets
+  the companion to its class default. Toggling the mod, or a hook-order change,
+  is enough.
+- `SerializeQuirks.find(getQuirk.m.ID)` (`:1736`) returns **null** for any quirk
+  not in that table, writing `"(null)"` into the payload; on load
+  `arrayQuirks[i].tointeger()` then throws. Any mod adding companion quirks
+  triggers this.
 
-Fix: real serialised fields, wrapped not replaced, with a version byte, bounds
-checks and safe defaults. Read the legacy name payload once for migration.
+Note: this defect does **not** explain the translation-mod complaints. Those are
+D5 — `TameList.find(target.getName())`. The payload is appended from live fields
+at save time, so renaming the item cannot strip it.
+
+Fix (chosen): keep the single-string stream slot — changing the stream shape
+would break every existing save — but make the payload self-describing and the
+parser total: validate the marker, field counts and ranges, tolerate unknown
+quirks, and on any failure log loudly and keep sane defaults instead of throwing.
+Wrap `onSerialize`/`onDeserialize` via the original rather than replacing them,
+and chain through the immediate parent instead of jumping to `accessory`.
 
 ### D2 — Alp nightmare crash `CONFIRMED` — *Nexus bug 3*
 `companions_nightmare_skill.nut:42-48`. `getDamage()` reads
@@ -105,12 +122,28 @@ Also on those lines: `array.find()` returns an **index**, and `0` is falsy, so
 and when first, and `BeastmasterSettlementsLarge.find(desc)` is false for the
 first entry of each list.
 
-### D8 — Foundation applied to every accessory in the game `CONFIRMED`
-`mod_AC.nut:1809-1811` apply the foundation to `accessory` (all children) plus
-`wardog_item` and `warhound_item` — overlapping trees, so those two get it
-twice. Every accessory (potions, amulets…) gains companion fields, which is why
-the mod's duck-test `"setType" in acc` needs a second `getType() != null` guard
-at every one of its ~8 call sites.
+### D8 — ~~Foundation applied to every accessory~~ `WITHDRAWN — not a defect`
+Originally recorded as "every accessory in the game gains companion fields".
+That was wrong. The foundation body is gated on `if ("setEntity" in o)`
+(`mod_AC.nut:972`), and exactly seven vanilla classes define or inherit
+`setEntity`: `wardog_item`, `warhound_item`, `wolf_item` and the four
+armoured variants. Potions, trophies and amulets are untouched, and the
+`"setType" in acc` duck-test is a legitimate way to pick out those seven.
+
+What *is* real, and narrower: `mod_AC.nut:1889-1891` register the foundation on
+overlapping trees (`accessory`'s children **plus** `wardog_item` and
+`warhound_item` directly), so those classes are visited more than once. Today
+that is harmless only because every slot is installed with `<-`, which is
+idempotent. Any change to wrap-instead-of-replace **must** add an
+already-applied marker first, or serialisation will be double-wrapped and the
+stream will desync. Severity: MEDIUM, and a trap for the port rather than a
+live bug.
+
+Note on stream shape: vanilla `wardog_item`/`warhound_item`/`wolf_item` each
+write exactly one string (`m.Name`); the mod's replacement also writes exactly
+one string (name + payload). The two are stream-equivalent, so there is **no**
+desync from the replacement itself — an earlier claim in this document that it
+"skips intermediate classes → stream desync" was also incorrect.
 
 ### D9 — Positional coupling across three parallel tables `CONFIRMED`
 `companions_library.nut` — `TameList`, `TypeList` and `Library` (20 entries) are

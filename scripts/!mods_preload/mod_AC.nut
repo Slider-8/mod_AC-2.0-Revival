@@ -1730,14 +1730,46 @@
 				local nameCopy = this.m.Name;
 				local serializedName = nameCopy += "\nmod_AC=" + this.m.Type + "," + this.m.Level + "," + this.m.XP + "," + this.m.Wounds + ",A=" + this.m.Attributes.Hitpoints + "," + this.m.Attributes.Stamina + "," + this.m.Attributes.Bravery + "," + this.m.Attributes.Initiative + "," + this.m.Attributes.MeleeSkill + "," + this.m.Attributes.RangedSkill + "," + this.m.Attributes.MeleeDefense + "," + this.m.Attributes.RangedDefense + ",Q=";
 
-				foreach(i, quirk in this.m.Quirks)
+				// A quirk added by another mod has no slot in SerializeQuirks, and
+				// find() returns null there -- which used to concatenate "(null)"
+				// into the payload and blow up tointeger() on the next load.
+				local written = 0;
+				foreach(quirk in this.m.Quirks)
 				{
 					local getQuirk = this.new(quirk);
-					serializedName += this.Const.Companions.SerializeQuirks.find(getQuirk.m.ID);
-					if (i < this.m.Quirks.len() - 1) serializedName += ",";
+					local code = this.Const.Companions.SerializeQuirks.find(getQuirk.m.ID);
+
+					if (code == null)
+					{
+						this.logWarning("mod_AC: quirk \'" + getQuirk.m.ID + "\' is not in SerializeQuirks and cannot be saved; dropping it.");
+						continue;
+					}
+
+					if (written > 0) serializedName += ",";
+					serializedName += code;
+					written = written + 1;
 				}
 
 				return serializedName;
+			}
+
+			// tointeger() is not total in Squirrel -- an empty or non-numeric field
+			// throws, and this runs during savegame load. Returns null on anything
+			// that is not a plain integer so callers can decide what to do.
+			o.parseCompanionInt <- function(_s)
+			{
+				if (_s == null || _s.len() == 0)
+				{
+					return null;
+				}
+
+				foreach(i, c in _s)
+				{
+					if (i == 0 && c == '-' && _s.len() > 1) continue;
+					if (c < '0' || c > '9') return null;
+				}
+
+				return _s.tointeger();
 			}
 
 			o.deserializeCompanionName <- function(_cn)
@@ -1745,49 +1777,97 @@
 				local nameMod = "\nmod_AC=";
 				local findMod = _cn.find(nameMod);
 
-				if (findMod != null)
+				if (findMod == null)
 				{
-					local slicedName = _cn.slice(0, findMod);
-					local slicedDetails = _cn.slice(findMod + nameMod.len());
-					local nameAttributes = "A=";
-					local findAttributes = slicedDetails.find(nameAttributes);
-					local slicedBasics = slicedDetails.slice(0, findAttributes - 1);
-					local arrayBasics = split(slicedBasics, ",");
-					this.m.Type = arrayBasics[0].tointeger();
-					this.m.Level = arrayBasics[1].tointeger();
-					this.m.XP = arrayBasics[2].tointeger();
+					// No payload. Either this item predates the mod, or another mod
+					// won the onSerialize slot when the game was saved. Keep whatever
+					// the class defaults gave us rather than inventing state.
+					this.m.Name = _cn;
+					return;
+				}
 
-					if (arrayBasics.len() == 4)
-						this.m.Wounds = arrayBasics[3].tointeger();
+				// Everything below runs while a savegame is being loaded, so it must
+				// not throw: a single bad field would otherwise take down the whole
+				// load. Anything unparseable leaves the existing value in place.
+				local slicedName = _cn.slice(0, findMod);
+				local slicedDetails = _cn.slice(findMod + nameMod.len());
+				local nameAttributes = "A=";
+				local nameQuirks = "Q=";
+				local findAttributes = slicedDetails.find(nameAttributes);
+				local findQuirks = slicedDetails.find(nameQuirks);
 
-					slicedDetails = slicedDetails.slice(findAttributes + nameAttributes.len());
-					local nameQuirks = "Q=";
-					local findQuirks = slicedDetails.find(nameQuirks);
-					local slicedAttributes = slicedDetails.slice(0, findQuirks - 1);
-					local arrayAttributes = split(slicedAttributes, ",");
-					this.m.Attributes.Hitpoints = arrayAttributes[0].tointeger();
-					this.m.Attributes.Stamina = arrayAttributes[1].tointeger();
-					this.m.Attributes.Bravery = arrayAttributes[2].tointeger();
-					this.m.Attributes.Initiative = arrayAttributes[3].tointeger();
-					this.m.Attributes.MeleeSkill = arrayAttributes[4].tointeger();
-					this.m.Attributes.RangedSkill = arrayAttributes[5].tointeger();
-					this.m.Attributes.MeleeDefense = arrayAttributes[6].tointeger();
-					this.m.Attributes.RangedDefense = arrayAttributes[7].tointeger();
-			
-					slicedDetails = slicedDetails.slice(findQuirks + nameQuirks.len());
-					local arrayQuirks = split(slicedDetails, ",");
-					this.m.Quirks.resize(arrayQuirks.len());
-					foreach(i, quirk in this.m.Quirks)
+				if (findAttributes == null || findQuirks == null || findQuirks < findAttributes)
+				{
+					this.logWarning("mod_AC: companion payload on \'" + slicedName + "\' is malformed; keeping default stats.");
+					this.m.Name = slicedName;
+					return;
+				}
+
+				local arrayBasics = split(slicedDetails.slice(0, findAttributes - 1), ",");
+				local arrayAttributes = split(slicedDetails.slice(findAttributes + nameAttributes.len(), findQuirks - 1), ",");
+				local arrayQuirks = split(slicedDetails.slice(findQuirks + nameQuirks.len()), ",");
+
+				if (arrayBasics.len() < 3 || arrayAttributes.len() < 8)
+				{
+					this.logWarning("mod_AC: companion payload on \'" + slicedName + "\' is truncated (" + arrayBasics.len() + " basics, " + arrayAttributes.len() + " attributes); keeping default stats.");
+					this.m.Name = slicedName;
+					return;
+				}
+
+				local type = this.parseCompanionInt(arrayBasics[0]);
+
+				if (type == null || type < 0 || type >= this.Const.Companions.Library.len())
+				{
+					this.logWarning("mod_AC: companion type \'" + arrayBasics[0] + "\' on \'" + slicedName + "\' is not a valid type; keeping default type.");
+					this.m.Name = slicedName;
+					return;
+				}
+
+				this.m.Type = type;
+
+				local level = this.parseCompanionInt(arrayBasics[1]);
+				local xp = this.parseCompanionInt(arrayBasics[2]);
+
+				if (level != null) this.m.Level = level;
+				if (xp != null) this.m.XP = xp;
+
+				if (arrayBasics.len() >= 4)
+				{
+					local wounds = this.parseCompanionInt(arrayBasics[3]);
+					if (wounds != null) this.m.Wounds = wounds;
+				}
+
+				local attributeNames = ["Hitpoints", "Stamina", "Bravery", "Initiative", "MeleeSkill", "RangedSkill", "MeleeDefense", "RangedDefense"];
+				foreach(i, key in attributeNames)
+				{
+					local value = this.parseCompanionInt(arrayAttributes[i]);
+
+					if (value != null)
+						this.m.Attributes[key] = value;
+				}
+
+				// Quirk codes can be stale if another mod's quirks were saved, or if
+				// DeserializeQuirks changed between versions. Skip what we can't map.
+				this.m.Quirks = [];
+				foreach(code in arrayQuirks)
+				{
+					local index = this.parseCompanionInt(code);
+
+					if (index == null)
 					{
-						this.m.Quirks[i] = this.Const.Companions.DeserializeQuirks[arrayQuirks[i].tointeger()];
+						continue;    // empty trailing field when the companion has no quirks
 					}
 
-					this.m.Name = slicedName;
+					if (index < 0 || index >= this.Const.Companions.DeserializeQuirks.len())
+					{
+						this.logWarning("mod_AC: unknown quirk code " + index + " on \'" + slicedName + "\'; skipping it.");
+						continue;
+					}
+
+					this.m.Quirks.push(this.Const.Companions.DeserializeQuirks[index]);
 				}
-				else
-				{
-					this.m.Name = _cn;
-				}
+
+				this.m.Name = slicedName;
 			}
 
 			o.onSerialize <- function(_out)
