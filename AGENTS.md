@@ -17,6 +17,10 @@ Revive and modernise [Accessory Companions](https://www.nexusmods.com/battlebrot
 - **Save stream shape** is one string payload on the item name; do not add/remove serialised fields without a migration plan.
 - **Decisions locked:** port to Hooks/MSU; soft-detect Reforged and yield `wolf_item` when present; nachzerer mid-swallow is not tamable.
 - Game install: `C:\Games\Steam\steamapps\common\Battle Brothers`. Log: `C:\Users\igorl\Documents\Battle Brothers\log.html`.
+- **BB framework research (default consult):** `C:\Users\igorl\Documents\05_Games_&_Entertainment\Modding\BB_modding_research`
+  - Start with `README.md`, `frameworks.md`, `mod_structure.md`
+  - Unpacked sources under `temp/` (`mod_modern_hooks`, `mod_msu`, `mod_modular_vanilla`, `mod_hooks`, …)
+  - Use this for Hooks/MSU/queue/UI registration questions **before** guessing; also use `mod_AC/.refs/` and `docs/reference/PORTING-GUIDE.md`
 
 ## Work Guidance
 
@@ -31,6 +35,7 @@ Revive and modernise [Accessory Companions](https://www.nexusmods.com/battlebrot
 ## User Preferences
 
 - **Always commit** completed work in this repo without waiting to be asked. After a coherent change (fix, feature, docs, package script): stage relevant files, write a clear commit message, commit. Still do not force-push, amend published history, or push unless asked.
+- Consult **BB_modding_research** (path above) for framework/API facts; do not rely only on memory or on-repo docs when those sources exist.
 
 ## Verification
 
