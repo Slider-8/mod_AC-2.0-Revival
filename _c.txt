@@ -1,3 +1,0 @@
-Restore full companion tooltips when Reforged tooltip wrap throws (v2.1.8).
-
-Screenshots showed companion tooltips reduced to name/description/worth: RF item.getTooltip builds AC content then throws on blueprint.getName, and our outer catch returned a minimal fallback. Companions with m.Type set now always use ::AC.buildCompanionItemTooltip and skip the RF crafting walk.
