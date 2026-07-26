@@ -3,8 +3,8 @@
 Revival of [Accessory Companions](https://www.nexusmods.com/battlebrothers/mods/314)
 (original `mod_AC` v1.26 by Vazl, abandoned 2021) for **Battle Brothers 1.5.2.3**.
 
-**Current release: v2.1.4** — Phase 1 + Phase 2 port (foundation installs
-onSerialize with `<-` so armoured dog classes load cleanly).
+**Current release: v2.1.5** — Phase 1 + Phase 2 port (load fixes; companion
+tooltip hardened; tooltip JS no longer clobbers MSU/Reforged).
 `c66303f` is the mod exactly as published. Every commit after it is a change,
 so `git diff c66303f` is the complete delta.
 

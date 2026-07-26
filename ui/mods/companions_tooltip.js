@@ -1,56 +1,36 @@
-TooltipModule.prototype.setupUITooltip = function(_targetDIV, _data)
+// Do not replace setupUITooltip wholesale — MSU Nested Tooltips and Reforged
+// also patch this. Only clamp vertical position so tall companion tooltips
+// stay on screen after the existing implementation has laid them out.
+(function ()
 {
-	if(_targetDIV === undefined)
+	if (typeof TooltipModule === "undefined" || !TooltipModule.prototype)
 		return;
 
-	var offsetY = ('yOffset' in _data) ? _data.yOffset : this.mDefaultYOffset;
-	if (offsetY !== null)
+	var previous = TooltipModule.prototype.setupUITooltip;
+
+	TooltipModule.prototype.setupUITooltip = function (_targetDIV, _data)
 	{
-		if (typeof(offsetY) === 'string')
+		if (typeof previous === "function")
 		{
-			offsetY = parseInt(offsetY, 10);
+			previous.call(this, _targetDIV, _data);
 		}
-		else if (typeof(offsetY) !== 'number')
+
+		if (_targetDIV === undefined || this.mContainer === undefined || this.mContainer === null)
+			return;
+
+		var wnd = this.mParent;
+		if (wnd === undefined || wnd === null || typeof wnd.height !== "function")
+			return;
+
+		var containerHeight = this.mContainer.outerHeight(true);
+		var posTop = parseInt(this.mContainer.css("top"), 10);
+		if (isNaN(posTop))
+			return;
+
+		if (posTop + containerHeight > wnd.height())
 		{
-			offsetY = 0;
+			posTop = Math.max(0, wnd.height() - containerHeight);
+			this.mContainer.css({ top: posTop });
 		}
-	}
-
-	var wnd = this.mParent; // $(window);
-	
-	// calculate tooltip position
-	var targetOffset    = _targetDIV.offset();
-	var elementWidth    = _targetDIV.outerWidth(true);
-	var elementHeight   = _targetDIV.outerHeight(true);
-	var containerWidth  = this.mContainer.outerWidth(true);
-	var containerHeight = this.mContainer.outerHeight(true);
-	
-	var posLeft = (targetOffset.left + (elementWidth / 2)) - (containerWidth / 2);
-	var posTop  = targetOffset.top - containerHeight - offsetY;
-
-	if (posLeft < 0)
-	{
-		posLeft = targetOffset.left;
-	}
-	
-	if (posLeft + containerWidth > wnd.width())
-	{
-		posLeft = targetOffset.left + elementWidth - containerWidth;
-	}
-			
-	if (posTop < 0)
-	{
-		posTop = targetOffset.top + elementHeight + offsetY;
-	}
-
-	// make sure long tooltips stay within the window
-	if (posTop + containerHeight > wnd.height())
-	{
-		posTop = wnd.height() - containerHeight;
-	}
-
-	// show & position tooltip & animate
-	this.mContainer.removeClass('display-none').addClass('display-block');
-	this.mContainer.css({ left: posLeft, top: posTop });
-	this.mContainer.velocity("finish", true).velocity({ opacity: 0.99 }, { duration: this.mFadeInTime }); // Anti Alias Fix
-};
+	};
+})();

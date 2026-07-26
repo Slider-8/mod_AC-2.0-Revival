@@ -210,24 +210,44 @@
 
 			p.getTooltip <- function()
 			{
+				// Guard incomplete state (failed create/load) so UI never gets a throw.
+				if (this.m.Type == null || this.m.Attributes == null)
+				{
+					return [
+						{ id = 1, type = "title", text = ("getName" in this) ? this.getName() : this.m.Name },
+						{ id = 2, type = "description", text = this.m.Description != null ? this.m.Description : "" },
+						{ id = 3, type = "text", text = this.getValueString() }
+					];
+				}
+
+				local level = this.m.Level;
+				if (level == null || level < 1)
+					level = 1;
+				if (level > this.Const.LevelXP.len())
+					level = this.Const.LevelXP.len();
+
 				local xpMax = this.m.XP;
-				if (this.m.Level < this.Const.LevelXP.len())
-					xpMax = this.Const.LevelXP[this.m.Level] - this.Const.LevelXP[this.m.Level - 1];
+				if (level < this.Const.LevelXP.len())
+					xpMax = this.Const.LevelXP[level] - this.Const.LevelXP[level - 1];
 
 				local xpText = "MAX LEVEL";
-				if (this.m.Level < this.Const.LevelXP.len())
-					xpText = this.m.XP + " / " + this.Const.LevelXP[this.m.Level];
+				if (level < this.Const.LevelXP.len())
+					xpText = this.m.XP + " / " + this.Const.LevelXP[level];
 
 				local woundsCalc = (100 - this.m.Wounds);
 				if (this.m.Entity != null)
 					woundsCalc = this.Math.floor(this.m.Entity.getHitpointsPct() * 100.0);
 
-				local nameText = this.getName() + " ([color=" + this.Const.UI.Color.PositiveValue + "]" + woundsCalc + "%[/color])";
-				local levelText = "Level " + this.m.Level + ", Health " + woundsCalc + "%"
+				local displayName = this.m.Name;
+				if ("getName" in this)
+					displayName = this.getName();
+
+				local nameText = displayName + " ([color=" + this.Const.UI.Color.PositiveValue + "]" + woundsCalc + "%[/color])";
+				local levelText = "Level " + level + ", Health " + woundsCalc + "%";
 				if (this.m.Type == this.Const.Companions.TypeList.TomeReanimation)
 				{
-					nameText = this.getName();
-					levelText = "Level " + this.m.Level;
+					nameText = displayName;
+					levelText = "Level " + level;
 				}
 
 				local result = [
@@ -265,21 +285,21 @@
 						id = 7,
 						type = "progressbar",
 						icon = "ui/icons/xp_received.png",
-						value = this.m.XP - this.Const.LevelXP[this.m.Level - 1],
+						value = this.m.XP - this.Const.LevelXP[level - 1],
 						valueMax = xpMax,
 						text = xpText,
 						style = "armor-body-slim"
 					}
 				];
 
-				local aHit = this.m.Attributes.Hitpoints;
-				local aFat = this.m.Attributes.Stamina;
-				local aRes = this.m.Attributes.Bravery;
-				local aIni = this.m.Attributes.Initiative;
-				local aMS = this.m.Attributes.MeleeSkill;
-				local aRS = this.m.Attributes.RangedSkill;
-				local aMD = this.m.Attributes.MeleeDefense;
-				local aRD = this.m.Attributes.RangedDefense;
+				local aHit = "Hitpoints" in this.m.Attributes ? this.m.Attributes.Hitpoints : 0;
+				local aFat = "Stamina" in this.m.Attributes ? this.m.Attributes.Stamina : 0;
+				local aRes = "Bravery" in this.m.Attributes ? this.m.Attributes.Bravery : 0;
+				local aIni = "Initiative" in this.m.Attributes ? this.m.Attributes.Initiative : 0;
+				local aMS = "MeleeSkill" in this.m.Attributes ? this.m.Attributes.MeleeSkill : 0;
+				local aRS = "RangedSkill" in this.m.Attributes ? this.m.Attributes.RangedSkill : 0;
+				local aMD = "MeleeDefense" in this.m.Attributes ? this.m.Attributes.MeleeDefense : 0;
+				local aRD = "RangedDefense" in this.m.Attributes ? this.m.Attributes.RangedDefense : 0;
 
 				local bufferHealth;
 				local bufferStamina;
@@ -428,27 +448,34 @@
 
 				local quirkString = "";
 				local knownQuirks = [];
-				if (this.m.Quirks.len() != 0)
+				if (this.m.Quirks != null && this.m.Quirks.len() != 0)
 				{
-					foreach(i, quirk in this.m.Quirks)
+					foreach (quirk in this.m.Quirks)
 					{
-						local getQuirk = this.new(quirk);
-						knownQuirks.push(getQuirk.m.Name);
-					}
-			
-					knownQuirks.sort();
-					foreach(i, quirk in knownQuirks)
-					{
-						quirkString += quirk;
-
-						if (i < this.m.Quirks.len() - 1)
+						try
 						{
-							quirkString += ", ";
+							local getQuirk = this.new(quirk);
+							if ("getName" in getQuirk)
+								knownQuirks.push(getQuirk.getName());
+							else if ("Name" in getQuirk.m)
+								knownQuirks.push(getQuirk.m.Name);
 						}
+						catch (error)
+						{
+							// skip unknown/stale quirk scripts so the whole tooltip still shows
+						}
+					}
+
+					knownQuirks.sort();
+					foreach (i, quirkName in knownQuirks)
+					{
+						quirkString += quirkName;
+						if (i < knownQuirks.len() - 1)
+							quirkString += ", ";
 					}
 				}
 
-				if (this.m.Quirks.len() != 0)
+				if (knownQuirks.len() != 0)
 				{
 					result.push({
 						id = 13,

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Revive and modernise [Accessory Companions](https://www.nexusmods.com/battlebrothers/mods/314) (`mod_AC`) for Battle Brothers **1.5.2.3**. Current packaged version: **v2.1.4**. Phase 1+2 complete (modern Hooks/MSU, D1–D15/D17, Reforged wolf yield).
+Revive and modernise [Accessory Companions](https://www.nexusmods.com/battlebrothers/mods/314) (`mod_AC`) for Battle Brothers **1.5.2.3**. Current packaged version: **v2.1.5**. Phase 1+2 complete (modern Hooks/MSU, D1–D15/D17, Reforged wolf yield).
 
 ## Ownership
 
