@@ -87,4 +87,5 @@ Ordered by how much care they need.
    late `zz_item_tooltip_guard` (after `mod_reforged`): companions always use
    `buildCompanionItemTooltip`; other items recover the cache on throw so
    damage/armor/etc. remain visible (RF craft-hint lines may be missing).
-   Root fix is still repair/remove bad crafting mods.
+   Root fix is still repair/remove bad crafting mods. Long play on 2.1.9 with
+   leftovers disabled: zero tooltip recovery events — [PLAYTEST.md](PLAYTEST.md).

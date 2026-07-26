@@ -1,9 +1,10 @@
 # Defect register — Accessory Companions
 
 Baseline: the mod exactly as published (v1.26, commit `c66303f`).
-Current packaged version: **v2.1.2** (Phase 1 + full Phase 2 port; Beastmaster
-on `onAdded`; rawHookTree uses required `p` parameter).
-Target: Battle Brothers **1.5.2.3**, modern Hooks + MSU, coexisting with Reforged 0.9.1.
+Current packaged version: **v2.1.9** (Phase 1+2; tooltip cache; companion builder).
+Target: Battle Brothers **1.5.2.3**, modern Hooks + MSU, coexisting with Reforged.
+
+Playtest / log sessions: **[PLAYTEST.md](PLAYTEST.md)** (long manual **PASS** for AC on 2.1.9, 2026-07-26).
 
 Status values: `FIXED`, `CONFIRMED` (still open), `UNCONFIRMED`, `UNVERIFIED`, `WITHDRAWN`.
 
@@ -65,6 +66,16 @@ Foundation wraps subclass `create` (`_ac_create()` then setType).
 When `::Hooks.hasMod("mod_reforged")`:
 - Foundation is not applied to `wolf_item` (Script `warwolf`).
 - `resolveTameType` returns null for `EntityType.Wolf`.
+
+---
+
+## Runtime tooltip / env (2.1.7–2.1.9)
+
+| Topic | Status |
+|---|---|
+| RF blueprint `getName` blanks all tooltips | **Mitigated** — early cache + late guard (2.1.9); companions skip RF (2.1.8) |
+| Bare name/worth only on weapons/armor | **Fixed** for players (recover cache); root = broken craft mods |
+| Long session log (2.1.9, ~3 h) | **No** `getTooltip failed` after leftovers disabled — [PLAYTEST.md](PLAYTEST.md) |
 
 ---
 

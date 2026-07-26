@@ -90,6 +90,11 @@ Not minimums — versions observed loading successfully with AC **2.1.9**:
 | Reforged (`mod_reforged`) | 0.9.2 |
 | Reforged assets (`mod_reforged_assets`) | 0.1.4 |
 
+**Long play session (same day, ~17:36–20:55):** AC **2.1.9** — zero `getTooltip`
+failures, zero AC fatals after TimeCrossing/sniper leftovers disabled. Full write-up:
+[PLAYTEST.md](PLAYTEST.md). Remaining log noise is non-AC (RPGR `Statistics`, UI
+procedural assets, zip scan, one Nested Tooltips JS TypeError).
+
 ---
 
 ## Package / deploy

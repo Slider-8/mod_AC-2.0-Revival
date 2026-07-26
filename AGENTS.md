@@ -52,11 +52,14 @@ powershell -ExecutionPolicy Bypass -File tools/package.ps1
 # → dist/mod_AC_<SemVer>.zip (version from scripts/!mods_preload/mod_AC.nut)
 ```
 
+In-game / log sessions: **[docs/PLAYTEST.md](docs/PLAYTEST.md)**. Long manual
+session 2026-07-26 (~3.3 h) on **2.1.9**: no AC errors in `log.html`.
+
 ## Child DOX Index
 
 | Path | Scope |
 |---|---|
-| `docs/` | Defects, compatibility, **REQUIREMENTS.md** (deps/versions), Phase 2 handoff, reference material (no separate AGENTS.md; contracts live in those docs) |
+| `docs/` | Defects, compatibility, **REQUIREMENTS.md**, **PLAYTEST.md** (log sessions), Phase 2 handoff, reference material (no separate AGENTS.md) |
 | `scripts/` | Runtime Squirrel sources (ship) |
 | `mod_AC/` | Modern entry helpers + per-target hook files (ship) |
 | `tools/` | Static checker, reference setup, scrapers |

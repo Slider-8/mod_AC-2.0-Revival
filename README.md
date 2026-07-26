@@ -60,10 +60,10 @@ Full list: **[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md)**.
 |---|---|
 | Phase 1 (crash/save baseline) | Done |
 | Phase 2 (Hooks/MSU port, defects D4–D15/D17) | Done for planned code |
-| In-game playtest | Partial — load, tooltips, companion XP/perks verified 2026-07-26; longer regression still open |
+| In-game playtest | **2.1.9:** tooltips, dog XP/perks, **~3.3 h** manual session — **no AC log errors** (2026-07-26). Formal checklist items still useful — [docs/PLAYTEST.md](docs/PLAYTEST.md) |
 
-Defect table and port notes for contributors: [docs/DEFECTS.md](docs/DEFECTS.md),
-[docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md).
+Defect table and port notes: [docs/DEFECTS.md](docs/DEFECTS.md),
+[docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md), [docs/PLAYTEST.md](docs/PLAYTEST.md).
 
 ---
 
