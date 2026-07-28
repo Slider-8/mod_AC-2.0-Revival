@@ -26,7 +26,7 @@ Full list: **[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md)**.
 ## Install
 
 1. Install Modern Hooks and MSU (and Reforged if you use that stack).
-2. Build or take a package: `dist/mod_AC_2.1.9.zip` (see [Build](#build)).
+2. Build or take a package: `dist/mod_AC_2.1.10.zip` (see [Build](#build)).
 3. Enable the zip with Vortex / drop into the game `data` folder (same as other mods).
 4. Confirm in `Documents\Battle Brothers\log.html`:  
    `Modern Hooks registered Accessory Companions (mod_AC) version 2.1.9`.
@@ -90,8 +90,14 @@ via a tooltip cache; disabling those leftovers still cleans the log.
 python tools/check_mod.py
 
 # package → dist/mod_AC_<SemVer>.zip  (version from scripts/!mods_preload/mod_AC.nut)
-powershell -ExecutionPolicy Bypass -File tools/package.ps1
+python tools/build.py
 ```
+
+`build.py` replaced the earlier `package.ps1`. PowerShell's `Compress-Archive`
+writes entry names with backslash separators, which the ZIP spec forbids
+(4.4.17.1 requires `/`). Battle Brothers tolerates it; other tooling need not.
+`build.py` writes conforming archives and drops the PowerShell dependency —
+Python is already required for `check_mod.py`.
 
 ### Layout
 
