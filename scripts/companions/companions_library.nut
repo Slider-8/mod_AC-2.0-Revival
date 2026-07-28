@@ -669,6 +669,11 @@ gt.Const.Companions.resolveTameType <- function( _entity )
 	if (_entity == null || !_entity.isAlive())
 		return null;
 
+	// getType/getSkills are actor-only; the entity base has neither. Callers can
+	// hand us any tactical entity, so refuse non-actors rather than throw.
+	if (!("getType" in _entity) || !("getSkills" in _entity))
+		return null;
+
 	local et = _entity.getType();
 	local ETC = this.Const.EntityType;
 	local TL = this.Const.Companions.TypeList;

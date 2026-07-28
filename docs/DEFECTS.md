@@ -92,3 +92,69 @@ When `::Hooks.hasMod("mod_reforged")`:
 ## Not a problem
 
 No vanilla API drift against 1.5.2.3 for paths and EntityTypes used.
+
+---
+
+## D18 — `getSkills` on a non-actor crashes the tame skill on hover
+
+**Status:** FIXED in v2.1.10. **Severity:** HIGH. **Introduced by:** the Phase 1 D3 fix.
+
+Reported from a 2026-07-28 playtest log:
+
+```
+Script Error: the index 'getSkills' does not exist
+hasSwallowedSomeone -> scripts/companions/player/companions_tame.nut : 173
+onVerifyTarget      -> scripts/companions/player/companions_tame.nut : 202
+updateCursorAndTooltip -> scripts/states/tactical_state.nut : 1836
+onMouseInput        -> scripts/states/tactical_state.nut : 502
+```
+
+`onVerifyTarget` runs for **every tile the cursor crosses**, not only on click, so
+with the Tame skill selected it is handed whatever entity sits on the hovered
+tile. The accessors are split across two classes:
+
+| Accessor | Defined on |
+|---|---|
+| `isAlive()`, `getFlags()` | `entity/tactical/entity.nut:38`, `:24` |
+| `getType()`, `getSkills()` | `entity/tactical/actor.nut:86`, `:116` |
+
+The existing guards only used entity-base accessors, so a non-actor entity passed
+them and then hit `getSkills()`. Note the same trap sits one line further on:
+`resolveTameType` calls `getType()`, so guarding only `hasSwallowedSomeone` would
+have moved the crash rather than removed it.
+
+**Fix:** reject non-actors once at the boundary in `onVerifyTarget`, plus
+defensive guards in `hasSwallowedSomeone` and `Const.Companions.resolveTameType`
+(the latter is a shared entry point also reached from `onUse`).
+
+**Lesson:** `onVerifyTarget` is a hover path. Anything it touches must tolerate
+arbitrary tile contents.
+
+---
+
+## D19 — `onDeath` vargv warning is expected noise, do NOT "fix" it
+
+**Status:** WON'T FIX (correct as-is). **Severity:** none.
+
+The log carries several of these:
+
+```
+Mod mod_AC is wrapping a vargv-using function onDeath in bb class
+scripts/entity/tactical/actor ... with a non-vargv function with a greater
+number of non-vargv parameters (used to be 0, wrapper returned function with 4)
+```
+
+This is **warning-level by deliberate design** in modern hooks. From its own
+source (`modern_hooks/q_object.nut:140-146`): a vargv function wrapped by a
+non-vargv one with *equal or more* params "could be a case of intermediate
+safe-wrapper by a mod", so it only warns. It escalates to a thrown error only
+when the wrapper has **fewer** params, which would break existing calls.
+
+Our wrapper takes `(_killer, _skill, _tile, _fatalityType)` — exactly the true
+vanilla signature (`vanilla/scripts/entity/tactical/actor.nut:1773`). Some other
+mod in the load order has installed a vargv passthrough beneath us; MSU is not
+the culprit (its own wrapper uses the same four fixed params,
+`msu/hooks/entity/tactical/actor.nut:131`).
+
+Rewriting our wrapper to use vargv would be cargo-culting: it would silence a
+warning while making the parameter contract *less* explicit. Leave it.

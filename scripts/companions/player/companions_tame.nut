@@ -170,7 +170,23 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 	// off-map and flagged Devoured forever. Kill it the normal way to get them back.
 	function hasSwallowedSomeone(_target)
 	{
-		local swallow = _target.getSkills().getSkillByID("actives.swallow_whole");
+		// onVerifyTarget runs for every tile the cursor crosses, and a tile can hold
+		// a non-actor entity. getSkills() is defined on actor, not on the entity
+		// base, so calling it unguarded throws "the index 'getSkills' does not
+		// exist" just from hovering the skill over scenery.
+		if (!("getSkills" in _target))
+		{
+			return false;
+		}
+
+		local skills = _target.getSkills();
+
+		if (skills == null)
+		{
+			return false;
+		}
+
+		local swallow = skills.getSkillByID("actives.swallow_whole");
 		return swallow != null && swallow.getSwallowedEntity() != null;
 	}
 
@@ -184,6 +200,14 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		local target = _targetTile.getEntity();
 
 		if (target == null)
+		{
+			return false;
+		}
+		// Only actors are ever tamable, and only actors carry getType/getSkills --
+		// those live on actor, while isAlive/getFlags live on the entity base. A
+		// tile holding a non-actor entity therefore has to be rejected here, before
+		// anything downstream reaches for an actor-only accessor.
+		if (!("getType" in target) || !("getSkills" in target))
 		{
 			return false;
 		}
