@@ -1,5 +1,5 @@
 // Companion XP share when the player kills something.
-// Beastmaster conversion is NOT here — see houndmaster_background.onAdded
+// Beastmaster conversion is NOT here -- see houndmaster_background.onAdded
 // (survives mod_modular_vanilla's setStartValuesEx replacement).
 ::AC.HooksMod.hook("scripts/entity/tactical/player", function(q)
 {

@@ -1,7 +1,7 @@
 // Outer safety net for item tooltips (registered after mod_reforged).
 //
 // Reforged wraps item.getTooltip and walks crafting blueprints with b.getName().
-// Broken PreviewCraftable → throw after __original() already built full stats.
+// Broken PreviewCraftable -> throw after __original() already built full stats.
 // item_tooltip_cache (early queue) stores that result on this.__AC_TooltipCache.
 //
 // Companions (m.Type set): always ::AC.buildCompanionItemTooltip (skip RF walk).
@@ -13,7 +13,7 @@
 	q.getTooltip = @(__original) function()
 	{
 		// Companion accessories: skip Reforged blueprint walk entirely.
-		// Type 0 is Wardog — must use != null, not truthiness.
+		// Type 0 is Wardog -- must use != null, not truthiness.
 		if ("setType" in this && "m" in this && this.m.Type != null)
 		{
 			return ::AC.buildCompanionItemTooltip(this);

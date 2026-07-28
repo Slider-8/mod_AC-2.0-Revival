@@ -210,3 +210,63 @@ sit behind `onVerifyTarget`, so anything reaching it is already an actor.
 - For anything inherited from a vanilla base, use `isKindOf`.
 - A static check cannot catch this, and neither can a clean load. Only running the
   skill does. Treat any change to targeting predicates as play-test-required.
+
+---
+
+## D21 — Frenzied hyena resolved via `in` on an inherited `m` field
+
+**Status:** FIXED in v2.1.12. **Severity:** MEDIUM. **Same root cause family as D20.**
+
+`resolveTameType` distinguished a frenzied hyena with:
+
+```squirrel
+if (("IsHigh" in _entity.m) && _entity.m.IsHigh) return TL.HyenaFrenzied;
+```
+
+`hyena_high` declares its own empty `m = {}` and only assigns `IsHigh` inside
+`create()`; the field is declared on the parent `hyena`'s `m`. So the `in` test is
+not reliable -- the D20 trap again, one level down, on a field rather than a method.
+
+**Fix:** call vanilla's own accessor, `hyena.nut:5 isHigh()`. Method calls resolve
+through the inheritance chain; `in` does not.
+
+**Symptom it actually causes:** a frenzied hyena tamed as an ordinary Hyena
+(type 9 instead of 10) -- wrong stats, wrong per-company cap. It does **not**
+produce "invalid target", because both branches return a valid type. See the note
+below.
+
+**Residual risk:** a third-party hyena that reports `EntityType.Hyena` without
+deriving from vanilla `hyena` would have no `isHigh()` and would throw here.
+`mod_champion_beasts` is installed on this machine; its beasts appear to subclass
+vanilla, so this is theoretical, but it is the reason a `getName()` fallback was
+not used instead.
+
+---
+
+## D22 — "invalid target" on frenzied hyena — `UNDIAGNOSED`
+
+Reported 2026-07-28 on v2.1.11. **Not explained by D21** and not yet reproduced
+from evidence -- the log for that run contains no `mod_AC` error at all, which is
+expected because a rejected target is a silent predicate result, not an exception.
+
+Gates in `onVerifyTarget` that can silently reject, in order, with what would have
+to be true for each:
+
+| Gate | Would require |
+|---|---|
+| `isKindOf(target, "actor")` | hyena not derived from actor -- very unlikely, snakes pass |
+| `getFlags().has("taming_protection")` | **a previous failed tame attempt on that same beast** |
+| `hasSwallowedSomeone` | not applicable to hyenas |
+| `isAlliedWith` | hyena allied to the player |
+| `resolveTameType == null` | ruled out -- `hyena_high` inherits `m.Type = EntityType.Hyena` from `hyena.create()`, so both branches return a type |
+| `hasMaxTamed` | 4+ hyena companions already held (Hyena `MaxPerCompany = 4`) |
+| base `skill.onVerifyTarget` | out of range -- the skill is `MaxRange = 1`, adjacency only |
+
+**Leading candidate: intended behaviour.** `companions_tame.nut:348` adds the
+`taming_protection` flag on a *failed* attempt, and the skill's own description
+says "Failing the attempt makes further attempts on the same beast impossible."
+The flag is cleared in `onCombatFinished`, so it lasts the rest of that battle.
+
+Do not "fix" this until it is distinguished from a genuine defect. The question
+that separates them: was the frenzied hyena rejected on the **very first** hover,
+before any attempt was made on it, and was the brother standing adjacent?

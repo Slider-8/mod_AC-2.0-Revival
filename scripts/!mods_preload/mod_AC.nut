@@ -1,10 +1,10 @@
-// Accessory Companions — modern Hooks + MSU entry point.
-// Phase 2 complete: modern hooks, D4–D17 addressed (see docs/DEFECTS.md).
+// Accessory Companions -- modern Hooks + MSU entry point.
+// Phase 2 complete: modern hooks, D4-D17 addressed (see docs/DEFECTS.md).
 // Frozen mod ID: mod_AC
 
 ::AC <- {
 	ID = "mod_AC",
-	Version = "2.1.11",
+	Version = "2.1.12",
 	Name = "Accessory Companions"
 };
 
@@ -20,7 +20,7 @@
 	::AC.Mod <- ::MSU.Class.Mod(::AC.ID, ::AC.Version, ::AC.Name);
 
 	// CSS only for tall companion tooltips. Do NOT register LateJS that patches
-	// TooltipModule.setupUITooltip — that fights MSU Nested Tooltips / Reforged
+	// TooltipModule.setupUITooltip -- that fights MSU Nested Tooltips / Reforged
 	// and can blank tooltips on non-companion items.
 	::Hooks.registerCSS("ui/mods/companions_tooltip.css");
 

@@ -1,7 +1,7 @@
 // Cache the tooltip built *under* Reforged's item.getTooltip wrap.
 //
 // RF does: local ret = __original(); then walks Crafting blueprints with
-// b.getName() → PreviewCraftable.getName(). Broken craft mods throw *after*
+// b.getName() -> PreviewCraftable.getName(). Broken craft mods throw *after*
 // vanilla (and AC companion) tooltips are already built, so the outer
 // zz_item_tooltip_guard catch would otherwise only see the throw.
 //

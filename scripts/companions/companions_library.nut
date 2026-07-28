@@ -689,7 +689,12 @@ gt.Const.Companions.resolveTameType <- function( _entity )
 
 	if (et == ETC.Hyena)
 	{
-		if (("IsHigh" in _entity.m) && _entity.m.IsHigh)
+		// Ask vanilla's own accessor (hyena.nut isHigh()) rather than testing
+		// ("IsHigh" in _entity.m). hyena_high declares its own empty m and only
+		// assigns IsHigh in create(), so the `in` form is not reliable here --
+		// the same trap that made D20 reject every target. Method calls resolve
+		// through the chain; `in` does not.
+		if (_entity.isHigh())
 			return TL.HyenaFrenzied;
 		return TL.Hyena;
 	}
