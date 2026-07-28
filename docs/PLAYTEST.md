@@ -86,3 +86,31 @@ Long formal checklist items still useful for a future pass:
 | **2.1.9** | tooltips, dog XP, **~3.3 h** manual | **No AC log errors mid-run**; tooltips/cache path idle once leftovers disabled |
 
 Last full log review: **2026-07-26** (session C).
+
+## 2026-07-28 — v2.1.11, taming confirmed working
+
+First **play-proven** result for the targeting path. Source: `log.html` for the
+2.1.11 run, plus Igor taming a snake in-game.
+
+| Check | Result |
+|---|---|
+| Load | `(mod_AC) version 2.1.11` |
+| mod_AC script errors | **none** |
+| Other script errors | 3 × `the index 'Statistics' does not exist`, all `mod_rpgr_parameters` → `getKrakenBuiltState` on a legendary sword blade — pre-existing baseline, unrelated |
+| mod_AC warnings | only the D19 `onDeath` vargv notice, expected and documented |
+| Save migration | `MSU Serialization: Loading old save for Accessory Companions (mod_AC), 2.1.10 -> 2.1.11` |
+| Tame a snake | **succeeded** |
+| Autosave after tame | `Save campaign: autosave_01` / `Finished saving scene.` with no serialization error |
+
+**Now play-proven:** D18 (hover over scenery with Tame selected no longer throws)
+and D20 (targeting accepts legitimate targets again). The autosave also exercised
+the D1 one-string payload **write** path with a real tamed companion equipped.
+
+**Not yet proven — the read path.** Nothing here loads that save back. The next
+useful check is loading `autosave_01` and confirming the snake survives with its
+level, XP and quirks intact. A payload that writes cleanly can still fail to parse.
+
+Note on reading these logs: the "successfully tamed" message goes to the in-game
+tactical event log, not to `log.html`, so its absence from the file is expected
+and is not evidence either way. BB also overwrites `log.html` on every launch —
+quit and read it before relaunching, or the evidence is gone.
