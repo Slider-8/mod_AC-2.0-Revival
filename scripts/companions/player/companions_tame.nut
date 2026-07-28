@@ -1,5 +1,5 @@
 this.companions_tame <- this.inherit("scripts/skills/skill", {
-	m = {},
+	m = { acLastReject = "" },
 	function create()
 	{
 		this.m.ID = "actives.companions_tame";
@@ -190,6 +190,36 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		return swallow != null && swallow.getSwallowedEntity() != null;
 	}
 
+	// Diagnostic for "invalid target" reports. onVerifyTarget runs on every hover,
+	// so log only when the reason changes -- otherwise a single mouse sweep buries
+	// log.html. Set Const.Companions.DebugTame to false to silence.
+	function acReject(_reason, _target)
+	{
+		if (!("DebugTame" in this.Const.Companions) || !this.Const.Companions.DebugTame)
+		{
+			return false;
+		}
+
+		local name = "?";
+		local type = "?";
+
+		if (_target != null)
+		{
+			try { name = _target.getName(); } catch (e) { name = "<no name>"; }
+			try { type = _target.getType().tostring(); } catch (e) { type = "<no type>"; }
+		}
+
+		local line = _reason + " | name=" + name + " type=" + type;
+
+		if (line != this.m.acLastReject)
+		{
+			this.m.acLastReject = line;
+			this.logInfo("mod_AC tame reject: " + line);
+		}
+
+		return false;
+	}
+
 	function onVerifyTarget(_originTile, _targetTile)
 	{
 		if (_targetTile.IsEmpty)
@@ -212,30 +242,30 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		// actors and rejects every target.
 		if (!this.isKindOf(target, "actor"))
 		{
-			return false;
+			return this.acReject("not an actor", target);
 		}
 		if (!target.isAlive())
 		{
-			return false;
+			return this.acReject("not alive", target);
 		}
 		if (target.getFlags().has("taming_protection"))
 		{
-			return false;
+			return this.acReject("taming_protection flag already set", target);
 		}
 		if (this.isKindOf(target, "lindwurm_tail"))
 		{
-			return false;
+			return this.acReject("lindwurm tail", target);
 		}
 		if (this.hasSwallowedSomeone(target))
 		{
-			return false;
+			return this.acReject("has swallowed someone", target);
 		}
 
 		local actor = this.getContainer().getActor();
 
 		if (actor.isAlliedWith(target))
 		{
-			return false;
+			return this.acReject("allied with user", target);
 		}
 
 		// D5: match Const.EntityType (and frenzied class), not localised getName().
@@ -243,14 +273,21 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 
 		if (tameType == null)
 		{
-			return false;
+			return this.acReject("resolveTameType returned null", target);
 		}
 		if (this.hasMaxTamed(tameType))
 		{
-			return false;
+			return this.acReject("already at MaxPerCompany for type " + tameType, target);
 		}
 
-		return this.skill.onVerifyTarget(_originTile, _targetTile);
+		local ok = this.skill.onVerifyTarget(_originTile, _targetTile);
+
+		if (!ok)
+		{
+			return this.acReject("base skill.onVerifyTarget said no (range/LOS/AP)", target);
+		}
+
+		return true;
 	}
 
 	function onUse(_user, _targetTile)

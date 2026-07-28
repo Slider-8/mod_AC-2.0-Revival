@@ -3,6 +3,7 @@ if (!("Companions" in gt.Const))
 {
 	gt.Const.Companions <- {};
 }
+gt.Const.Companions.DebugTame <- true;
 gt.Const.Companions.TameChance <- {
 	Default = 30.00,
 	Beastmaster = 45.00

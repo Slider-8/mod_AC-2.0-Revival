@@ -6,7 +6,7 @@ Revival of [Accessory Companions](https://www.nexusmods.com/battlebrothers/mods/
 Tame beasts, equip them as accessories, unleash them in battle, level them with
 quirks, and raise fallen companions. Ported to **Modern Hooks + MSU**.
 
-**Current version: [v2.1.12](docs/REQUIREMENTS.md)**  
+**Current version: [v2.1.13](docs/REQUIREMENTS.md)**  
 Repository: [github.com/Slider-8/mod_AC-2.0-Revival](https://github.com/Slider-8/mod_AC-2.0-Revival)
 
 ---
@@ -26,10 +26,10 @@ Full list: **[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md)**.
 ## Install
 
 1. Install Modern Hooks and MSU (and Reforged if you use that stack).
-2. Build or take a package: `dist/mod_AC_2.1.12.zip` (see [Build](#build)).
+2. Build or take a package: `dist/mod_AC_2.1.13.zip` (see [Build](#build)).
 3. Enable the zip with Vortex / drop into the game `data` folder (same as other mods).
 4. Confirm in `Documents\Battle Brothers\log.html`:  
-   `Modern Hooks registered Accessory Companions (mod_AC) version 2.1.12`.
+   `Modern Hooks registered Accessory Companions (mod_AC) version 2.1.13`.
 
 ---
 
@@ -60,7 +60,7 @@ Full list: **[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md)**.
 |---|---|
 | Phase 1 (crash/save baseline) | Done |
 | Phase 2 (Hooks/MSU port, defects D4–D15/D17) | Done for planned code |
-| In-game playtest | **2.1.9:** ~3.3 h manual session, clean (2026-07-26). A later 2026-07-28 session hit a hover crash in Tame targeting — fixed in **2.1.12** as [D18](docs/DEFECTS.md). 2.1.12 is not yet playtested. [docs/PLAYTEST.md](docs/PLAYTEST.md) |
+| In-game playtest | **2.1.9:** ~3.3 h manual session, clean (2026-07-26). A later 2026-07-28 session hit a hover crash in Tame targeting — fixed in **2.1.13** as [D18](docs/DEFECTS.md). 2.1.13 is not yet playtested. [docs/PLAYTEST.md](docs/PLAYTEST.md) |
 
 Defect table and port notes: [docs/DEFECTS.md](docs/DEFECTS.md),
 [docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md), [docs/PLAYTEST.md](docs/PLAYTEST.md).

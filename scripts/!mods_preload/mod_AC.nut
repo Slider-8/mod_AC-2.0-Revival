@@ -4,7 +4,7 @@
 
 ::AC <- {
 	ID = "mod_AC",
-	Version = "2.1.12",
+	Version = "2.1.13",
 	Name = "Accessory Companions"
 };
 
