@@ -344,3 +344,50 @@ Full cross-check of `resolveTameType` against the library and vanilla. **All cle
 - Both `ArmorScript` paths are vanilla items and exist in the vanilla reference.
 
 Reproduce with the audit script kept at `tools/audit_tame.py`.
+
+---
+
+## D22 — CLOSED: frenzied hyena targetable again (fixed by D21)
+
+**Status:** FIXED in v2.1.12 (the D21 `isHigh()` change), **confirmed in play on
+v2.1.13**. Supersedes both the `UNDIAGNOSED` entry and the working-as-designed
+entry above -- the second of which was wrong, see below.
+
+The instrumented 2.1.13 build settled it. Log from that run:
+
+```
+mod_AC tame reject: taming_protection flag already set | name=Frenzied Hyena type=113
+mod_AC tame reject: allied with user | name=<own brothers> type=-1
+```
+
+Two things follow. The hyena is **no longer rejected on first hover** -- the only
+rejection left is the intended post-failure lockout, after Igor had already spent
+an attempt. And `type=113` is `Const.EntityType.Hyena`, confirmed by
+`config/spawnlist_master.nut:479` where `HyenaHIGH` is declared with
+`ID = this.Const.EntityType.Hyena`. Frenzied hyenas share the base entity type,
+so `resolveTameType` enters the Hyena branch correctly.
+
+**Why D21 fixed it.** The only behavioural change between the broken 2.1.11 and
+the working 2.1.12 was the frenzied-hyena check. With the old
+`("IsHigh" in _entity.m)` form returning false, a frenzied hyena resolved to
+`Hyena` (type 9, `MaxPerCompany = 4`) instead of `HyenaFrenzied` (type 10,
+`MaxPerCompany = 2`). With enough ordinary hyena companions already held,
+`hasMaxTamed(9)` returned true and the beast was rejected as an invalid target --
+while the frenzied cap it should have been measured against was nowhere near met.
+
+So D21 was never merely cosmetic. Mis-typing the beast fed the wrong per-company
+cap into `hasMaxTamed`, and that is what produced "invalid target".
+
+**Correction to the earlier entry.** The "working as designed / 0% at full
+health" diagnosis was wrong for this report. It described a real property of the
+chance formula, but the target was wounded and it was a first attempt, so that
+mechanism did not apply. The instrumentation existed because reasoning had
+already failed twice here.
+
+**Balance is intended.** Igor confirmed the low success rate is acceptable and
+should not be tuned. `TameChance.Default` / `.Beastmaster` stay at 30 / 45.
+
+**Diagnostics retained.** `Const.Companions.DebugTame` (default `false`) turns the
+per-gate reject logging back on. Seven gates in `onVerifyTarget` all fail as a
+bare `return false` with identical UI feedback, so this is the only practical way
+to tell them apart from outside. Leave the switch in place.

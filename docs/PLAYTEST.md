@@ -114,3 +114,18 @@ Note on reading these logs: the "successfully tamed" message goes to the in-game
 tactical event log, not to `log.html`, so its absence from the file is expected
 and is not evidence either way. BB also overwrites `log.html` on every launch —
 quit and read it before relaunching, or the evidence is gone.
+
+## 2026-07-28 — v2.1.13/2.1.14, frenzied hyena resolved
+
+Instrumented build confirmed the frenzied hyena is targetable again; the only
+remaining rejection is the intended post-failure lockout. Root cause was D21
+feeding the wrong `MaxPerCompany` into `hasMaxTamed` -- see D22 in DEFECTS.md.
+
+Also verified in the same log: no `mod_AC` script errors, and the "allied with
+user" rejections against the player's own brothers are correct behaviour.
+
+Low taming success rate reviewed and **accepted as intended** -- do not tune
+`TameChance` without asking.
+
+Still not exercised: loading a save back with a levelled, quirked companion
+equipped (the payload **read** path). That remains the top outstanding check.

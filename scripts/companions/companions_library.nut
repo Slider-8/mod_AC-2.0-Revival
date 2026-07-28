@@ -3,7 +3,9 @@ if (!("Companions" in gt.Const))
 {
 	gt.Const.Companions <- {};
 }
-gt.Const.Companions.DebugTame <- true;
+// Diagnostic switch for tame targeting. Flip to true and the skill logs which gate
+// rejected a target (see companions_tame.acReject). Off for normal play.
+gt.Const.Companions.DebugTame <- false;
 gt.Const.Companions.TameChance <- {
 	Default = 30.00,
 	Beastmaster = 45.00
