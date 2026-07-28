@@ -270,3 +270,77 @@ The flag is cleared in `onCombatFinished`, so it lasts the rest of that battle.
 Do not "fix" this until it is distinguished from a genuine defect. The question
 that separates them: was the frenzied hyena rejected on the **very first** hover,
 before any attempt was made on it, and was the brother standing adjacent?
+
+---
+
+## D22 — RESOLVED: frenzied hyena was working as designed
+
+Superseded the `UNDIAGNOSED` entry above. Root cause found 2026-07-28 from the
+2.1.11 log plus the reported click sequence.
+
+The message in the in-game combat log was **the mod's own**, not an exception:
+
+```squirrel
+// companions_tame.nut, failure branch
+this.Tactical.EventLog.logEx(... + " failed to tame " + ...);
+target.getFlags().add("taming_protection");
+```
+
+`log.html` for that run contains no `mod_AC` error at all -- only the three
+pre-existing `mod_rpgr_parameters` `Statistics` rows.
+
+**The chance formula makes a healthy target unwinnable:**
+
+```squirrel
+chance = (1.0 - target.getHitpointsPct()) * TameChance.Default   // Default = 30
+if (rooted) chance *= 1.25
+if (this.Math.rand(1, 1000) <= chance) { /* success */ }
+```
+
+At full health `getHitpointsPct()` is 1.0, so `chance` is **0** and the roll can
+never succeed. The attempt still counts: the failure branch adds
+`taming_protection`, and every later attempt on that beast is rejected by
+`onVerifyTarget` for the rest of the battle. Cleared in `onCombatFinished`.
+
+Worst case is not much better. The roll is out of **1000** while `chance` peaks at
+the constant itself, so a target on 1 HP gives:
+
+| Situation | Best possible chance |
+|---|---|
+| Default | 30/1000 = **3.0%** |
+| Beastmaster background | 45/1000 = **4.5%** |
+| Rooted, Beastmaster | 56/1000 = **5.6%** |
+
+And failure locks the beast out, so in practice each beast is worth **one ~3%
+roll per battle**. The snake that succeeded on 2.1.11 was a wounded target and a
+lucky roll.
+
+**Not a code defect.** This is original 1.26 balance, and it is the real
+explanation behind the most common complaint on the Nexus page ("taming does
+nothing / the chance is so small"). The author's own answer there was to raise
+`TameChance` in `companions_library.nut`. Tuning it is a product decision, not a
+bug fix -- see the note in PLAYTEST.md.
+
+**Worth improving regardless of tuning:** the skill gives no feedback that a
+full-health target is a guaranteed loss. `getHitchance()` returns `chance / 10.0`,
+so the UI does show 0.0% -- but nothing explains *why*, and nothing warns that
+spending the attempt burns the beast for the battle.
+
+---
+
+## Tamable-entity coverage audit (2026-07-28, v2.1.12)
+
+Full cross-check of `resolveTameType` against the library and vanilla. **All clean.**
+
+- All **16** `Const.EntityType` values it tests exist in vanilla.
+- All **15** tamable types resolve to a library entry with a script that exists on
+  disk: Wardog, Warhound, Warwolf, Direwolf, DirewolfFrenzied, Hyena,
+  HyenaFrenzied, Spider, Snake, Nacho, Alp, Schrat, Noodle, Unhold, UnholdArmor.
+- The **5** library types not reachable by taming are correct: `WardogArmor`,
+  `WardogArmorHeavy`, `WarhoundArmor`, `WarhoundArmorHeavy` (armour upgrades) and
+  `TomeReanimation` (necromancer drop).
+- TypeList count == Library count == 20; the D9 `entry.Type == i` assert covers
+  alignment at load.
+- Both `ArmorScript` paths are vanilla items and exist in the vanilla reference.
+
+Reproduce with the audit script kept at `tools/audit_tame.py`.
