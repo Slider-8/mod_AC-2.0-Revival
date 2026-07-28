@@ -391,3 +391,45 @@ should not be tuned. `TameChance.Default` / `.Beastmaster` stay at 30 / 45.
 per-gate reject logging back on. Seven gates in `onVerifyTarget` all fail as a
 bare `return false` with identical UI feedback, so this is the only practical way
 to tell them apart from outside. Leave the switch in place.
+
+---
+
+## D22 — REOPENED as `UNEXPLAINED`: the closure above was wrong
+
+**Correction, 2026-07-28.** The entry above closed D22 by claiming D21 fixed it
+via a wrong `MaxPerCompany`. That explanation is **dead**.
+
+It required the player to already hold enough ordinary hyenas to hit
+`Hyena.MaxPerCompany = 4`. Igor holds **no hyenas at all** -- one tamed snake and
+several bought war dogs. Wardogs are type 0 (cap 12) and the snake is type 12;
+neither counts toward either hyena type. So `hasMaxTamed` returns false whether
+the beast resolves as `Hyena` (cap 4) or `HyenaFrenzied` (cap 2), and that gate
+could not have rejected it under either version.
+
+**What is still true:**
+
+- The D21 change is correct on its own merits and stays. `("IsHigh" in _entity.m)`
+  is not a reliable test (D20 family); `isHigh()` is.
+- Frenzied hyenas share `EntityType.Hyena` (`type=113` in the log, corroborated by
+  `config/spawnlist_master.nut:479`), so `resolveTameType` enters the Hyena branch.
+- On v2.1.13 the beast was targetable, and the only logged rejection was
+  `taming_protection flag already set` -- i.e. after an attempt had been spent.
+
+**What is not established:** why v2.1.11 rejected it. Note that *both* branches of
+the 2.1.11 hyena check returned a non-null type, so `resolveTameType` could not
+have returned null either. Neither of the two gates D21 could plausibly influence
+explains the report.
+
+**Leading remaining hypothesis:** the v2.1.11 target already carried
+`taming_protection` from an earlier attempt in that same battle instance, and the
+"first attempt" was first only since the most recent reload. Unverified, and it
+contradicts the report as given, so it is a hypothesis and nothing more.
+
+**How to settle it if it recurs:** set `Const.Companions.DebugTame = true` and
+reproduce. The gate that rejects is then named in `log.html`. Do not ship another
+root-cause claim for this without such a line.
+
+**Process note.** This is the third confident wrong diagnosis on this defect
+(full-health chance; then wrong cap). Each was a plausible mechanism reached for
+without evidence that it was the *active* one. The instrumentation exists
+precisely because reasoning keeps failing here -- use it first next time.
