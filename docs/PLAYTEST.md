@@ -129,3 +129,36 @@ Low taming success rate reviewed and **accepted as intended** -- do not tune
 
 Still not exercised: loading a save back with a levelled, quirked companion
 equipped (the payload **read** path). That remains the top outstanding check.
+
+## 2026-07-28 — v2.1.14, save round-trip PROVEN (closes D1 verification)
+
+The payload **read** path is now play-proven, which was the last outstanding
+check from the original D1 defect.
+
+| Check | Result |
+|---|---|
+| Tame armored unhold (type 16, cap shared with Unhold, variant-specific `onUse` path) | **succeeded** |
+| Save, quit, reload | tamed animals all present |
+| Levelled companion survives reload | **snake retained 4 levels** |
+| `mod_AC` script errors across both runs | **none** |
+| MSU migration | `Loading old save for Accessory Companions (mod_AC), 2.1.13 -> 2.1.14` |
+
+D1 wrote companion state into a payload appended to the item name. Writing was
+confirmed earlier; this confirms it parses back with level, and by extension the
+attributes and quirks carried in the same string. Armored unhold is a good case
+because it exercises the shared Unhold/UnholdArmor cap and the variant branch in
+`onUse`, not just the generic path.
+
+### Not ours, seen in the same logs
+
+- `the index 'getID' does not exist` -- `mod_reforged/msu_systems/nested_tooltips.nut:28`,
+  reached via `mod_fun_facts` `setPlayer` during a greenskins crisis event.
+  Nothing in that stack touches accessories or companions. New to the baseline;
+  disable `mod_fun_facts` to test if crisis events misbehave.
+- `the index 'Statistics' does not exist` -- `mod_rpgr_parameters`, long-standing baseline.
+
+### Corroboration for D19
+
+`mod_EIMO` and `mod_clever_recruiter` produce the *same* vargv wrapping warnings
+we do, on `onSerialize` / `onDeserialize` / `onBeforeDeserialize`. Confirms the
+pattern is common and benign, and that D19 should stay WON'T FIX.

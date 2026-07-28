@@ -12,7 +12,7 @@ Status values: `FIXED`, `CONFIRMED` (still open), `UNCONFIRMED`, `UNVERIFIED`, `
 
 ## Critical
 
-### D1 — Companion state in name payload — `FIXED` (parser total + wrap)
+### D1 - Companion state in name payload - `FIXED, PLAY-PROVEN 2026-07-28`
 Save stream still uses one string (vanilla-equivalent). Parser is total (Phase 1).
 `onSerialize`/`onDeserialize` now wrap the parent and inject/parse the payload
 via `m.Name` without jumping to `accessory` base. Quirk codes use

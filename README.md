@@ -60,7 +60,7 @@ Full list: **[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md)**.
 |---|---|
 | Phase 1 (crash/save baseline) | Done |
 | Phase 2 (Hooks/MSU port, defects D4–D15/D17) | Done for planned code |
-| In-game playtest | **2.1.9:** ~3.3 h manual session, clean (2026-07-26). A later 2026-07-28 session hit a hover crash in Tame targeting — fixed in **2.1.14** as [D18](docs/DEFECTS.md). 2.1.14 is not yet playtested. [docs/PLAYTEST.md](docs/PLAYTEST.md) |
+| In-game playtest | **2.1.14:** taming (snake, armored unhold), **save round-trip proven** -- levelled companion survives reload -- no AC log errors (2026-07-28). [docs/PLAYTEST.md](docs/PLAYTEST.md) |
 
 Defect table and port notes: [docs/DEFECTS.md](docs/DEFECTS.md),
 [docs/PHASE2-HANDOFF.md](docs/PHASE2-HANDOFF.md), [docs/PLAYTEST.md](docs/PLAYTEST.md).
