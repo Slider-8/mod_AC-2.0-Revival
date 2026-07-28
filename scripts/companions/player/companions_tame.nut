@@ -174,7 +174,7 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		// a non-actor entity. getSkills() is defined on actor, not on the entity
 		// base, so calling it unguarded throws "the index 'getSkills' does not
 		// exist" just from hovering the skill over scenery.
-		if (!("getSkills" in _target))
+		if (!this.isKindOf(_target, "actor"))
 		{
 			return false;
 		}
@@ -203,11 +203,14 @@ this.companions_tame <- this.inherit("scripts/skills/skill", {
 		{
 			return false;
 		}
-		// Only actors are ever tamable, and only actors carry getType/getSkills --
-		// those live on actor, while isAlive/getFlags live on the entity base. A
-		// tile holding a non-actor entity therefore has to be rejected here, before
-		// anything downstream reaches for an actor-only accessor.
-		if (!("getType" in target) || !("getSkills" in target))
+		// Only actors are tamable, and only actors carry getType/getSkills -- those
+		// live on actor while isAlive/getFlags live on the entity base. Reject
+		// non-actors here, before anything downstream reaches an actor-only
+		// accessor. Must be isKindOf, NOT ("getSkills" in target): BB's table
+		// inheritance resolves method *calls* through the super chain but `in`
+		// only sees a table's own slots, so the `in` form is false even for real
+		// actors and rejects every target.
+		if (!this.isKindOf(target, "actor"))
 		{
 			return false;
 		}

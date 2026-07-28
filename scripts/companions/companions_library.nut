@@ -669,11 +669,11 @@ gt.Const.Companions.resolveTameType <- function( _entity )
 	if (_entity == null || !_entity.isAlive())
 		return null;
 
-	// getType/getSkills are actor-only; the entity base has neither. Callers can
-	// hand us any tactical entity, so refuse non-actors rather than throw.
-	if (!("getType" in _entity) || !("getSkills" in _entity))
-		return null;
-
+	// No non-actor guard here on purpose. `this` is the Const table, so isKindOf
+	// is not reachable, and the ("getType" in _entity) form does not work -- BB's
+	// table inheritance hides inherited members from `in`. Both callers live in
+	// companions_tame.nut behind onVerifyTarget's isKindOf(target, "actor")
+	// check, so anything arriving here is already an actor.
 	local et = _entity.getType();
 	local ETC = this.Const.EntityType;
 	local TL = this.Const.Companions.TypeList;

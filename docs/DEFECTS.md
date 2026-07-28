@@ -158,3 +158,55 @@ the culprit (its own wrapper uses the same four fixed params,
 
 Rewriting our wrapper to use vargv would be cargo-culting: it would silence a
 warning while making the parameter contract *less* explicit. Leave it.
+
+---
+
+## D20 — `in` does not see inherited members; the D18 guard rejected every target
+
+**Status:** FIXED in v2.1.11. **Severity:** CRITICAL (Tame skill fully unusable).
+**Introduced by:** the D18 fix in v2.1.10. Lived for exactly one release.
+
+The D18 fix guarded the hover path with:
+
+```squirrel
+if (!("getType" in target) || !("getSkills" in target)) return false;
+```
+
+That guard is false for **every** entity, actors included, so the Tame skill
+reported "invalid target" against everything — snakes in an ordinary fight, in
+Igor's report.
+
+**Why.** Battle Brothers does not use Squirrel classes for entities; it builds
+tables via `this.inherit(...)`, with the parent reachable through a `SuperName`
+slot. Method *calls* resolve up that chain, but the `in` operator only inspects a
+table's **own** slots. So `target.getSkills()` works while `"getSkills" in target`
+is false.
+
+The evidence was in the original mod all along — its own idiom
+
+```squirrel
+while(!("onDeath" in o)) o = o[o.SuperName];   // walk UP to the shared parent
+```
+
+only makes sense *because* `in` cannot see inherited members. I had already
+quoted that line in the audit notes and still wrote the broken guard.
+
+**Fix.** Use `isKindOf`, which does walk the chain and is what the mod already
+used elsewhere (`isKindOf(target, "lindwurm_tail")`):
+
+```squirrel
+if (!this.isKindOf(target, "actor")) return false;
+```
+
+`resolveTameType` gets **no** guard: `this` is the Const table there, so
+`isKindOf` is out of reach, and the `in` form does not work. Both of its callers
+sit behind `onVerifyTarget`, so anything reaching it is already an actor.
+
+**Rules this leaves behind.**
+
+- `"name" in obj` is only valid for slots **that table owns** — e.g. `setType`,
+  which the companion foundation attaches directly. Existing uses of that form in
+  this mod are correct for exactly that reason.
+- For anything inherited from a vanilla base, use `isKindOf`.
+- A static check cannot catch this, and neither can a clean load. Only running the
+  skill does. Treat any change to targeting predicates as play-test-required.
