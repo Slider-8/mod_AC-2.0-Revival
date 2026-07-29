@@ -243,6 +243,34 @@
 			{
 				if (this.m.Type != null && !this.isUnleashed() && _onTile != null && this.getScript() != null && this.Const.Companions.Library[this.m.Type].Unleash.onActorDied)
 				{
+					// Vanilla wardog_item.onActorDied refuses to spawn onto an occupied
+					// tile: it falls back to the first free neighbour, and if there is
+					// none it does not spawn at all. mod_AC had dropped that check and
+					// spawned unconditionally at the corpse tile. Two actors sharing a
+					// tile corrupts zone-of-control and turn-sequence bookkeeping, and
+					// this companion has IsActingImmediately so it is inserted to act
+					// straight away, before anything can clean up after it.
+					if (!_onTile.IsEmpty)
+					{
+						local free = null;
+
+						for( local i = 0; i < 6; i = ++i )
+						{
+							if (_onTile.hasNextTile(i) && _onTile.getNextTile(i).IsEmpty)
+							{
+								free = _onTile.getNextTile(i);
+								break;
+							}
+						}
+
+						if (free == null)
+						{
+							return;
+						}
+
+						_onTile = free;
+					}
+
 					local entity = this.Tactical.spawnEntity(this.getScript(), _onTile.Coords.X, _onTile.Coords.Y);
 					entity.setItem(this);
 					entity.setName(this.getName());

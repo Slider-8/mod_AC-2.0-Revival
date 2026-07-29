@@ -433,3 +433,104 @@ root-cause claim for this without such a line.
 (full-health chance; then wrong cap). Each was a plausible mechanism reached for
 without evidence that it was the *active* one. The instrumentation exists
 precisely because reasoning keeps failing here -- use it first next time.
+
+---
+
+## D23 — Softlock on the companion's turn after unleash-on-owner-death
+
+**Report (2026-07-29).** A human brother died of bleeding at the end of his own
+turn. His equipped Winter warhound was unleashed by the on-death path. The game
+stopped on the dog's turn and had to be killed.
+
+**Log evidence** (`Documents\Battle Brothers\log.html`, 14:03:42):
+
+```
+Leon Wild H Fl is unconscious.
+ff: onKill ... Skill = "effects.bleeding", Self = true
+onRemovedFromMap activeEntity null. Leon Wild H Fl (1773057)
+Spawned Entity type "scripts/companions/types/companions_warhound" at (14,11)
+onPlacedOnMap activeEntity null. Warhound (2583362)
+Turn started for Winter
+<nothing further>
+Shutting down engine core.        (21s later, user killed the process)
+```
+
+**No Squirrel exception was thrown.** This is a spin, not a crash. That matters:
+it rules out every "index does not exist" family of cause and points at a loop
+that never terminates.
+
+### Established mechanism
+
+1. Vanilla `actor.onDeath` order is `removeFromMap()` -> `Items.onActorDied(tile)`
+   -> `onAfterDeath(tile)` (`.refs/vanilla/scripts/entity/tactical/actor.nut:3511`).
+   So the mod's spawn runs *inside* the owner's death resolution.
+2. Every companion sets `m.IsActingImmediately = true`. In `actor.onPlacedOnMap`
+   that routes to `Tactical.TurnSequenceBar.insertEntity(this)` rather than
+   `addEntity` (`actor.nut:2233`), i.e. the dog is inserted to act **next**.
+   Combined with (1), the dog becomes active with no gap after the owner's turn.
+3. `onRemovedFromMap activeEntity null` / `onPlacedOnMap activeEntity null` are
+   **Reforged** diagnostics, not vanilla and not ours -- see
+   `mod_reforged/hooks/experimental_modules/ai_agent_fixes.nut:310,328`. They mean
+   Reforged could not invalidate the active agent's cached behavior because no
+   entity was active at that instant. Both fired here.
+4. Reforged's `ai_agent_fixes` is loaded unconditionally: `mod_reforged.nut:198`
+   is `foreach (file in ::IO.enumerateFiles("mod_reforged"))`, which recurses into
+   `hooks/experimental_modules/`. There is no setting that disables it; the only
+   related MSU setting, `Debug_AIAgentFixes`, controls *logging* only.
+
+### Leading hypothesis — NOT CONFIRMED
+
+Reforged replaces `agent.think` with:
+
+```squirrel
+q.RF_canExecute <- function() {
+    return this.m.RF_AgentState.isExecuting()
+        || (!::Time.hasEventScheduled(::TimeUnit.Virtual) && !::Tactical.getNavigator().IsTravelling);
+}
+q.think = @(__original) function( _evaluateOnly = false ) {
+    if (!_evaluateOnly && !this.RF_canExecute()) { __original(true); return; }
+    __original(_evaluateOnly);
+}
+```
+
+If a Virtual-time event stays pending (or the navigator stays `IsTravelling`),
+`think` degrades to evaluate-only **forever**: the behavior is never executed, the
+turn never ends, nothing is logged, and no exception is raised. This is the only
+silent non-terminating path found in the whole stack, and it matches the symptom
+exactly. The death sequence that spawned the dog is a plausible source of such a
+pending event.
+
+`mod_AC` itself schedules only one Virtual event and it is unrelated to this path
+(`companions_nightmare_skill.nut:113`, alp only).
+
+**This is a mechanism, not a proven cause. Do not ship it as a fix.**
+
+### How to confirm
+
+Enable the MSU setting **Reforged -> Debug -> `AIAgentFixes`**, reproduce, and read
+`log.html`. A stall shows as repeating `evaluate -- Winter (...)` lines with no
+matching `execute -- Winter` line. If instead `execute` lines appear and repeat,
+the loop is inside a behavior, not the gate.
+
+### Fixed under this defect (independent of the hang)
+
+`accessory_foundation.onActorDied` had dropped vanilla's occupancy guard.
+Vanilla `wardog_item.onActorDied` scans the six neighbours when the death tile is
+not empty and **refuses to spawn at all** when none is free
+(`.refs/vanilla/scripts/items/accessory/wardog_item.nut`). mod_AC spawned
+unconditionally at the corpse tile. Restored, with the same fall-back-then-abort
+shape as vanilla.
+
+This is a genuine regression and worth fixing on its own, but it **did not cause
+this hang**: the log shows Leon was removed from the map at (14,11) immediately
+before the dog spawned there, so the tile was free and the guard would not have
+fired.
+
+**Checked and deliberately not changed:** the Noodle needs a second tile for its
+tail, and the unleash *skill* enforces that via `findTailTile`, which
+`onActorDied` does not. No fix needed -- `companions_noodle.nut:319-356` leaves
+`m.Tail` null when no neighbour is free, and every consumer null-checks it. The
+companion is degraded, not broken.
+
+**Status:** `PARTIALLY FIXED` — occupancy guard restored; the softlock itself is
+`UNCONFIRMED` pending the instrumented repro above.
